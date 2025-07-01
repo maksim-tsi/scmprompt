@@ -170,3 +170,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 *   Open an issue on this GitHub repository for technical questions or bug reports.
 
 *(Please cite this repository/associated publication if using concepts or code from this project.)*
+
+## Environment Variables & Credentials
+
+This project uses environment variables to securely manage all credentials and API keys. **Do not hardcode any credentials in code or notebooks.**
+
+### Required Environment Variables
+
+- `GOOGLE_API_KEY`: API key for Google Generative AI (required for embedding and LLM calls)
+- `QDRANT_URL`: URL for your Qdrant Cloud instance
+- `QDRANT_API_KEY`: API key for Qdrant Cloud
+- `OPENAI_API_KEY`: (if using OpenAI models)
+- Any other service-specific keys (see relevant code or .env.example)
+
+**How to set up:**
+1. Copy `.env.example` to `.env` in the project root.
+2. Fill in all required variables with your own credentials.
+3. Never commit your `.env` file or any credentials to version control.
+
+All code and notebooks are designed to load credentials from environment variables using the `python-dotenv` package. If a required variable is missing, the code will raise an error and prompt you to set it.
