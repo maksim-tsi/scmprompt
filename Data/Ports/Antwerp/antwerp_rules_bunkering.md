@@ -1,0 +1,72 @@
+# Port of Antwerp - Port Instructions - Vessels Supplying Energy Chapter Analysis
+
+**Document Source:** [Provided Document - "Port Instructions of Antwerp Port"]
+**Effective Date:** December 2024 (Assumed from document footer)
+
+**Note:** *Analysis of Chapter 9 Vessels Supplying Energy from the Port Instructions of Antwerp Port, focusing on bunkering regulations and procedures.*
+
+## 9. VESSELS SUPPLYING ENERGY (Chapter 9 of Port Instructions)
+
+*   **9.1. Liquid and gaseous fuels and lubricating oils:**
+
+    *   **9.1.1. Licence:**
+        *   **9.1.1.1. Licensing conditions:**
+            *   **General Requirement:** Both bunker suppliers and bunker ships *must have a permit* to conduct bunkering operations at the port.
+            *   **Bunker Suppliers (Companies purchasing/selling bunker fuels):** Application to Toelatingen.HKD@portofantwerpbruges.com with:
+                *   Company presentation (contact details: address, phone numbers (24/7), email, contact person). **(Checklist Item: Bunker Supplier License Application - Company Info)**
+                *   ADN Safety Advisor Certificate Copy. **(Checklist Item: Bunker Supplier License Application - ADN Safety Advisor Certificate)**
+                *   Customs authorization copy. **(Checklist Item: Bunker Supplier License Application - Customs Authorization Copy)**
+                *   Copies of other bunker licenses (Flemish ports, Scheldt, etc.). **(Checklist Item: Bunker Supplier License Application - Other Bunker Licenses Copies)**
+                *   Information on bunker organization: Chain description (fuel collection to delivery), product types, delivery to seagoing/inland craft? **(Checklist Item: Bunker Supplier License Application - Bunker Organization Info)**
+                *   Solemn declaration confirming: ADN-certified skippers used; bunker vessels hold valid certificates (tonnage, inspection, community, ADN approval, calibration); bunker vessel meters calibrated yearly; equipment certified; bunker vessels have overflow containment equipment (oil-absorbing hoses, granular absorbents); bunker checklists and Bunker Delivery Notes completed correctly. **(Checklist Item: Bunker Supplier License Application - Sworn Declaration)**
+                *   *Special conditions may be imposed in the license.* Processing time approx. 30 working days for complete application.
+
+            *   **Bunker ships (Ships carrying out bunkering operations):** Application to Toelatingen.HKD@portofantwerpbruges.com with:
+                *   Bunker ship name. **(Checklist Item: Bunker Ship License Application - Bunker Ship Name)**
+                *   Bunker ship ENI-number. **(Checklist Item: Bunker Ship License Application - Bunker Ship ENI Number)**
+                *   AND type (C2.2, etc.). **(Checklist Item: Bunker Ship License Application - AND Type)**
+                *   P&I insurance. **(Checklist Item: Bunker Ship License Application - P&I Insurance)**
+                *   Meter type for bunkered quantity determination. **(Checklist Item: Bunker Ship License Application - Meter Type)**
+                *   Contact information (phone, mobile, email). **(Checklist Item: Bunker Ship License Application - Contact Info)**
+                *   Permit address (postal address). **(Checklist Item: Bunker Ship License Application - Permit Address)**
+                *   Legal entity details (name, address, phone, mobile). **(Checklist Item: Bunker Ship License Application - Legal Entity Details)**
+                *   Bunker suppliers for which bunker ship is used. **(Checklist Item: Bunker Ship License Application - Bunker Suppliers List)**
+
+            *   **LNG Bunkering:** Procedures for safe/efficient LNG bunkering in Port of Antwerp (stringent safety standards due to urban/industrial location). Antwerp Port Authority procedures focus on system safety, LNG bunkering map locations, operational safety.
+                *   **System safety (Bunker Operator responsibilities):** Carefully check safe organization of LNG bunkering operations before performance (evaluated by Port Authority during licensing).
+                *   **Operational scenarios addressed:** Bunker Station-to-Ship, Truck-to-Ship, Ship-to-Ship transfer.
+                *   **Bunker Station to Ship & Truck to Ship transfer:** Bunker suppliers *must have Harbour Master license* for LNG delivery at Port of Antwerp (issued after positive evaluation of Bunker/Safety Procedures and other requirements). Application to toelatingen.hkd@portofantwerpbruges.com with business information/desired activities explanation. Licence application to Harbourmaster's Office *at least 30 working days before first bunkering operations*. Potential service provider invited for intake interview by Harbour Master. **(Checklist Item: LNG Bunker Supplier License Application - Business Info & Intake Interview)**
+                *   **Ship-to-Ship transfer:** Licence for Ship-to-Ship LNG bunkering uses IAPH roadmap (International Association of Ports and Harbours). IAPH Audit Tool (IAT) used for audit (management system quality - business organization & bunker ship). Licence granted after favorable audit result and based on LNG bunker map. Licence application via "intake form". Application to Harbour Master's Office *at least 90 working days before first bunkering operations* (toelatingen.hkd@portofantwerpbruges.com). **(Checklist Item: LNG Bunker Supplier License Application - IAPH Audit & Intake Form)**
+                *   **Validity of the licence:** Licence valid 5 years from decision date. New application for renewal *at least 30 working days before expiry*. Licence suspension/revocation possible by Harbour Master. Immediate communication to Harbourmaster's Office for any changes (HMO decides on licence retention). Flemish port bunker licences (obtained in other Flemish ports) also valid in Port of Antwerp (and vice versa), copy of other Flemish port license submitted. All Port Instructions conditions/procedures fully apply to LNG bunkering companies in Port of Antwerp.
+                *   **Supervision and enforcement:** All bunkering documents/certificates/checklists (operations/bunker vessels) presented to Harbourmaster's Office on request.
+
+    *   **9.1.2. Conditions governing bunkering operations:**
+        *   **9.1.2.1. Conventional bunkering:** Bunkering by bunker ship only permitted if rules adhered to (in addition to license requirement - 9.1.1.1):
+            *   **Safe Access:** Receiving ship master ensures safe access from bunker vessel (gangway, boarding ladder, pilot door) per Article 12.5.11. **(Checklist Item: Bunkering Operation - Safe Access)**
+            *   **Masters' Responsibilities (Both Vessels):** Masters of both vessels ensure bunkering checklist fully/truthfully completed/signed (Article 9.1.3). Checklist verification points: Bunker hoses properly suspended with slack, leak-free hose connections, leak collection means under bunker line connection, no smoking/hot work on deck, emergency response means available for spills/overflows, routine checks performed. **(Checklist Item: Bunkering Operation - ISGOTT Bunker Checklist Completion & Verification)**
+            *   **HMO Authority:** Harbour Master may cancel/stop bunkering anytime due to weather/safety risks, may impose additional safety requirements. **(HMO Oversight & Authority to Stop/Modify Bunkering)**
+            *   **Emergency Procedures (Spills/Overflows):** In emergencies, Port Police Regulations Section 5.4 applies: Immediate measures to mitigate damage (stop spill, containment - Article 3.6 PPR), detergents/dispersants prohibited, oil spill removal by Port Authority-appointed service provider (Article 12.4.4 PPR), Port Authority Supervisor notified immediately (contact details provided). **(Checklist Item: Bunkering Operation - Emergency Procedures Awareness & Readiness)**
+            *   **Transfer operations:** Any transfer during bunkering subject to Article 10.6.3 conditions (Direct transshipment of hazardous goods in bulk - liquid + gas).
+
+        *   **Bunkering by truck:** Allowed only if provisions complied with: Notification per Port Police Regulations Article 9.1.4. , ship properly moored, leak-free bunker hose connections, master informs Harbour Master's Office of bunkering start/end (VHF channel 63), bunkering operations supervised at all times, master/truck driver complete/sign bunker checklist, Harbour Master may cancel/stop bunkering anytime due to weather/safety, concessionaire permission obtained (written, produced on request), hoses inspected every 6 months (certificate available for inspection), emergency response resources available (absorbent materials for shore spills).
+
+        *   **9.1.2.2. LNG bunkering:** Procedures for safe/efficient LNG bunkering in Port of Antwerp (stringent safety standards due to urban/industrial location). Antwerp Port Authority procedures focus on system safety, LNG bunkering map locations, operational safety.
+            *   **Operational safety (Bunker Operator responsibilities):** Bunker operator responsibilities *before, during, after* LNG bunkering. LNG bunkering only permitted after Harbour Master's Office authorization (requested for specific quay/terminal/berth per Article 9.1.4 PPR). **General conditions for LNG bunkering operations:**
+                *   **Responsible person:** Appoint person responsible for LNG bunkering operation (contact point for Harbour Master's Office). **(Checklist Item: LNG Bunkering Operation - Responsible Person Appointed)**
+                *   **Documents to be kept/submitted:** Documents kept at bunkering location, submitted/available for HMO inspection. Kept onboard receiving vessel for 6 months. Documents: SDS of LNG supplied, certificates of transfer equipment/PPE/fire-fighting equipment, Emergency Response Plan, Class certificates of vessels, Crew training certificates, Bunkering checklists. **(Checklist Item: LNG Bunkering Operation - Documentation Ready & Available)**
+                *   **Communication:** English preferred, reliable communication throughout operation, supplier provides secure communication if needed, bunkering stops immediately if communication fails until restored (visual/audible communication between receiver/supplier personnel in normal positions sufficient, electronic communication dispensed with). **(Checklist Item: LNG Bunkering Operation - Communication Protocol & Equipment)**
+                *   **Emergency Shut Down (ESD) system:** Each truck/terminal/ship has ESD for quick/safe shutdown in emergency. ESD checked/tested *before each bunkering*. **(Checklist Item: LNG Bunkering Operation - ESD System Check & Test)**
+                *   **Weather conditions:** LNG bunkering *prohibited* if wind exceeds force 8 Beaufort. Special permission from Harbour Master's Office for wind speeds > force 6 Beaufort (local situation considered). Vessels moored to withstand wind/waves/swell. LNG bunkering *prohibited during thunderstorms*. Bunkering *suspended immediately* if thunderstorm/lightning, systems secured, restart with HMO permission. **(Checklist Item: LNG Bunkering Operation - Weather Condition Monitoring & Limits)**
+                *   **Personnel Training:** Personnel trained per IGF, IGC, STCW, ISO20519, ADN/ADR etc. Terminal personnel trained per SIGTTO, ISGINTT, LNG handling course. All LNG bunkering personnel must have relevant training. **(Checklist Item: LNG Bunkering Operation - Trained Personnel)**
+                *   **Responsibilities and rest periods:** Responsibilities defined by legislation. Each party responsible for staff training, rest periods, emergency measure implementation/monitoring.
+                *   **Methane release minimization:** Minimize methane release to atmosphere.
+
+    *   **9.1.3. Bunker checklist:** Bunker checklist *must* be fully/truthfully completed/signed by all parties for every bunkering operation. Checklist kept onboard vessels during bunkering and 24 hours after, retained for 6 months, submitted to Harbourmaster's Office on request. Bunker checklist minimum items: (Links to checklists provided for Conventional and LNG bunkering - www.portofantwerpbruges.com/scheepvaart/regels-en-procedures/toelatingen-aanvragen and www.lngbunkering.org/lng/bunker-checklists). **(Checklist Item: Bunkering Operation - Bunker Checklist Completion, Signature, Retention)**
+
+    *   **9.1.4. Duty to report:** Every bunkering operation *must be notified*. HMO may grant exemptions from notification procedures on justified request.
+        *   **9.1.4.1. Conventional bunkering:** Bunker notification via APICS (web page or API). Barge bunkering reported *before start*. Seagoing vessel bunkering reported *at least 2 hours before start*. Licensed bunkering company may delegate reporting to third party. **Required information in Bunker Notification (Conventional):** Company identification (bunkering company code), Bunker vessel name/ENI number (or truck plate number), Planned start date/time, Estimated duration, Receiving vessel name, Bunkering location (quay number), Product type, Quantity planned for delivery/unit. **Optional information (for Customs forwarding via APICS):** Customs code of product, BDR number, Bunker supplier details (License number, Customs/tax warehouse IDs). Bunker Delivery Note (BDN) *must* be completed per international standards, *additionally* containing: Viscosity at 50°C, MARPOL sample numbers. **(Checklist Item: Conventional Bunkering Notification via APICS - Required Information)**
+        *   **9.1.4.2. LNG bunkering:** Authorization *required from Harbour Master's Office for each LNG bunkering operation* (procedure link provided). ACC (Antwerp Coordination Center) *notified at least 4 hours before start and upon completion* (VHF channel 18). Harbour Master may cancel/stop bunkering anytime due to weather/safety, may impose additional safety requirements. Harbour Master may inspect bunkering operation anytime without notice. **(Checklist Item: LNG Bunkering Operation - HMO Authorization & ACC Notification)**
+
+*   **9.2. Shore power:** Generator use on barges to generate electricity prohibited if berthed and shore power connection available. Shore power used per installation instructions. **(Shore Power Mandatory Use for Barges)**
+
+---

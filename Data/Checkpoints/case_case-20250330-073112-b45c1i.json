@@ -1,0 +1,802 @@
+{
+  "case_id": "case-20250330-073112-b45c1i",
+  "checkpoint_file": "/Users/max/Documents/Code/magdeburg25/Data/Checkpoints/case_case-20250330-073112-b45c1i.json",
+  "checkpoint_history": [
+    {
+      "stage": "initialized",
+      "timestamp": "2025-03-30T07:31:12.410819"
+    },
+    {
+      "stage": "draft",
+      "timestamp": "2025-03-30T07:31:17.146817"
+    },
+    {
+      "stage": "analyzed",
+      "timestamp": "2025-03-30T07:31:23.738159"
+    },
+    {
+      "stage": "datapoints_retrieved",
+      "timestamp": "2025-03-30T07:31:31.176193"
+    },
+    {
+      "stage": "enhanced",
+      "timestamp": "2025-03-30T07:31:39.068590"
+    },
+    {
+      "stage": "completed",
+      "timestamp": "2025-03-30T07:31:49.300823"
+    }
+  ],
+  "last_checkpoint": "completed",
+  "creation_timestamp": "2025-03-30T07:31:12.410812",
+  "checkpoint_time": "2025-03-30 07:31:49",
+  "example_inspiration": "CASE • Fedco Fasteners",
+  "example_filename": "Case_Fedco_Fasteners.md",
+  "draft_case": "**Scenario:** BaltiFoods, a rapidly growing food processing company based in Riga, Latvia, specializing in organic dried berries and fruit snacks, is struggling to maintain its ambitious growth targets due to escalating shipping costs and unreliable delivery schedules for its key ingredient: organic goji berries sourced from the Ningxia region of China.\n\n**Entities:**\n\n*   BaltiFoods (Janis Ozols, CEO; Inga Liepa, Supply Chain Manager; Peteris Kalnins, CFO)\n*   Ningxia Goji Farms Cooperative (Li Wei, Export Manager)\n*   OceanWave Shipping (Hans Schmidt, Key Account Manager)\n*   Port of Riga (Representative: Maris Jansons, Terminal Operations)\n*   MV Northern Star (Container Vessel, owned by OceanWave Shipping)\n\n**Regulatory Issues:** Import regulations for organic food products into the EU (specifically Latvia), including required certifications and potential customs inspections at the Port of Riga. Documentation accuracy is critical.\n\n**Problem:** BaltiFoods’ existing contract with OceanWave Shipping, utilizing the MV Northern Star on a fixed schedule from Ningbo, China, to Riga via the Suez Canal, has become increasingly unreliable. Recent port congestion in Ningbo and the Suez Canal, coupled with unforeseen delays due to weather conditions in the Indian Ocean, have resulted in several shipments arriving weeks behind schedule. These delays are causing significant disruption to BaltiFoods' production schedule, leading to missed delivery deadlines to major European supermarket chains and resulting in costly penalties and potential loss of valuable contracts.\n\nFurthermore, the price of goji berries is highly volatile, and BaltiFoods’ current shipping arrangement doesn’t offer sufficient flexibility to adjust order volumes quickly in response to market fluctuations. Inga Liepa, the Supply Chain Manager, needs to find a solution that balances cost-effectiveness, reliability, and flexibility to secure BaltiFoods' supply chain and protect its market position. Janis Ozols, the CEO, is demanding immediate action to rectify the situation, while Peteris Kalnins, the CFO, is concerned about the escalating costs and potential impact on profitability. The company needs to determine the best course of action: renegotiate with OceanWave Shipping, explore alternative shipping routes or providers, or consider holding a larger inventory of goji berries (despite the associated storage costs and risk of spoilage).\n",
+  "creation_date": "2025-03-30",
+  "stage": "datapoints_retrieved",
+  "model": "gemini-2.0-flash-exp",
+  "generation_duration": 3.679619,
+  "draft_complete": true,
+  "analysis": "## Case Analysis\n\nThis draft case is a good starting point but needs further development to fully align with the provided guidelines. Here's a breakdown:\n\n*   **Strengths:**\n    *   **Realistic Scenario:** The scenario is plausible and grounded in real-world supply chain challenges.\n    *   **Clear Problem Statement:** The core problem (unreliable shipping leading to financial and operational issues) is well-defined.\n    *   **Defined Entities:** The key players and their roles are clearly outlined.\n    *   **Regulatory Awareness:** The case acknowledges the importance of import regulations for organic food.\n    *   **Multiple Perspectives:** The inclusion of CEO, CFO, and Supply Chain Manager perspectives adds depth.\n\n*   **Weaknesses:**\n    *   **Limited Documentation Focus:** The case mentions \"documentation accuracy\" but doesn't explicitly involve specific documents or workflows. It needs to be tied to the Import Documentation Workflow.\n    *   **Lack of B/L Focus:** The case doesn't directly address Bill of Lading errors or data quality issues, a key focus area of the guidelines.\n    *   **Missing Digitalization Aspect:** The case doesn't explore the potential benefits of digitalization or the challenges of manual processes.\n    *   **Limited Incoterms Consideration:** The case doesn't specify the Incoterms used, which would influence documentation responsibilities.\n    *   **Missing Checklist Opportunity:** The case could be enhanced by requiring the LLM to generate a checklist of documents needed for the import of organic goji berries into Riga.\n\n*   **Improvements Needed:**\n    *   **Incorporate specific document requirements:** Detail which documents are required for importing organic goji berries into Latvia (e.g., phytosanitary certificate, certificate of origin, organic certification, commercial invoice, packing list, Bill of Lading).\n    *   **Introduce a B/L error scenario:** For example, the B/L could have an incorrect weight declaration, leading to potential customs issues.\n    *   **Specify Incoterms:** State the Incoterms used in the contract between BaltiFoods and Ningxia Goji Farms Cooperative (e.g., CIF Riga). This will define who is responsible for which documents.\n    *   **Add a digitalization angle:** Consider mentioning that BaltiFoods is currently using a manual, paper-based system for import documentation, leading to delays and errors.\n    *   **Prompt for a checklist:** Task the LLM with generating a comprehensive checklist of documents required for the import, considering the Incoterms and regulatory requirements.\n    *   **Expand on the Port of Riga's role:** How does the port's documentation process impact BaltiFoods? Is it efficient or a source of delays?\n\n## Knowledge Gaps\n\n1.  **Specific import regulations for organic food products in Latvia/EU:** Detailed requirements for organic certification, labeling, and inspection.\n2.  **Required documentation for importing food products into Latvia:** A comprehensive list of documents needed for customs clearance.\n3.  **Common Bill of Lading errors and their consequences:** Specific examples of B/L errors that could impact the import of goji berries.\n4.  **Port of Riga's import procedures and documentation requirements:** Specific processes and forms required by the Port of Riga.\n5.  **EU customs regulations related to food imports:** Rules regarding tariffs, quotas, and inspections.\n6.  **Phytosanitary certificate requirements for goji berries:** Specific regulations regarding plant health and pest control.\n7.  **Incoterms 2020 rules and their impact on documentation responsibilities:** Detailed understanding of how different Incoterms affect who is responsible for which documents.\n8.  **EU regulations on food safety and traceability:** Requirements for tracking food products throughout the supply chain.\n9.  **Penalties for non-compliance with import regulations in Latvia/EU:** Consequences of submitting incorrect or incomplete documentation.\n10. **Best practices for mitigating B/L errors in the food industry:** Strategies for ensuring data accuracy and preventing delays.\n\n## Search Queries\n\n1.  \"Import regulations organic food Latvia\"\n2.  \"Required documents import food products Latvia\"\n3.  \"Bill of Lading errors customs clearance EU\"\n4.  \"Port of Riga import procedures documentation\"\n5.  \"EU customs regulations food imports\"\n6.  \"Phytosanitary certificate requirements goji berries\"\n7.  \"Incoterms 2020 documentation responsibilities\"\n8.  \"EU food safety traceability regulations\"\n9.  \"Penalties non-compliance import regulations Latvia\"\n10. \"Best practices mitigating Bill of Lading errors food industry\"\n\n## Keywords\n\n1.  BaltiFoods\n2.  Riga\n3.  Goji Berries\n4.  Organic Certification\n5.  Import Regulations\n6.  Bill of Lading\n7.  Customs Clearance\n8.  Port of Riga\n9.  Incoterms\n10. Supply Chain\n11. Documentation\n12. Phytosanitary Certificate\n13. Food Safety\n14. Ningxia\n15. OceanWave Shipping\n",
+  "analysis_timestamp": "2025-03-30T07:31:23.735760",
+  "analysis_duration": 5.964712,
+  "analysis_model": "gemini-2.0-flash-exp",
+  "search_queries": [
+    "\"Import regulations organic food Latvia\"",
+    "\"Required documents import food products Latvia\"",
+    "\"Bill of Lading errors customs clearance EU\"",
+    "\"Port of Riga import procedures documentation\"",
+    "\"EU customs regulations food imports\"",
+    "\"Phytosanitary certificate requirements goji berries\"",
+    "\"Incoterms 2020 documentation responsibilities\"",
+    "\"EU food safety traceability regulations\"",
+    "\"Penalties noncompliance import regulations Latvia\"",
+    "\"Best practices mitigating Bill of Lading errors food industry\""
+  ],
+  "keywords": [
+    "BaltiFoods",
+    "Riga",
+    "Goji Berries",
+    "Organic Certification",
+    "Import Regulations",
+    "Bill of Lading",
+    "Customs Clearance",
+    "Port of Riga",
+    "Incoterms",
+    "Supply Chain",
+    "Documentation",
+    "Phytosanitary Certificate",
+    "Food Safety",
+    "Ningxia",
+    "OceanWave Shipping"
+  ],
+  "analysis_complete": true,
+  "relevant_datapoints": [
+    {
+      "datapoint_id": "INCO_DP_001_Definition_Incoterms",
+      "datapoint_type": "Definition",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Definition",
+      "regulation_detail": "Incoterms (International Commercial Terms) are a set of globally recognized rules defining buyer and seller responsibilities in international trade.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1]",
+      "keywords": [
+        "incoterms",
+        "definition",
+        "rules",
+        "international trade",
+        "icc"
+      ],
+      "search_score": 0.8916294,
+      "matched_query": "\"Incoterms 2020 documentation responsibilities\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "INCO_DP_002_Purpose_Incoterms_DefineResponsibilities",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Purpose",
+      "regulation_detail": "Incoterms provide a framework for understanding the division of responsibilities between buyer and seller.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1, 4]",
+      "keywords": [
+        "incoterms",
+        "purpose",
+        "responsibilities",
+        "obligations",
+        "buyer",
+        "seller"
+      ],
+      "search_score": 0.88235456,
+      "matched_query": "\"Incoterms 2020 documentation responsibilities\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "INCO_DP_003_Purpose_Incoterms_DefineCosts",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Purpose",
+      "regulation_detail": "Incoterms clarify the allocation of costs associated with the delivery of goods between buyer and seller.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1, 4]",
+      "keywords": [
+        "incoterms",
+        "purpose",
+        "costs",
+        "allocation",
+        "buyer",
+        "seller"
+      ],
+      "search_score": 0.87607557,
+      "matched_query": "\"Incoterms 2020 documentation responsibilities\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "INCO_DP_004_Purpose_Incoterms_DefineRisks",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Purpose",
+      "regulation_detail": "Incoterms define the point at which the risk of loss or damage to goods transfers from seller to buyer.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1, 4]",
+      "keywords": [
+        "incoterms",
+        "purpose",
+        "risk",
+        "risk transfer",
+        "buyer",
+        "seller"
+      ],
+      "search_score": 0.87089294,
+      "matched_query": "\"Incoterms 2020 documentation responsibilities\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "INCO_DP_005_Publisher_ICC",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Publisher",
+      "regulation_detail": "Incoterms rules are published by the International Chamber of Commerce (ICC).",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1]",
+      "keywords": [
+        "incoterms",
+        "icc",
+        "publisher",
+        "international chamber of commerce"
+      ],
+      "search_score": 0.86461127,
+      "matched_query": "\"Incoterms 2020 documentation responsibilities\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "DOC_CHECKLIST_CUSTOMS_CLEARANCE_IMPORT_097",
+      "datapoint_type": "Checklist",
+      "document_type": "Customs Clearance Documents - Import",
+      "relevant_entity": "Importer/Customs Broker",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Import Documentation - Checklist",
+      "source_document": "Customs Declaration Report, Latvia Customs Information, EuroBrokers",
+      "regulation_detail": "Customs Clearance Documents Checklist for Import to Latvia: Commercial Invoice (Original), Packing List, Bill of Lading, Certificate of Origin (if preferential duties), Customs Declaration (Electronic), Import Licenses/Permits (if applicable), Sanitary/Phytosanitary Certificates (if applicable), Documents for Reduced VAT (if applicable).",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "checklist",
+        "customs clearance documents",
+        "import documentation"
+      ],
+      "search_score": 0.8600329,
+      "matched_query": "\"Required documents import food products Latvia\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ACCURACY_CRUCIAL_080",
+      "datapoint_type": "Guideline",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shippers, Freight Forwarders",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Handling Guidelines",
+      "regulation_detail": "Accuracy of all information on the Bill of Lading (B/L) is crucial and must be ensured to match other shipping documents, avoiding discrepancies and delays.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "4. Guidelines for Handling Bills of Lading - Accuracy",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "accuracy",
+        "data accuracy",
+        "document accuracy",
+        "guideline",
+        "shipping documents",
+        "avoid discrepancies"
+      ],
+      "search_score": 0.8478869,
+      "matched_query": "\"Bill of Lading errors customs clearance EU\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "CUSTOMS_DOC_PHYTOSANITARY_CERTIFICATE_FOOD_084",
+      "datapoint_type": "Document Requirement",
+      "document_type": "Phytosanitary Certificate",
+      "relevant_entity": "Importer (Food Products)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Special Cargo Types - Food Products",
+      "source_document": "Customs Declaration Report",
+      "regulation_detail": "For import of plant materials at the Port of Riga, an original Phytosanitary Certificate from the origin country is required for customs clearance.",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "Phytosanitary Certificate",
+        "food products",
+        "agricultural products",
+        "document requirement",
+        "certificate"
+      ],
+      "search_score": 0.8296129,
+      "matched_query": "\"Required documents import food products Latvia\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.8270633,
+      "matched_query": "\"Bill of Lading errors customs clearance EU\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "CUSTOMS_TRANSIT_EXEMPT_DUTIES_VAT_055",
+      "datapoint_type": "Regulation",
+      "relevant_entity": "Transit Cargo",
+      "regulation_category": "Customs Procedures - Transit",
+      "regulation_subcategory": "Transit Benefits",
+      "source_document": "Latvia Customs Information",
+      "regulation_detail": "Goods that are in transit through Latvia are generally exempt from both Latvian import and export duties, as well as VAT.",
+      "keywords": [
+        "customs",
+        "transit",
+        "duty exemption",
+        "tax exemption",
+        "VAT exemption",
+        "transit benefits"
+      ],
+      "search_score": 0.82251084,
+      "matched_query": "\"Penalties noncompliance import regulations Latvia\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ACCURACY_CRUCIAL_080",
+      "datapoint_type": "Guideline",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shippers, Freight Forwarders",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Handling Guidelines",
+      "regulation_detail": "Accuracy of all information on the Bill of Lading (B/L) is crucial and must be ensured to match other shipping documents, avoiding discrepancies and delays.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "4. Guidelines for Handling Bills of Lading - Accuracy",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "accuracy",
+        "data accuracy",
+        "document accuracy",
+        "guideline",
+        "shipping documents",
+        "avoid discrepancies"
+      ],
+      "search_score": 0.8215703,
+      "matched_query": "\"Best practices mitigating Bill of Lading errors food industry\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_INSPECTION_TRIGGERS_029",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Latvian Customs (VID)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Customs Inspections",
+      "source_document": "Riga Port Report, Latvia Customs Information",
+      "regulation_detail": "Shipments may be selected for inspection by Latvian Customs officials, involving document review and/or physical container inspection, particularly for high-risk shipments or goods requiring closer scrutiny.",
+      "keywords": [
+        "customs",
+        "inspection",
+        "procedure",
+        "Latvia",
+        "VID",
+        "risk-based",
+        "document review",
+        "physical inspection"
+      ],
+      "search_score": 0.8215236,
+      "matched_query": "\"Penalties noncompliance import regulations Latvia\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "CUSTOMS_DOC_PHYTOSANITARY_CERTIFICATE_FOOD_084",
+      "datapoint_type": "Document Requirement",
+      "document_type": "Phytosanitary Certificate",
+      "relevant_entity": "Importer (Food Products)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Special Cargo Types - Food Products",
+      "source_document": "Customs Declaration Report",
+      "regulation_detail": "For import of plant materials at the Port of Riga, an original Phytosanitary Certificate from the origin country is required for customs clearance.",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "Phytosanitary Certificate",
+        "food products",
+        "agricultural products",
+        "document requirement",
+        "certificate"
+      ],
+      "search_score": 0.81926113,
+      "matched_query": "\"Import regulations organic food Latvia\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_EORI_REQUIRED_EU_BUSINESSES_053",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "EU Business/Importer/Exporter",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "General Requirements",
+      "source_document": "DHL Global Forwarding, Latvia Customs Information",
+      "regulation_detail": "For businesses operating within the EU, an Economic Operators' Registration and Identification (EORI) number is usually required for customs clearance in Latvia.",
+      "keywords": [
+        "customs",
+        "EORI number",
+        "Economic Operators Registration and Identification",
+        "EU businesses",
+        "requirement",
+        "registration"
+      ],
+      "search_score": 0.81491405,
+      "matched_query": "\"Required documents import food products Latvia\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_EMDAS_ELECTRONIC_011",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Importer/Exporter/Customs Broker",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Electronic Systems",
+      "source_document": "Customs Declaration Report, Latvia Customs Information",
+      "regulation_detail": "Customs declarations are typically submitted electronically through the Electronic Customs Data Processing System (EMDAS) in Latvia.",
+      "keywords": [
+        "customs",
+        "electronic declaration",
+        "EMDAS",
+        "electronic system",
+        "procedure",
+        "Latvia"
+      ],
+      "search_score": 0.81324965,
+      "matched_query": "\"Required documents import food products Latvia\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "CUSTOMS_DOC_COMMERCIAL_INVOICE_REQUIRED_DATA_052",
+      "datapoint_type": "Document Requirement",
+      "document_type": "Commercial Invoice",
+      "relevant_entity": "Importer/Exporter",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Import/Export Documentation - Commercial Invoice",
+      "source_document": "Eurobrokers, Latvia Customs Information",
+      "regulation_detail": "The Commercial Invoice for Latvian customs clearance must contain: names/addresses of sender/consignee, goods description, HS code, net/gross weight, quantity, price per item, total value, currency, packaging quantity, Incoterms, origin confirmation (invoice declaration/EUR certificate).",
+      "keywords": [
+        "customs",
+        "import",
+        "export",
+        "documents",
+        "Commercial Invoice",
+        "data requirements",
+        "checklist",
+        "mandatory data"
+      ],
+      "search_score": 0.8126311,
+      "matched_query": "\"Required documents import food products Latvia\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "CUSTOMS_DOC_PHYTOSANITARY_CERTIFICATE_FOOD_084",
+      "datapoint_type": "Document Requirement",
+      "document_type": "Phytosanitary Certificate",
+      "relevant_entity": "Importer (Food Products)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Special Cargo Types - Food Products",
+      "source_document": "Customs Declaration Report",
+      "regulation_detail": "For import of plant materials at the Port of Riga, an original Phytosanitary Certificate from the origin country is required for customs clearance.",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "Phytosanitary Certificate",
+        "food products",
+        "agricultural products",
+        "document requirement",
+        "certificate"
+      ],
+      "search_score": 0.81248003,
+      "matched_query": "\"Port of Riga import procedures documentation\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.8109975,
+      "matched_query": "\"Bill of Lading errors customs clearance EU\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "HAMBURG_DP_CUSTOMS_BMEL_FOOD_IMPORT_065",
+      "datapoint_type": "Regulatory Authority",
+      "relevant_entity": "BMEL",
+      "regulation_category": "Cargo-Specific Regulations - Germany",
+      "regulation_subcategory": "Food Import Regulations",
+      "regulation_detail": "BMEL (Federal Ministry of Food and Agriculture) regulates import conditions and certifications for specific cargo types like food products in Germany and Port of Hamburg.",
+      "source_document": "Comparative Analysis Report",
+      "search_score": 0.8096829,
+      "matched_query": "\"EU customs regulations food imports\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "ANTWERP_DP_CUSTOMS_CLEARANCE_BILL_OF_LADING_TRANSPORT_038",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Containerized Cargo (Import)",
+      "regulation_category": "Customs Clearance",
+      "regulation_subcategory": "Supporting Documents",
+      "source_document": "Port Instructions & PPR (Implied)",
+      "source_section": "N/A (Implied)",
+      "regulation_detail": "A Bill of Lading (B/L) is a standard transport document and document of title typically required for customs clearance of imported containerized cargo at the Port of Antwerp, evidencing the contract of carriage and ownership of goods.",
+      "keywords": [
+        "bill of lading",
+        "B/L",
+        "transport document",
+        "supporting document",
+        "customs clearance",
+        "containerized cargo",
+        "contract of carriage",
+        "ownership of goods",
+        "Port of Antwerp",
+        "requirement"
+      ],
+      "search_score": 0.80806476,
+      "matched_query": "\"Bill of Lading errors customs clearance EU\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_EMDAS_ELECTRONIC_011",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Importer/Exporter/Customs Broker",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Electronic Systems",
+      "source_document": "Customs Declaration Report, Latvia Customs Information",
+      "regulation_detail": "Customs declarations are typically submitted electronically through the Electronic Customs Data Processing System (EMDAS) in Latvia.",
+      "keywords": [
+        "customs",
+        "electronic declaration",
+        "EMDAS",
+        "electronic system",
+        "procedure",
+        "Latvia"
+      ],
+      "search_score": 0.804803,
+      "matched_query": "\"Penalties noncompliance import regulations Latvia\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "CUSTOMS_EXEMPTION_HUMANITARIAN_AID_012",
+      "datapoint_type": "Regulation",
+      "relevant_entity": "Humanitarian Aid Organization",
+      "regulation_category": "Customs Regulations",
+      "regulation_subcategory": "Duty and Tax Exemptions",
+      "source_document": "Latvia Customs Information",
+      "regulation_detail": "Humanitarian aid consignments are exempted from customs duties in Latvia.",
+      "keywords": [
+        "customs exemption",
+        "duty free",
+        "humanitarian aid",
+        "charity",
+        "Latvia",
+        "regulation"
+      ],
+      "search_score": 0.80097306,
+      "matched_query": "\"Penalties noncompliance import regulations Latvia\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "CUSTOMS_DOC_PHYTOSANITARY_CERTIFICATE_FOOD_084",
+      "datapoint_type": "Document Requirement",
+      "document_type": "Phytosanitary Certificate",
+      "relevant_entity": "Importer (Food Products)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Special Cargo Types - Food Products",
+      "source_document": "Customs Declaration Report",
+      "regulation_detail": "For import of plant materials at the Port of Riga, an original Phytosanitary Certificate from the origin country is required for customs clearance.",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "Phytosanitary Certificate",
+        "food products",
+        "agricultural products",
+        "document requirement",
+        "certificate"
+      ],
+      "search_score": 0.7993549,
+      "matched_query": "\"Penalties noncompliance import regulations Latvia\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ESSENTIAL_CARGO_RELEASE_075",
+      "datapoint_type": "Requirement",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Consignee",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Importance",
+      "regulation_detail": "Presenting the original Bill of Lading (B/L) is essential for the consignee to obtain release of cargo from the carrier at the destination port.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Importance",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "cargo release",
+        "delivery of goods",
+        "original B/L",
+        "consignee",
+        "requirement",
+        "port operations"
+      ],
+      "search_score": 0.79796106,
+      "matched_query": "\"Bill of Lading errors customs clearance EU\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "DOC_CHECKLIST_CUSTOMS_CLEARANCE_IMPORT_097",
+      "datapoint_type": "Checklist",
+      "document_type": "Customs Clearance Documents - Import",
+      "relevant_entity": "Importer/Customs Broker",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Import Documentation - Checklist",
+      "source_document": "Customs Declaration Report, Latvia Customs Information, EuroBrokers",
+      "regulation_detail": "Customs Clearance Documents Checklist for Import to Latvia: Commercial Invoice (Original), Packing List, Bill of Lading, Certificate of Origin (if preferential duties), Customs Declaration (Electronic), Import Licenses/Permits (if applicable), Sanitary/Phytosanitary Certificates (if applicable), Documents for Reduced VAT (if applicable).",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "checklist",
+        "customs clearance documents",
+        "import documentation"
+      ],
+      "search_score": 0.79662853,
+      "matched_query": "\"Import regulations organic food Latvia\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "ASIA_EUROPE_DIFF_REGULATORY_CHINA_STATE_CONTROLLED_031",
+      "datapoint_type": "Difference",
+      "port_area": [
+        "Shanghai",
+        "Rotterdam",
+        "Hamburg",
+        "Singapore"
+      ],
+      "relevant_entity": "Regulatory Environment",
+      "regulation_category": "Regulatory Environment",
+      "regulation_subcategory": "General Regulatory Style",
+      "regulation_detail": "China's customs regulations (Shanghai) are part of a comprehensive state-controlled system, potentially more bureaucratic compared to EU.",
+      "source_document": "Comparative Report",
+      "source_section": "7. Key Differences in Regulatory Environments and Operational Practices",
+      "keywords": [
+        "regulatory environment",
+        "state-controlled",
+        "bureaucracy",
+        "China",
+        "EU",
+        "comparison"
+      ],
+      "search_score": 0.7960839,
+      "matched_query": "\"EU customs regulations food imports\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "DOC_CHECKLIST_CUSTOMS_CLEARANCE_IMPORT_097",
+      "datapoint_type": "Checklist",
+      "document_type": "Customs Clearance Documents - Import",
+      "relevant_entity": "Importer/Customs Broker",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Import Documentation - Checklist",
+      "source_document": "Customs Declaration Report, Latvia Customs Information, EuroBrokers",
+      "regulation_detail": "Customs Clearance Documents Checklist for Import to Latvia: Commercial Invoice (Original), Packing List, Bill of Lading, Certificate of Origin (if preferential duties), Customs Declaration (Electronic), Import Licenses/Permits (if applicable), Sanitary/Phytosanitary Certificates (if applicable), Documents for Reduced VAT (if applicable).",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "checklist",
+        "customs clearance documents",
+        "import documentation"
+      ],
+      "search_score": 0.79224026,
+      "matched_query": "\"Port of Riga import procedures documentation\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.78784573,
+      "matched_query": "\"Port of Riga import procedures documentation\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_EMDAS_ELECTRONIC_011",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Importer/Exporter/Customs Broker",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Electronic Systems",
+      "source_document": "Customs Declaration Report, Latvia Customs Information",
+      "regulation_detail": "Customs declarations are typically submitted electronically through the Electronic Customs Data Processing System (EMDAS) in Latvia.",
+      "keywords": [
+        "customs",
+        "electronic declaration",
+        "EMDAS",
+        "electronic system",
+        "procedure",
+        "Latvia"
+      ],
+      "search_score": 0.78690547,
+      "matched_query": "\"Port of Riga import procedures documentation\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_EORI_REQUIRED_EU_BUSINESSES_053",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "EU Business/Importer/Exporter",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "General Requirements",
+      "source_document": "DHL Global Forwarding, Latvia Customs Information",
+      "regulation_detail": "For businesses operating within the EU, an Economic Operators' Registration and Identification (EORI) number is usually required for customs clearance in Latvia.",
+      "keywords": [
+        "customs",
+        "EORI number",
+        "Economic Operators Registration and Identification",
+        "EU businesses",
+        "requirement",
+        "registration"
+      ],
+      "search_score": 0.78664315,
+      "matched_query": "\"Import regulations organic food Latvia\"",
+      "result_position": 3
+    }
+  ],
+  "datapoints_complete": true,
+  "search_metadata": {
+    "collection_name": "logistics_datapoints",
+    "queries_used": 10,
+    "total_results": 50,
+    "unique_datapoints": 30,
+    "retrieval_duration": 7.433338,
+    "timestamp": "2025-03-30T07:31:31.174826",
+    "query_stats": [
+      {
+        "query": "\"Import regulations organic food Latvia\"",
+        "results_found": 5,
+        "top_score": 0.81926113
+      },
+      {
+        "query": "\"Required documents import food products Latvia\"",
+        "results_found": 5,
+        "top_score": 0.8600329
+      },
+      {
+        "query": "\"Bill of Lading errors customs clearance EU\"",
+        "results_found": 5,
+        "top_score": 0.8478869
+      },
+      {
+        "query": "\"Port of Riga import procedures documentation\"",
+        "results_found": 5,
+        "top_score": 0.81248003
+      },
+      {
+        "query": "\"EU customs regulations food imports\"",
+        "results_found": 5,
+        "top_score": 0.8096829
+      },
+      {
+        "query": "\"Phytosanitary certificate requirements goji berries\"",
+        "results_found": 5,
+        "top_score": 0.74725413
+      },
+      {
+        "query": "\"Incoterms 2020 documentation responsibilities\"",
+        "results_found": 5,
+        "top_score": 0.8916294
+      },
+      {
+        "query": "\"EU food safety traceability regulations\"",
+        "results_found": 5,
+        "top_score": 0.74283946
+      },
+      {
+        "query": "\"Penalties noncompliance import regulations Latvia\"",
+        "results_found": 5,
+        "top_score": 0.82251084
+      },
+      {
+        "query": "\"Best practices mitigating Bill of Lading errors food industry\"",
+        "results_found": 5,
+        "top_score": 0.8215703
+      }
+    ]
+  },
+  "title": "BaltiFoods' Baltic Blues: Navigating EU Organic Import Regulations and Supply Chain Disruptions",
+  "enhanced_case": "**Scenario:** BaltiFoods, a rapidly growing food processing company based in Riga, Latvia, specializing in organic dried berries and fruit snacks, is struggling to maintain its ambitious growth targets due to escalating shipping costs and unreliable delivery schedules for its key ingredient: organic goji berries sourced from the Ningxia region of China.\n\n**Entities:**\n\n*   BaltiFoods (Janis Ozols, CEO; Inga Liepa, Supply Chain Manager; Peteris Kalnins, CFO)\n*   Ningxia Goji Farms Cooperative (Li Wei, Export Manager)\n*   OceanWave Shipping (Hans Schmidt, Key Account Manager)\n*   Port of Riga (Representative: Maris Jansons, Terminal Operations)\n*   Latvian Customs Authority (VID) Inspector (Representative: Elina Krumina)\n*   MV Northern Star (Container Vessel, owned by OceanWave Shipping)\n\n**Regulatory Issues:** Import regulations for organic food products into the EU (specifically Latvia), including required certifications and potential customs inspections at the Port of Riga. Documentation accuracy is critical, particularly regarding:\n\n*   **EU Organic Certification (Regulation (EU) 2018/848):** Goji berries must be certified organic by an EU-recognized certification body. BaltiFoods must possess a valid Certificate of Inspection (COI) for each shipment, issued by the Ningxia Goji Farms Cooperative's certifying body and endorsed by Latvian Customs (VID) upon arrival. The COI details the origin, quantity, and certification status of the goji berries. Failure to provide a valid COI will result in the shipment being rejected or subjected to rigorous testing at BaltiFoods' expense.\n*   **EU Food Safety Regulations (Regulation (EC) No 178/2002):** BaltiFoods is responsible for ensuring the safety of the imported goji berries. This includes conducting risk assessments, implementing traceability systems, and ensuring compliance with maximum residue levels (MRLs) for pesticides. Documentation of these activities must be readily available for inspection by Latvian Customs (VID).\n*   **Customs Declaration (Single Administrative Document - SAD):** A complete and accurate SAD must be submitted to Latvian Customs (VID) upon arrival of the shipment. This document must include the correct Harmonized System (HS) code for goji berries, the declared value, and all relevant information about the shipper, consignee, and goods. Any discrepancies or errors in the SAD can lead to delays, penalties, and even seizure of the shipment.\n*   **Phytosanitary Certificate:** A phytosanitary certificate issued by the Chinese authorities is required to demonstrate that the goji berries are free from pests and diseases. This certificate must be presented to Latvian Customs (VID) along with the other import documents.\n*   **Import License (if applicable):** While generally not required for organic goji berries, Inga Liepa needs to confirm with Latvian Customs (VID) if any specific import licenses are necessary based on current trade agreements or quotas.\n*   **Compliance with Latvian Food Law:** BaltiFoods must adhere to Latvian national food law, which transposes EU food law into national legislation. This includes proper labeling of the goji berry products, including information on origin, organic certification, and nutritional content, in Latvian.\n*   **Advance Cargo Information (ACI):** OceanWave Shipping is legally obligated to provide an Advance Cargo Information (ACI) manifest to the Port of Riga and Latvian Customs (VID) at least 24 hours before the arrival of the MV Northern Star, detailing all cargo onboard. This manifest must accurately reflect the contents of each container, including the BaltiFoods' shipment.\n\n**Problem:** BaltiFoods’ existing contract with OceanWave Shipping, utilizing the MV Northern Star on a fixed schedule from Ningbo, China, to Riga via the Suez Canal, has become increasingly unreliable. Recent port congestion in Ningbo and the Suez Canal, coupled with unforeseen delays due to weather conditions in the Indian Ocean, have resulted in several shipments arriving weeks behind schedule. These delays are causing significant disruption to BaltiFoods' production schedule, leading to missed delivery deadlines to major European supermarket chains and resulting in costly penalties and potential loss of valuable contracts.\n\nSpecifically, the last shipment, *Container No. OOLU1234567*, arrived at the Port of Riga 23 days late. Upon arrival, Inspector Elina Krumina from Latvian Customs (VID) flagged the shipment for a physical inspection due to discrepancies between the declared weight on the SAD (Single Administrative Document) and the weight recorded on the Bill of Lading. Furthermore, the EU Organic Certification (COI) presented for this shipment was nearing its expiration date, raising concerns about the integrity of the organic certification process. This inspection is further delaying the release of the goji berries, exacerbating BaltiFoods' production woes.\n\nFurthermore, the price of goji berries is highly volatile, and BaltiFoods’ current shipping arrangement doesn’t offer sufficient flexibility to adjust order volumes quickly in response to market fluctuations. Inga Liepa, the Supply Chain Manager, needs to find a solution that balances cost-effectiveness, reliability, and flexibility to secure BaltiFoods' supply chain and protect its market position. Janis Ozols, the CEO, is demanding immediate action to rectify the situation, while Peteris Kalnins, the CFO, is concerned about the escalating costs and potential impact on profitability. The company needs to determine the best course of action: renegotiate with OceanWave Shipping, explore alternative shipping routes (e.g., rail via the \"New Silk Road\") or providers, consider air freight for smaller, urgent shipments, or consider holding a larger inventory of goji berries (despite the associated storage costs and risk of spoilage). Inga must also review their internal documentation processes to ensure compliance with EU regulations and to minimize the risk of further customs delays and inspections. She needs to implement stricter quality control procedures for reviewing import documents before submission to Latvian Customs (VID).",
+  "domain_guideline": "maritime",
+  "enhancement_metadata": {
+    "model": null,
+    "timestamp": "2025-03-30 07:31:39",
+    "datapoints_used": 30,
+    "guideline_type": "maritime",
+    "guideline_chunks": 5,
+    "enhancement_duration": 7.142221
+  },
+  "enhancement_complete": true,
+  "solution": "## Executive Summary\n\nBaltiFoods is facing significant challenges due to unreliable shipping schedules and customs delays impacting its organic goji berry supply chain from China. This solution addresses these issues by focusing on immediate actions to resolve the current shipment delay, followed by strategic adjustments to improve supply chain resilience, reduce costs, and ensure regulatory compliance. The solution involves a multi-pronged approach including renegotiating with the current carrier, exploring alternative transportation modes, strengthening internal documentation processes, and improving inventory management. By implementing these measures, BaltiFoods can mitigate risks, maintain its growth trajectory, and secure its market position.\n\n## Detailed Solution Steps\n\n**Phase 1: Immediate Actions - Resolving the Current Shipment Delay (Container No. OOLU1234567)**\n\n**Step 1: Expedite Customs Clearance (Focus: Current Shipment)**\n\n*   **Action:** Inga Liepa should immediately contact Inspector Elina Krumina at Latvian Customs (VID) to understand the specific reasons for the weight discrepancy between the SAD and the Bill of Lading.\n*   **Regulatory Reference:** *Customs Declaration (Single Administrative Document - SAD)*.  Any discrepancies can lead to delays, penalties, and seizure.\n*   **Reasoning:** Identifying the root cause of the discrepancy (e.g., data entry error, weighing error at origin, moisture absorption during transit) is crucial for providing a credible explanation to customs.\n*   **Action:** Provide all supporting documentation to VID, including the original Bill of Lading, the SAD, the supplier's packing list, and any weight certificates from the Ningxia Goji Farms Cooperative. Offer to conduct a joint weighing of the container at the Port of Riga to resolve the discrepancy.\n*   **Regulatory Reference:** *EU Food Safety Regulations (Regulation (EC) No 178/2002)* - Traceability.  Providing accurate documentation demonstrates commitment to traceability and food safety.\n*   **Reasoning:** Transparency and cooperation with customs officials can expedite the inspection process and demonstrate BaltiFoods' commitment to compliance.\n*   **Action:** Address the expiring Certificate of Inspection (COI). Determine the exact expiration date and whether the goji berries can still be released under the existing COI. If necessary, request an extension from the certifying body or obtain a new COI.\n*   **Regulatory Reference:** *EU Organic Certification (Regulation (EU) 2018/848)*. A valid COI is mandatory for organic imports.\n*   **Reasoning:** An expired or invalid COI will result in shipment rejection. Proactive action is crucial to prevent this.\n\n**Step 2: Mitigation of Potential Penalties (Focus: Current Shipment)**\n\n*   **Action:** Inga Liepa and Peteris Kalnins should assess the potential penalties associated with the weight discrepancy and the near-expired COI.\n*   **Regulatory Reference:** *Latvian Customs Authority (VID) regulations regarding discrepancies in customs declarations and violations of organic certification requirements.*\n*   **Reasoning:** Understanding the potential financial impact allows BaltiFoods to prepare for negotiations with customs and allocate resources accordingly.\n*   **Action:** If penalties are unavoidable, negotiate with Latvian Customs (VID) to minimize the financial impact, emphasizing BaltiFoods' commitment to compliance and the unintentional nature of the discrepancy.\n*   **Reasoning:** A proactive and cooperative approach can often lead to more favorable outcomes in penalty negotiations.\n\n**Phase 2: Short-Term Adjustments - Improving Reliability and Flexibility**\n\n**Step 3: Renegotiate with OceanWave Shipping (Focus: Next 3-6 months)**\n\n*   **Action:** Janis Ozols and Inga Liepa should meet with Hans Schmidt from OceanWave Shipping to discuss the recent delays and their impact on BaltiFoods' business.\n*   **Reasoning:** Open communication is essential for finding mutually beneficial solutions.\n*   **Action:** Negotiate for improved service level agreements (SLAs) with guaranteed delivery times and penalties for non-compliance. Explore options for priority loading and unloading at ports to minimize delays.\n*   **Reasoning:** Tighter SLAs provide greater accountability and incentivize the carrier to improve performance.\n*   **Action:** Investigate the possibility of diversifying shipping routes with OceanWave, potentially utilizing alternative ports of origin in China or alternative transshipment points.\n*   **Reasoning:** Diversifying routes can mitigate the risk of congestion at specific ports.\n\n**Step 4: Explore Alternative Transportation Modes (Focus: Next 3-6 months)**\n\n*   **Action:** Inga Liepa should investigate the feasibility of using rail transport via the \"New Silk Road\" as an alternative to ocean freight. Obtain quotes from rail freight providers and compare transit times and costs with ocean freight.\n*   **Reasoning:** Rail transport can offer faster transit times than ocean freight, although it may be more expensive.\n*   **Action:** Evaluate the use of air freight for smaller, urgent shipments to meet critical deadlines. Obtain quotes from air freight providers and compare costs with potential penalties for missed deliveries.\n*   **Reasoning:** Air freight provides the fastest transit time but is the most expensive option. It should be reserved for situations where speed is paramount.\n\n**Step 5: Review and Strengthen Internal Documentation Processes (Focus: Immediate Implementation)**\n\n*   **Action:** Inga Liepa should implement a stricter quality control process for reviewing all import documents before submission to Latvian Customs (VID). This should include cross-checking data between the SAD, Bill of Lading, packing list, and other relevant documents.\n*   **Regulatory Reference:** *Compliance with Latvian Food Law* - Accurate documentation is crucial for compliance.\n*   **Reasoning:** Preventing errors in documentation can significantly reduce the risk of customs delays and inspections.\n*   **Action:** Provide training to BaltiFoods' staff on EU import regulations and documentation requirements.\n*   **Reasoning:** Well-trained staff are less likely to make errors and more likely to identify potential issues before they escalate.\n\n**Phase 3: Long-Term Strategy - Building a Resilient and Cost-Effective Supply Chain**\n\n**Step 6: Diversify Sourcing (Focus: Next 6-12 months)**\n\n*   **Action:** Janis Ozols and Inga Liepa should explore alternative sources of organic goji berries, potentially from other regions in China or from other countries with EU-recognized organic certification.\n*   **Reasoning:** Diversifying sourcing reduces reliance on a single supplier and mitigates the risk of supply disruptions.\n\n**Step 7: Optimize Inventory Management (Focus: Ongoing)**\n\n*   **Action:** Peteris Kalnins should work with Inga Liepa to develop an optimized inventory management strategy that balances the need for sufficient stock to meet demand with the costs of storage and the risk of spoilage. Consider using forecasting tools to predict demand and adjust order volumes accordingly.\n*   **Reasoning:** Effective inventory management reduces the risk of stockouts and minimizes holding costs.\n\n**Step 8: Enhance Communication and Collaboration (Focus: Ongoing)**\n\n*   **Action:** Inga Liepa should establish regular communication channels with the Ningxia Goji Farms Cooperative, OceanWave Shipping, and Latvian Customs (VID) to proactively address potential issues and ensure smooth operations.\n*   **Reasoning:** Open communication and collaboration can help prevent problems before they arise and facilitate faster resolution of any issues that do occur.\n\n## Recommendations\n\n*   **Prioritize Accuracy and Compliance:** Implement a robust system for verifying the accuracy of all import documents and ensuring compliance with EU regulations.\n*   **Diversify Transportation Options:** Utilize a combination of ocean freight, rail transport, and air freight to optimize cost, speed, and reliability.\n*   **Build Strong Relationships:** Foster strong relationships with suppliers, carriers, and customs officials to facilitate communication and collaboration.\n*   **Invest in Technology:** Implement supply chain management software to improve visibility, track shipments, and automate documentation processes.\n*   **Continuous Improvement:** Regularly review and improve supply chain processes to identify and address potential weaknesses.\n\n## Risk Mitigation\n\n*   **Risk:** Further delays in shipping.\n    *   **Mitigation:** Diversify transportation options, negotiate stricter SLAs with carriers, and maintain buffer stock.\n*   **Risk:** Customs inspections and penalties.\n    *   **Mitigation:** Implement robust documentation processes, provide training to staff, and maintain open communication with customs officials.\n*   **Risk:** Price volatility of goji berries.\n    *   **Mitigation:** Negotiate long-term contracts with suppliers, explore hedging strategies, and diversify sourcing.\n*   **Risk:** Spoilage of goji berries during storage.\n    *   **Mitigation:** Implement proper storage conditions, utilize FIFO (First-In, First-Out) inventory management, and optimize order volumes.\n*   **Risk:** Changes in EU regulations.\n    *   **Mitigation:** Stay informed about regulatory changes, seek expert advice, and adapt processes accordingly.\n",
+  "solution_complete": true,
+  "solution_metadata": {
+    "model": "gemini-2.0-flash-exp",
+    "timestamp": "2025-03-30T07:31:49.299599",
+    "datapoints_referenced": 30,
+    "solution_version": "2.0",
+    "generation_duration": 10.227314,
+    "prompt_tokens": 7925,
+    "solution_structure": "four_part"
+  }
+}

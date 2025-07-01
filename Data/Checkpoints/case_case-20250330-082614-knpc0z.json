@@ -1,0 +1,806 @@
+{
+  "case_id": "case-20250330-082614-knpc0z",
+  "checkpoint_file": "/Users/max/Documents/Code/magdeburg25/Data/Checkpoints/case_case-20250330-082614-knpc0z.json",
+  "checkpoint_history": [
+    {
+      "stage": "initialized",
+      "timestamp": "2025-03-30T08:26:14.513461"
+    },
+    {
+      "stage": "draft",
+      "timestamp": "2025-03-30T08:26:19.549572"
+    },
+    {
+      "stage": "analyzed",
+      "timestamp": "2025-03-30T08:26:26.308160"
+    },
+    {
+      "stage": "datapoints_retrieved",
+      "timestamp": "2025-03-30T08:26:33.651083"
+    },
+    {
+      "stage": "enhanced",
+      "timestamp": "2025-03-30T08:26:41.668863"
+    },
+    {
+      "stage": "completed",
+      "timestamp": "2025-03-30T08:27:17.157442"
+    }
+  ],
+  "last_checkpoint": "completed",
+  "creation_timestamp": "2025-03-30T08:26:14.513455",
+  "checkpoint_time": "2025-03-30 08:27:17",
+  "example_inspiration": "CASE: The Great Bite Peach Company",
+  "example_filename": "Case_Great_Bite.md",
+  "draft_case": "**Scenario:** Nordic Salmon Exports (NSE), a leading Norwegian salmon producer, has secured a large contract to supply fresh salmon to a rapidly expanding restaurant chain, \"Asian Delights,\" across several major cities in South Korea and Japan. The contract stipulates strict delivery deadlines and temperature control requirements to maintain the salmon's premium quality.\n\n**Key Entities:**\n\n*   Nordic Salmon Exports (NSE) (shipper)\n*   Baltic Star Lines (BSL) (carrier)\n*   Asian Delights (customer of NSE, restaurant chain in South Korea and Japan)\n*   Klaipeda Cold Storage (KCS) (a refrigerated warehousing and transloading facility in Klaipeda, Lithuania)\n*   \"MS Baltic Mariner\" (BSL's container vessel operating on the Baltic-Far East trade lane)\n\n**Core Regulatory Issues:** The case focuses on the logistical challenges of maintaining the cold chain integrity and navigating potential port congestion issues. While no single regulation is highlighted, the implicit requirement to comply with international food safety standards for perishable goods is present.\n\n**Problem to be Solved:**\n\nNordic Salmon Exports needs to devise the most efficient and cost-effective shipping plan to transport fresh salmon from its processing facilities in Norway to Asian Delights' restaurants in Seoul and Tokyo, meeting the stringent delivery deadlines and temperature requirements.\n\nThe shipment must originate from Bergen, Norway. Baltic Star Lines has offered a competitive rate, but requires the shipment to be consolidated in Klaipeda, Lithuania, before being loaded onto the *MS Baltic Mariner*, which calls at major ports including Rotterdam, Hamburg, Gdansk, Klaipeda, Singapore, Busan and Yokohama.\n\nThe challenge lies in:\n\n1.  Minimizing transit time to ensure the salmon's freshness upon arrival.\n2.  Maintaining a consistent temperature of 0-2°C throughout the entire journey.\n3.  Navigating potential delays at the Klaipeda transloading facility (KCS) due to peak season congestion. KCS has a reputation for occasional delays due to equipment shortages and labor disputes.\n4. Evaluating the risk and cost implications of potential rerouting options, such as using a more direct, but more expensive, air freight option from a European hub to Seoul or Tokyo if unexpected delays occur in Klaipeda or at sea.\n5. Optimizing the container packing configuration to maximize the amount of salmon that can be shipped per container while ensuring adequate airflow and temperature control. The *MS Baltic Mariner* is experiencing a slight overbooking of reefer containers due to a sudden increase in demand for frozen goods being shipped from Europe to Asia. This potentially could lead to further delays.\n",
+  "creation_date": "2025-03-30",
+  "stage": "datapoints_retrieved",
+  "model": "gemini-2.0-flash-exp",
+  "generation_duration": 4.079081,
+  "draft_complete": true,
+  "analysis": "## Case Analysis\n\nThe draft case is a good starting point but needs significant expansion to fully align with the provided guidelines. Here's a breakdown:\n\n*   **Strengths:** The case presents a realistic scenario with clear objectives and challenges. It introduces multiple entities and a potential bottleneck (Klaipeda). The focus on cold chain integrity and potential delays is relevant.\n*   **Weaknesses:**\n    *   **Limited Documentation Focus:** The case mentions no specific documents beyond the implicit need for standard shipping documents. It lacks the detailed documentation workflow focus emphasized in the guidelines. There's no mention of a Bill of Lading, which is a key focus area.\n    *   **Missing Regulatory Specificity:** While it mentions food safety standards, it lacks concrete regulatory references (e.g., EU regulations, Korean/Japanese import regulations).\n    *   **No Bill of Lading Error/Data Quality Element:** The case doesn't incorporate any B/L errors or data quality issues, a core requirement of the guidelines.\n    *   **Limited Technology Integration:** While it hints at container optimization, it doesn't explicitly address the role of technology in tracking, monitoring, or automating documentation processes.\n    *   **Incoterms Absence:** The case doesn't specify Incoterms, which is crucial for defining responsibilities.\n*   **Improvements Needed:**\n    *   **Incorporate a Bill of Lading:** Introduce a B/L and then inject an error into it (e.g., incorrect weight, misdescription of goods, wrong consignee).\n    *   **Specify Incoterms:** Define the Incoterms (e.g., CIF Busan/Yokohama) to clarify responsibilities for documentation and insurance.\n    *   **Add Documentation Workflow:** Outline the steps involved in import clearance in South Korea and Japan, highlighting the documents required at each stage.\n    *   **Introduce Regulatory Details:** Research and incorporate specific EU, Korean, and Japanese regulations related to salmon imports, food safety, and customs clearance.\n    *   **Integrate Technology:** Consider adding elements related to temperature monitoring systems, track-and-trace technology, or electronic data interchange (EDI) for customs declarations.\n    *   **Develop Rerouting Options:** Elaborate on the air freight option, including cost comparisons and documentation requirements.\n    *   **Address Reefer Container Overbooking:** Explore the implications of reefer container overbooking and potential solutions, such as negotiating priority loading or using alternative carriers.\n\n## Knowledge Gaps\n\n1.  **Specific EU regulations regarding the export of perishable goods (salmon) to non-EU countries.**\n2.  **South Korean import regulations for fresh salmon, including required documentation, customs procedures, and food safety standards.**\n3.  **Japanese import regulations for fresh salmon, including required documentation, customs procedures, and food safety standards.**\n4.  **Common Bill of Lading errors and their consequences in international trade.**\n5.  **Best practices for maintaining cold chain integrity during international shipping.**\n6.  **Specific requirements for reefer containers, including temperature monitoring and documentation.**\n7.  **Regulations regarding container weight verification (SOLAS Convention).**\n8.  **Port Community Systems (PCS) in Busan and Yokohama and their impact on import clearance efficiency.**\n9.  **EDI standards used for customs declarations in South Korea and Japan.**\n10. **Specific documentation requirements for air freight shipments of perishable goods from Europe to South Korea/Japan.**\n\n## Search Queries\n\n1.  \"EU export regulations perishable goods salmon\"\n2.  \"South Korea import regulations fresh salmon\"\n3.  \"Japan import regulations fresh salmon\"\n4.  \"Bill of Lading errors consequences international trade\"\n5.  \"Cold chain integrity best practices international shipping\"\n6.  \"Reefer container temperature monitoring requirements\"\n7.  \"SOLAS Convention container weight verification\"\n8.  \"Busan Port Community System import clearance\"\n9.  \"Yokohama Port Community System import clearance\"\n10. \"EDI customs declarations South Korea Japan\"\n\n## Keywords\n\n1.  Salmon\n2.  Export\n3.  Import\n4.  Reefer container\n5.  Cold chain\n6.  Bill of Lading\n7.  Customs clearance\n8.  Food safety\n9.  Klaipeda\n10. Busan\n11. Yokohama\n12. Temperature control\n13. Perishable goods\n14. Documentation\n15. Baltic Star Lines\n",
+  "analysis_timestamp": "2025-03-30T08:26:26.306777",
+  "analysis_duration": 6.003535,
+  "analysis_model": "gemini-2.0-flash-exp",
+  "search_queries": [
+    "\"EU export regulations perishable goods salmon\"",
+    "\"South Korea import regulations fresh salmon\"",
+    "\"Japan import regulations fresh salmon\"",
+    "\"Bill of Lading errors consequences international trade\"",
+    "\"Cold chain integrity best practices international shipping\"",
+    "\"Reefer container temperature monitoring requirements\"",
+    "\"SOLAS Convention container weight verification\"",
+    "\"Busan Port Community System import clearance\"",
+    "\"Yokohama Port Community System import clearance\"",
+    "\"EDI customs declarations South Korea Japan\""
+  ],
+  "keywords": [
+    "Salmon",
+    "Export",
+    "Import",
+    "Reefer container",
+    "Cold chain",
+    "Bill of Lading",
+    "Customs clearance",
+    "Food safety",
+    "Klaipeda",
+    "Busan",
+    "Yokohama",
+    "Temperature control",
+    "Perishable goods",
+    "Documentation",
+    "Baltic Star Lines"
+  ],
+  "analysis_complete": true,
+  "relevant_datapoints": [
+    {
+      "datapoint_id": "YANGSHAN_DP_BLOCKCHAIN_BENEFIT_INCREASED_TRANSPARENCY_TRACEABILITY_162",
+      "datapoint_type": "Benefit",
+      "port_area": "Blockchain Integration in Shipping",
+      "relevant_entity": "Blockchain Technology",
+      "regulation_category": "Electronic Documentation",
+      "regulation_subcategory": "Blockchain Benefits - Transparency & Traceability",
+      "regulation_detail": "Blockchain integration increases transparency and traceability throughout the shipping process.",
+      "source_document": "Documentation, Customs Clearance, and Cargo Handling Procedures at Yangshan Port",
+      "source_section": "Electronic Documentation and Blockchain Integration - Benefits of Blockchain Integration",
+      "keywords": [
+        "electronic documentation",
+        "blockchain benefits",
+        "increased transparency",
+        "traceability",
+        "supply chain visibility",
+        "end-to-end tracking",
+        "benefit",
+        "shipping process"
+      ],
+      "search_score": 0.8608068,
+      "matched_query": "\"Cold chain integrity best practices international shipping\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ACCURACY_CRUCIAL_080",
+      "datapoint_type": "Guideline",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shippers, Freight Forwarders",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Handling Guidelines",
+      "regulation_detail": "Accuracy of all information on the Bill of Lading (B/L) is crucial and must be ensured to match other shipping documents, avoiding discrepancies and delays.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "4. Guidelines for Handling Bills of Lading - Accuracy",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "accuracy",
+        "data accuracy",
+        "document accuracy",
+        "guideline",
+        "shipping documents",
+        "avoid discrepancies"
+      ],
+      "search_score": 0.8436645,
+      "matched_query": "\"Bill of Lading errors consequences international trade\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_OVERVIEW_071",
+      "datapoint_type": "Document Function",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shipper/Carrier/Consignee",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Overview",
+      "regulation_detail": "The Bill of Lading (B/L) is a fundamental document in international trade, acting as a contract of carriage, receipt for goods, and document of title.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Description",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "shipping document",
+        "contract of carriage",
+        "receipt for goods",
+        "document of title",
+        "international trade"
+      ],
+      "search_score": 0.83140916,
+      "matched_query": "\"Bill of Lading errors consequences international trade\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.8071724,
+      "matched_query": "\"EDI customs declarations South Korea Japan\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_SOLAS_VGM_REQ_001",
+      "datapoint_type": "Requirement",
+      "port_area": "International - IMO",
+      "relevant_entity": "Shipper",
+      "regulation_category": "Safety Regulations",
+      "regulation_subcategory": "SOLAS - Container Weight Verification (VGM)",
+      "regulation_detail": "Shippers are required to provide the Verified Gross Mass (VGM) of a packed container to the carrier and the terminal before loading onto a ship.",
+      "source_document": "SOLAS Convention",
+      "source_section": "SOLAS Amendment - Verified Gross Mass (VGM) Requirement",
+      "keywords": [
+        "SOLAS",
+        "VGM",
+        "container weight",
+        "verified gross mass",
+        "mandatory",
+        "shipper",
+        "documentation"
+      ],
+      "search_score": 0.80438554,
+      "matched_query": "\"SOLAS Convention container weight verification\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_SOLAS_VGM_PROHIB_002",
+      "datapoint_type": "Prohibition",
+      "port_area": "International - IMO",
+      "relevant_entity": "Carrier/Terminal",
+      "regulation_category": "Safety Regulations",
+      "regulation_subcategory": "SOLAS - Container Weight Verification (VGM)",
+      "regulation_detail": "Carriers and terminals are prohibited from loading a container onto a ship if the Verified Gross Mass (VGM) has not been provided.",
+      "source_document": "SOLAS Convention",
+      "source_section": "SOLAS Amendment - Verified Gross Mass (VGM) Requirement",
+      "keywords": [
+        "SOLAS",
+        "VGM",
+        "container weight",
+        "verified gross mass",
+        "prohibited",
+        "carrier",
+        "terminal",
+        "loading"
+      ],
+      "search_score": 0.79982495,
+      "matched_query": "\"SOLAS Convention container weight verification\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_EUROGATE_DP_HANDLING_ORDER_EDI_04",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Goods Handling Orders",
+      "source_document": "EUROGATE Hamburg - General Terms & Conditions of Business Analysis",
+      "regulation_detail": "Orders for goods handling must be submitted by EDI or exceptionally in text form using stipulated forms/templates.",
+      "keywords": [
+        "goods handling",
+        "order",
+        "EDI",
+        "forms",
+        "templates"
+      ],
+      "search_score": 0.7945726,
+      "matched_query": "\"EDI customs declarations South Korea Japan\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.793869,
+      "matched_query": "\"EDI customs declarations South Korea Japan\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "HAMBURG_KBO_DP_GENERAL_CUSTOMER_DATATRANSFER_EDI_PREFERRED_03",
+      "datapoint_type": "Recommendation",
+      "relevant_entity": "Customer",
+      "regulation_category": "IT Systems in Port",
+      "regulation_subcategory": "Data Exchange - EDI (Recommended)",
+      "source_document": "Hafen Hamburg e.V. - Kaibetriebsordnung Analysis",
+      "regulation_detail": "Customer is recommended to use quay operator's printed forms or EDI for application data transfer. EDI preferred if available.",
+      "keywords": [
+        "data transfer",
+        "EDI",
+        "forms",
+        "recommendation",
+        "communication"
+      ],
+      "search_score": 0.7937517,
+      "matched_query": "\"EDI customs declarations South Korea Japan\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "IMO_DP_FAL_FORM2_GROSS_WEIGHT_MEASUREMENT_106",
+      "datapoint_type": "Document Content - Key Element",
+      "port_area": "International - Port Operations/Customs",
+      "relevant_entity": "Declarant",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "IMO Cargo Declaration (FAL Form 2) - Key Information",
+      "regulation_detail": "Gross weight and measurement (volume/dimensions) of each package or container must be accurately stated in the IMO Cargo Declaration (FAL Form 2).",
+      "source_document": "IMO Cargo Declaration (FAL Form 2) Report",
+      "source_section": "2. Document Structure and Key Information - Cargo Details - Gross Weight and Measurement",
+      "keywords": [
+        "IMO Cargo Declaration",
+        "FAL Form 2",
+        "gross weight",
+        "measurement",
+        "volume",
+        "dimensions",
+        "document content",
+        "key element",
+        "cargo data"
+      ],
+      "search_score": 0.7923267,
+      "matched_query": "\"SOLAS Convention container weight verification\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "HAMBURG_KBO_DP_HANDLING_MANIFEST_SUBMISSION_DEADLINE_GENERAL_06",
+      "datapoint_type": "Recommendation",
+      "relevant_entity": "Shipping Agent",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Manifest Submission (Recommended)",
+      "source_document": "Hafen Hamburg e.V. - Kaibetriebsordnung Analysis",
+      "regulation_detail": "Shipping agent is recommended to submit manifest at least one day before discharge.",
+      "keywords": [
+        "manifest",
+        "submission",
+        "deadline",
+        "discharge",
+        "shipping agent",
+        "checklist item",
+        "recommendation"
+      ],
+      "search_score": 0.78811735,
+      "matched_query": "\"EDI customs declarations South Korea Japan\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.78728986,
+      "matched_query": "\"Yokohama Port Community System import clearance\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "INCO_DP_004_Purpose_Incoterms_DefineRisks",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Purpose",
+      "regulation_detail": "Incoterms define the point at which the risk of loss or damage to goods transfers from seller to buyer.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1, 4]",
+      "keywords": [
+        "incoterms",
+        "purpose",
+        "risk",
+        "risk transfer",
+        "buyer",
+        "seller"
+      ],
+      "search_score": 0.78360057,
+      "matched_query": "\"Bill of Lading errors consequences international trade\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_FUNCTION_CONTRACT_073",
+      "datapoint_type": "Document Function",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shipper/Carrier",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Functions",
+      "regulation_detail": "Another key function of the Bill of Lading (B/L) is to act as evidence of the contract of carriage between the shipper and the carrier, outlining terms and conditions.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Three Primary Functions",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "contract of carriage",
+        "shipping contract",
+        "shipper",
+        "carrier",
+        "function",
+        "terms and conditions"
+      ],
+      "search_score": 0.78313494,
+      "matched_query": "\"Bill of Lading errors consequences international trade\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.78179276,
+      "matched_query": "\"Cold chain integrity best practices international shipping\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.7815236,
+      "matched_query": "\"Cold chain integrity best practices international shipping\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_MARITIME_CODE_CARRIER_DUE_DILIGENCE_CARGO_FITNESS_022",
+      "datapoint_type": "Regulation",
+      "port_area": "International",
+      "relevant_entity": "Carrier",
+      "regulation_category": "Carrier Obligations",
+      "regulation_subcategory": "Due Diligence - Cargo Fitness",
+      "regulation_detail": "Carriers must ensure vessel components are 'fit and safe for their reception, carriage and preservation' of goods.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Maritime Code of the People's Republic of China: Fundamental Framework (Article 47)",
+      "keywords": [
+        "legal framework",
+        "maritime code",
+        "carrier obligation",
+        "due diligence",
+        "cargo fitness",
+        "vessel components",
+        "cargo reception",
+        "cargo carriage",
+        "cargo preservation",
+        "article 47"
+      ],
+      "search_score": 0.77960634,
+      "matched_query": "\"Cold chain integrity best practices international shipping\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "INCO_DP_265_Issue_FOB_RiskTransferAmbiguityForContainers",
+      "datapoint_type": "Clarification",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "FOB",
+      "regulation_category": "Challenges",
+      "regulation_subcategory": "FOB",
+      "regulation_detail": "Using FOB for container shipments can create ambiguity about when risk and responsibility actually transfer.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "FOB Guidance Note [Source 15]",
+      "keywords": [
+        "fob",
+        "free on board",
+        "issue",
+        "challenge",
+        "container",
+        "risk transfer",
+        "ambiguity"
+      ],
+      "search_score": 0.77861786,
+      "matched_query": "\"Bill of Lading errors consequences international trade\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "INCO_DP_244_Suitability_DAP_Container_Recommended",
+      "datapoint_type": "Guideline",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "DAP",
+      "regulation_category": "Container Suitability",
+      "regulation_subcategory": "Recommendation",
+      "regulation_detail": "DAP (Delivered At Place) is suitable for all modes of transport, including containerized and multimodal shipments.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "DAP Guidance Note [Source 1]",
+      "keywords": [
+        "dap",
+        "delivered at place",
+        "suitability",
+        "container",
+        "recommended",
+        "multimodal",
+        "any mode"
+      ],
+      "search_score": 0.7766668,
+      "matched_query": "\"Cold chain integrity best practices international shipping\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "HAMBURG_CUSTOMS_DP_PROCEDURE_TEMPORARYSTORAGE_DEFINITION_12",
+      "datapoint_type": "Customs Procedure",
+      "relevant_entity": "Goods (Customs Sea Port)",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Customs Temporary Storage",
+      "source_document": "Waltershof Customs Office - Information on Temporary Storage and General German Customs Clearance",
+      "regulation_detail": "Goods in customs seaport are under customs supervision and placed under temporary storage upon arrival (AT/B number).",
+      "keywords": [
+        "customs procedure",
+        "temporary storage",
+        "definition",
+        "customs seaport",
+        "AT/B number"
+      ],
+      "search_score": 0.77615106,
+      "matched_query": "\"Busan Port Community System import clearance\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "SINGAPORE_DP_DEFINITION_GOODS_131",
+      "datapoint_type": "Definition",
+      "port_area": "Singapore",
+      "relevant_entity": "Goods",
+      "regulation_category": "Definitions",
+      "regulation_subcategory": "Cargo & Equipment",
+      "regulation_detail": "\"goods\" includes dangerous cargoes, animals, carcases, baggage, containers and any other movable property of any kind and whether in a refrigerated form or otherwise.",
+      "source_document": "Maritime and Port Authority of Singapore Act 1996",
+      "source_section": "Section 2 - Interpretation",
+      "keywords": [
+        "definition",
+        "goods",
+        "cargo",
+        "freight",
+        "commodities"
+      ],
+      "search_score": 0.7742983,
+      "matched_query": "\"EU export regulations perishable goods salmon\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_MARITIME_CODE_CARRIER_DUE_DILIGENCE_CARGO_FITNESS_022",
+      "datapoint_type": "Regulation",
+      "port_area": "International",
+      "relevant_entity": "Carrier",
+      "regulation_category": "Carrier Obligations",
+      "regulation_subcategory": "Due Diligence - Cargo Fitness",
+      "regulation_detail": "Carriers must ensure vessel components are 'fit and safe for their reception, carriage and preservation' of goods.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Maritime Code of the People's Republic of China: Fundamental Framework (Article 47)",
+      "keywords": [
+        "legal framework",
+        "maritime code",
+        "carrier obligation",
+        "due diligence",
+        "cargo fitness",
+        "vessel components",
+        "cargo reception",
+        "cargo carriage",
+        "cargo preservation",
+        "article 47"
+      ],
+      "search_score": 0.77148277,
+      "matched_query": "\"EU export regulations perishable goods salmon\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.77100587,
+      "matched_query": "\"Busan Port Community System import clearance\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "IMO_DP_SOLAS_CSM_MANDATORY_004",
+      "datapoint_type": "Regulation",
+      "port_area": "International - IMO",
+      "relevant_entity": "Container Vessel",
+      "regulation_category": "Safety Regulations",
+      "regulation_subcategory": "SOLAS - Chapter VI - Cargo Securing",
+      "regulation_detail": "SOLAS Chapter VI mandates the use of a Cargo Securing Manual (CSM) on container ships to ensure proper securing of containers.",
+      "source_document": "SOLAS Convention",
+      "source_section": "Chapter VI",
+      "keywords": [
+        "SOLAS",
+        "Cargo Securing Manual",
+        "CSM",
+        "container ships",
+        "cargo securing",
+        "mandatory",
+        "safety"
+      ],
+      "search_score": 0.76954436,
+      "matched_query": "\"SOLAS Convention container weight verification\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "HAMBURG_CUSTOMS_DP_PROCEDURE_TEMPORARYSTORAGE_DEFINITION_12",
+      "datapoint_type": "Customs Procedure",
+      "relevant_entity": "Goods (Customs Sea Port)",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Customs Temporary Storage",
+      "source_document": "Waltershof Customs Office - Information on Temporary Storage and General German Customs Clearance",
+      "regulation_detail": "Goods in customs seaport are under customs supervision and placed under temporary storage upon arrival (AT/B number).",
+      "keywords": [
+        "customs procedure",
+        "temporary storage",
+        "definition",
+        "customs seaport",
+        "AT/B number"
+      ],
+      "search_score": 0.7686758,
+      "matched_query": "\"Yokohama Port Community System import clearance\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_CUSTOMS_SINGLE_WINDOW_GOAL_ACCELERATE_CLEARANCE_172",
+      "datapoint_type": "Policy Goal",
+      "port_area": "China Single Window System",
+      "relevant_entity": "Customs Clearance",
+      "regulation_category": "Customs Clearance",
+      "regulation_subcategory": "Single Window System - Goals",
+      "regulation_detail": "The Single Window system aims to accelerate the customs clearance process for international shipments.",
+      "source_document": "Documentation, Customs Clearance, and Cargo Handling Procedures at Yangshan Port",
+      "source_section": "Customs Clearance and Single Window System - China's Single Window Framework",
+      "keywords": [
+        "customs clearance",
+        "single window system",
+        "policy goal",
+        "accelerate clearance",
+        "speed up process",
+        "efficiency improvement",
+        "trade facilitation",
+        "time saving"
+      ],
+      "search_score": 0.7672814,
+      "matched_query": "\"Busan Port Community System import clearance\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "HAMBURG_DP_CUSTOMS_BMEL_FOOD_IMPORT_065",
+      "datapoint_type": "Regulatory Authority",
+      "relevant_entity": "BMEL",
+      "regulation_category": "Cargo-Specific Regulations - Germany",
+      "regulation_subcategory": "Food Import Regulations",
+      "regulation_detail": "BMEL (Federal Ministry of Food and Agriculture) regulates import conditions and certifications for specific cargo types like food products in Germany and Port of Hamburg.",
+      "source_document": "Comparative Analysis Report",
+      "search_score": 0.766727,
+      "matched_query": "\"EU export regulations perishable goods salmon\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "IMO_DP_SOLAS_IMDG_DGD_008",
+      "datapoint_type": "Documentation Requirement",
+      "port_area": "International - IMO",
+      "relevant_entity": "Shipper (Hazardous/Dangerous Goods)",
+      "regulation_category": "Dangerous Goods Regulations",
+      "regulation_subcategory": "IMDG Code (SOLAS Chapter VII)",
+      "regulation_detail": "Shippers of dangerous goods are required to provide a Dangerous Goods Declaration (DGD) in accordance with the IMDG Code, as mandated by SOLAS Chapter VII.",
+      "source_document": "IMDG Code (Mandatory under SOLAS Chapter VII)",
+      "source_section": "IMDG Code - Part 5",
+      "keywords": [
+        "SOLAS",
+        "IMDG Code",
+        "dangerous goods",
+        "DGD",
+        "Dangerous Goods Declaration",
+        "documentation",
+        "shipper"
+      ],
+      "search_score": 0.765005,
+      "matched_query": "\"SOLAS Convention container weight verification\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "ANTWERPBRUGES_DP_CUSTOMS_EMPTY_CONTAINER_REPORTING_075",
+      "datapoint_type": "Documentation Requirement",
+      "relevant_entity": "Importer/Agent (Empty Containers)",
+      "regulation_category": "Empty Container Reporting - Belgium",
+      "regulation_subcategory": "Import Customs Manifest",
+      "regulation_detail": "Empty shippers' own containers discharging in Antwerp-Bruges must be reported on import customs manifest. >100kg require full customs clearance.",
+      "keywords": [
+        "empty containers",
+        "reporting",
+        "import customs manifest",
+        "Port of Antwerp-Bruges",
+        "documentation",
+        "customs clearance"
+      ],
+      "search_score": 0.7628407,
+      "matched_query": "\"EU export regulations perishable goods salmon\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_CUSTOMS_SINGLE_WINDOW_GOAL_STREAMLINE_PROCEDURES_171",
+      "datapoint_type": "Policy Goal",
+      "port_area": "China Single Window System",
+      "relevant_entity": "Customs Clearance",
+      "regulation_category": "Customs Clearance",
+      "regulation_subcategory": "Single Window System - Goals",
+      "regulation_detail": "The Single Window system aims to streamline customs clearance procedures for international trade.",
+      "source_document": "Documentation, Customs Clearance, and Cargo Handling Procedures at Yangshan Port",
+      "source_section": "Customs Clearance and Single Window System - China's Single Window Framework",
+      "keywords": [
+        "customs clearance",
+        "single window system",
+        "policy goal",
+        "streamline procedures",
+        "process simplification",
+        "efficiency improvement",
+        "trade facilitation"
+      ],
+      "search_score": 0.7627225,
+      "matched_query": "\"Busan Port Community System import clearance\"",
+      "result_position": 4
+    }
+  ],
+  "datapoints_complete": true,
+  "search_metadata": {
+    "collection_name": "logistics_datapoints",
+    "queries_used": 10,
+    "total_results": 50,
+    "unique_datapoints": 30,
+    "retrieval_duration": 7.339273,
+    "timestamp": "2025-03-30T08:26:33.649982",
+    "query_stats": [
+      {
+        "query": "\"EU export regulations perishable goods salmon\"",
+        "results_found": 5,
+        "top_score": 0.7742983
+      },
+      {
+        "query": "\"South Korea import regulations fresh salmon\"",
+        "results_found": 5,
+        "top_score": 0.71587783
+      },
+      {
+        "query": "\"Japan import regulations fresh salmon\"",
+        "results_found": 5,
+        "top_score": 0.7244297
+      },
+      {
+        "query": "\"Bill of Lading errors consequences international trade\"",
+        "results_found": 5,
+        "top_score": 0.8436645
+      },
+      {
+        "query": "\"Cold chain integrity best practices international shipping\"",
+        "results_found": 5,
+        "top_score": 0.8608068
+      },
+      {
+        "query": "\"Reefer container temperature monitoring requirements\"",
+        "results_found": 5,
+        "top_score": 0.76163685
+      },
+      {
+        "query": "\"SOLAS Convention container weight verification\"",
+        "results_found": 5,
+        "top_score": 0.80438554
+      },
+      {
+        "query": "\"Busan Port Community System import clearance\"",
+        "results_found": 5,
+        "top_score": 0.77615106
+      },
+      {
+        "query": "\"Yokohama Port Community System import clearance\"",
+        "results_found": 5,
+        "top_score": 0.78728986
+      },
+      {
+        "query": "\"EDI customs declarations South Korea Japan\"",
+        "results_found": 5,
+        "top_score": 0.8071724
+      }
+    ]
+  },
+  "title": ":\n\n**Salmon Run: Navigating Cold Chain Compliance and Port Congestion in the Asia-Europe Trade**",
+  "enhanced_case": "**Scenario:** Nordic Salmon Exports (NSE), a leading Norwegian salmon producer, has secured a lucrative contract to supply fresh, premium-grade Norwegian salmon to \"Asian Delights,\" a rapidly expanding restaurant chain with locations in Seoul and Tokyo. The contract includes stringent delivery deadlines and temperature control requirements (0-2°C) vital for maintaining the salmon's quality and adhering to international food safety regulations. Failure to meet these standards could result in contract penalties and reputational damage for NSE.\n\n**Key Entities:**\n\n*   Nordic Salmon Exports (NSE) (shipper): Responsible for ensuring salmon quality and compliance with all relevant regulations.\n*   Baltic Star Lines (BSL) (carrier): Providing container shipping services from Klaipeda to Asia.\n*   Asian Delights (customer of NSE, restaurant chain in South Korea and Japan): The end recipient of the salmon, with strict quality and delivery requirements.\n*   Klaipeda Cold Storage (KCS) (a refrigerated warehousing and transloading facility in Klaipeda, Lithuania): A crucial point in the cold chain, responsible for consolidating shipments and maintaining temperature control.\n*   \"MS Baltic Mariner\" (BSL's container vessel operating on the Baltic-Far East trade lane): The vessel transporting the salmon from Klaipeda to Asian ports.\n*   Customs Authorities (Lithuania, South Korea, Japan): Governmental agencies responsible for inspecting and clearing shipments according to import regulations, including food safety standards and documentation requirements.\n*   Shipping Agent: Overseeing the transport.\n*   Declarant: Responsible for customs declaration.\n\n**Core Regulatory Issues:**\n\nThis case highlights several critical regulatory aspects:\n\n1.  **HACCP (Hazard Analysis and Critical Control Points):** NSE must implement a robust HACCP plan to identify and control potential hazards throughout the salmon production and transportation process. This includes temperature monitoring, sanitation procedures, and documentation of all critical control points.\n2.  **EU Food Safety Regulations (e.g., Regulation (EC) No 852/2004):** As a Norwegian company exporting to the EU (via Lithuania), NSE must comply with EU food safety regulations, including requirements for hygiene, traceability, and temperature control.\n3.  **South Korean and Japanese Food Import Regulations:** Asian Delights and NSE must ensure compliance with the specific food import regulations of South Korea and Japan, which may include requirements for import permits, health certificates, and laboratory testing for contaminants. Non-compliance can lead to shipment rejection and significant financial losses.\n4.  **International Maritime Organization (IMO) Regulations:** BSL, as the carrier, must comply with IMO regulations related to the safe carriage of goods, including the proper operation and maintenance of refrigerated containers (\"reefers\"). This includes ensuring that reefers are pre-tripped, properly loaded, and monitored throughout the voyage.\n5.  **Customs Regulations:** Compliance with customs regulations in Lithuania, South Korea, and Japan is essential for smooth and timely clearance. NSE must ensure accurate and complete documentation, including commercial invoices, packing lists, and certificates of origin.\n6.  **ISPM 15 (International Standards for Phytosanitary Measures Publication No. 15):** While not directly related to the salmon, the wooden pallets used in the shipment must comply with ISPM 15 standards to prevent the spread of pests and diseases.\n\n**Problem to be Solved:**\n\nNordic Salmon Exports needs to devise the most efficient and cost-effective shipping plan to transport fresh salmon from its processing facilities in Bergen, Norway, to Asian Delights' restaurants in Seoul and Tokyo, meeting the stringent delivery deadlines, temperature requirements, and regulatory obligations.\n\nThe shipment must originate from Bergen, Norway. Baltic Star Lines has offered a competitive rate, but requires the shipment to be consolidated in Klaipeda, Lithuania, before being loaded onto the *MS Baltic Mariner*, which calls at major ports including Rotterdam, Hamburg, Gdansk, Klaipeda, Singapore, Busan and Yokohama.\n\nThe challenge lies in:\n\n1.  Minimizing transit time to ensure the salmon's freshness upon arrival, given the perishable nature of the cargo and the strict delivery deadlines.\n2.  Maintaining a consistent temperature of 0-2°C throughout the entire journey, from processing in Bergen to delivery in Seoul and Tokyo. This requires careful selection of packaging materials, reefer container technology, and monitoring systems.\n3.  Navigating potential delays at the Klaipeda transloading facility (KCS) due to peak season congestion. KCS has a reputation for occasional delays due to equipment shortages and labor disputes. NSE must develop contingency plans to mitigate these risks.\n4.  Evaluating the risk and cost implications of potential rerouting options, such as using a more direct, but more expensive, air freight option from a European hub to Seoul or Tokyo if unexpected delays occur in Klaipeda or at sea. The decision must consider the remaining shelf life of the salmon and the potential impact on Asian Delights' operations.\n5.  Optimizing the container packing configuration to maximize the amount of salmon that can be shipped per container while ensuring adequate airflow and temperature control. The *MS Baltic Mariner* is experiencing a slight overbooking of reefer containers due to a sudden increase in demand for frozen goods being shipped from Europe to Asia. This potentially could lead to further delays and necessitates proactive communication with BSL.\n6.  Ensuring full compliance with all applicable food safety regulations and customs requirements in Norway, Lithuania, South Korea, and Japan. This includes proper documentation, labeling, and inspections.\n7.  Implementing a robust track-and-trace system to monitor the salmon's temperature and location throughout the entire journey, providing real-time visibility and enabling proactive intervention in case of deviations. This system should be compliant with relevant data privacy regulations.\n8.  Preparing for potential customs inspections, including having all necessary documentation readily available and ensuring that the salmon meets all applicable import requirements.\n9.  Determining the roles and responsibilities of all parties involved in the shipment, including NSE, BSL, KCS, and Asian Delights, to ensure clear communication and accountability.\n\nThis case requires students to consider the complexities of international supply chain management, cold chain logistics, regulatory compliance, and risk management in the context of perishable goods. It also highlights the importance of technology and data analytics in optimizing supply chain performance and ensuring food safety.",
+  "domain_guideline": "maritime",
+  "enhancement_metadata": {
+    "model": null,
+    "timestamp": "2025-03-30 08:26:41",
+    "datapoints_used": 30,
+    "guideline_type": "maritime",
+    "guideline_chunks": 5,
+    "enhancement_duration": 7.239402
+  },
+  "enhancement_complete": true,
+  "solution": "## Executive Summary\n\nNordic Salmon Exports (NSE) faces a complex challenge in delivering fresh salmon to Asian Delights in Seoul and Tokyo, navigating stringent temperature requirements, tight deadlines, and potential port congestion. This solution outlines a comprehensive plan encompassing proactive risk management, robust cold chain protocols, regulatory compliance, and clear communication channels. The plan focuses on minimizing transit time, maintaining temperature control, mitigating potential delays, and ensuring full compliance with all relevant regulations. It leverages technology for real-time tracking and monitoring, and establishes clear roles and responsibilities for all parties involved. The solution includes contingency plans such as air freight rerouting in case of significant delays.\n\n## Detailed Solution Steps\n\n**Step 1: Pre-Shipment Planning and Preparation (NSE Responsibility)**\n\n*   **1.1 HACCP Plan Review and Implementation:**\n    *   **Action:** Review and update the existing HACCP plan to specifically address the risks associated with the Asia-Europe trade route, focusing on temperature control, sanitation, and potential contamination.\n    *   **Regulation:** HACCP principles, EU Regulation (EC) No 852/2004 (Article 5), South Korean and Japanese Food Import Regulations (require HACCP-based systems).\n    *   **Reasoning:** A robust HACCP plan is crucial for identifying and controlling potential hazards throughout the supply chain, ensuring food safety and compliance with international regulations.\n*   **1.2 Packaging Optimization:**\n    *   **Action:** Select appropriate insulated packaging materials (e.g., expanded polystyrene (EPS) boxes with gel packs or vacuum insulated panels (VIPs)) to maintain the 0-2°C temperature range for the expected transit time, considering potential delays. Conduct pre-shipment temperature simulations.\n    *   **Regulation:** EU Regulation (EC) No 852/2004 (Annex II, Chapter IV), South Korean and Japanese Food Import Regulations (packaging requirements).\n    *   **Reasoning:** Proper packaging is essential for maintaining the required temperature range and protecting the salmon from damage during transit.\n*   **1.3 Reefer Container Booking and Pre-Tripping:**\n    *   **Action:** Secure reefer container bookings with Baltic Star Lines (BSL) well in advance, considering the potential overbooking issue. Ensure the reefer container is thoroughly pre-tripped (pre-trip inspection) and certified by a qualified technician before loading. Specify the required temperature set point (0-2°C) and ventilation settings.\n    *   **Regulation:** IMO regulations for the safe carriage of goods, including refrigerated containers.\n    *   **Reasoning:** Pre-tripping ensures the reefer container is functioning correctly and capable of maintaining the required temperature throughout the voyage. Early booking mitigates the risk of unavailability.\n*   **1.4 Documentation Preparation:**\n    *   **Action:** Prepare all necessary documentation, including commercial invoices, packing lists, certificates of origin, health certificates (issued by the Norwegian Food Safety Authority), and any other required import permits for South Korea and Japan. Ensure all documentation is accurate, complete, and complies with the specific requirements of each country.\n    *   **Regulation:** Customs regulations in Lithuania, South Korea, and Japan, South Korean and Japanese Food Import Regulations.\n    *   **Reasoning:** Accurate and complete documentation is essential for smooth customs clearance and avoiding delays.\n*   **1.5 Traceability System Implementation:**\n    *   **Action:** Implement a robust track-and-trace system that monitors the salmon's temperature and location throughout the entire journey. This system should include temperature sensors placed inside the packaging and the reefer container, with real-time data transmission and alerts for temperature deviations. Consider using blockchain technology (DATAPOINT 1) to enhance transparency and security.\n    *   **Regulation:** EU Regulation (EC) No 178/2002 (General Food Law), South Korean and Japanese Food Import Regulations (traceability requirements).\n    *   **Reasoning:** A track-and-trace system provides real-time visibility and enables proactive intervention in case of temperature deviations or other issues.\n*   **1.6 ISPM 15 Compliance:**\n    *   **Action:** Ensure that any wooden pallets used in the shipment comply with ISPM 15 standards for phytosanitary measures. Use heat-treated or fumigated pallets and obtain the necessary certification.\n    *   **Regulation:** ISPM 15 (International Standards for Phytosanitary Measures Publication No. 15).\n    *   **Reasoning:** Compliance with ISPM 15 prevents the spread of pests and diseases.\n\n**Step 2: Transportation from Bergen to Klaipeda (NSE & Shipping Agent Responsibility)**\n\n*   **2.1 Temperature-Controlled Transport:**\n    *   **Action:** Utilize temperature-controlled trucks to transport the salmon from the processing facilities in Bergen to Klaipeda Cold Storage (KCS). Maintain the 0-2°C temperature range throughout the transport.\n    *   **Regulation:** EU Regulation (EC) No 852/2004 (Annex II, Chapter IV).\n    *   **Reasoning:** Maintaining temperature control during this initial leg of the journey is crucial for preserving the salmon's quality.\n*   **2.2 Communication with KCS:**\n    *   **Action:** Proactively communicate with KCS to schedule the arrival of the shipment and confirm the availability of transloading services. Inquire about potential congestion issues and discuss contingency plans.\n    *   **Regulation:** N/A - Best Practice.\n    *   **Reasoning:** Proactive communication helps to avoid delays and ensure a smooth transloading process.\n\n**Step 3: Transloading and Consolidation at Klaipeda Cold Storage (KCS Responsibility)**\n\n*   **3.1 Temperature Monitoring and Verification:**\n    *   **Action:** Upon arrival at KCS, verify the temperature of the salmon and the reefer container. Document the temperature readings and any discrepancies.\n    *   **Regulation:** EU Regulation (EC) No 852/2004 (Annex II, Chapter IV).\n    *   **Reasoning:** Verifying the temperature upon arrival ensures that the cold chain has been maintained.\n*   **3.2 Transloading and Consolidation:**\n    *   **Action:** Carefully transload the salmon from the temperature-controlled trucks into the pre-tripped reefer container. Ensure proper stacking and airflow within the container to maintain temperature uniformity.\n    *   **Regulation:** N/A - Best Practice.\n    *   **Reasoning:** Proper stacking and airflow are essential for maintaining temperature control within the reefer container.\n*   **3.3 Contingency Planning for Delays:**\n    *   **Action:** If delays are anticipated at KCS due to congestion or equipment shortages, consider alternative transloading facilities or temporary cold storage options.\n    *   **Regulation:** N/A - Risk Management.\n    *   **Reasoning:** Contingency plans are essential for mitigating the impact of potential delays.\n\n**Step 4: Ocean Freight from Klaipeda to Asia (BSL Responsibility)**\n\n*   **4.1 Reefer Container Monitoring:**\n    *   **Action:** BSL must continuously monitor the reefer container's temperature and performance throughout the voyage. Implement a system for real-time data transmission and alerts for temperature deviations or equipment malfunctions.\n    *   **Regulation:** IMO regulations for the safe carriage of goods, including refrigerated containers.\n    *   **Reasoning:** Continuous monitoring ensures that the required temperature is maintained throughout the voyage.\n*   **4.2 Communication and Coordination:**\n    *   **Action:** BSL must maintain open communication with NSE and Asian Delights regarding the vessel's schedule and any potential delays.\n    *   **Regulation:** N/A - Best Practice.\n    *   **Reasoning:** Open communication allows for proactive decision-making and mitigation of potential disruptions.\n*   **4.3 Rerouting Contingency:**\n    *   **Action:** In the event of significant delays at sea (e.g., due to weather or mechanical issues), evaluate the feasibility of rerouting the shipment to a closer port or using air freight from a European hub to Seoul or Tokyo. Consider the remaining shelf life of the salmon and the potential impact on Asian Delights' operations.\n    *   **Regulation:** N/A - Risk Management.\n    *   **Reasoning:** Rerouting or air freight may be necessary to meet delivery deadlines and preserve the salmon's quality.\n\n**Step 5: Customs Clearance and Delivery in South Korea and Japan (Shipping Agent & Declarant Responsibility)**\n\n*   **5.1 Pre-Arrival Documentation Review:**\n    *   **Action:** The shipping agent and declarant should review all documentation before the vessel's arrival to ensure compliance with South Korean and Japanese customs regulations.\n    *   **Regulation:** Customs regulations in South Korea and Japan, South Korean and Japanese Food Import Regulations.\n    *   **Reasoning:** Pre-arrival review helps to identify and resolve any potential issues before the shipment arrives.\n*   **5.2 Customs Inspection Preparation:**\n    *   **Action:** Prepare for potential customs inspections by having all necessary documentation readily available and ensuring that the salmon meets all applicable import requirements.\n    *   **Regulation:** Customs regulations in South Korea and Japan, South Korean and Japanese Food Import Regulations.\n    *   **Reasoning:** Proper preparation facilitates a smooth customs clearance process.\n*   **5.3 Temperature-Controlled Delivery:**\n    *   **Action:** Utilize temperature-controlled trucks to transport the salmon from the port to Asian Delights' restaurants. Maintain the 0-2°C temperature range throughout the delivery.\n    *   **Regulation:** South Korean and Japanese Food Import Regulations.\n    *   **Reasoning:** Maintaining temperature control during the final leg of the journey is crucial for preserving the salmon's quality.\n\n**Step 6: Post-Delivery Monitoring and Feedback (NSE & Asian Delights Responsibility)**\n\n*   **6.1 Temperature Verification and Quality Assessment:**\n    *   **Action:** Upon arrival at Asian Delights' restaurants, verify the temperature of the salmon and assess its quality. Document the temperature readings and any quality issues.\n    *   **Regulation:** South Korean and Japanese Food Import Regulations.\n    *   **Reasoning:** Verifying the temperature and assessing the quality ensures that the cold chain has been maintained and that the salmon meets Asian Delights' standards.\n*   **6.2 Feedback and Continuous Improvement:**\n    *   **Action:** Gather feedback from Asian Delights on the quality of the salmon and the overall shipping process. Use this feedback to identify areas for improvement and optimize the supply chain.\n    *   **Regulation:** N/A - Best Practice.\n    *   **Reasoning:** Continuous improvement is essential for maintaining a high level of service and ensuring customer satisfaction.\n\n## Recommendations\n\n*   **Proactive Communication:** Establish clear communication channels between all parties involved in the shipment (NSE, BSL, KCS, Asian Delights, shipping agent, declarant). Regular communication helps to identify and resolve potential issues proactively.\n*   **Real-Time Monitoring:** Implement a robust track-and-trace system with real-time temperature monitoring and alerts. This system should be accessible to all relevant parties.\n*   **Contingency Planning:** Develop comprehensive contingency plans to mitigate the impact of potential delays at KCS, at sea, or during customs clearance.\n*   **Regulatory Compliance:** Ensure full compliance with all applicable food safety regulations and customs requirements in Norway, Lithuania, South Korea, and Japan.\n*   **Documentation Accuracy:** Maintain accurate and complete documentation for all shipments.\n*   **Performance Measurement:** Track key performance indicators (KPIs) such as transit time, temperature deviations, and customer satisfaction. Use these KPIs to identify areas for improvement.\n*   **Relationship Management:** Build strong relationships with key partners such as BSL and KCS. Strong relationships can facilitate smoother operations and faster problem resolution.\n*   **Consider using freight forwarders (DATAPOINT 2) to assist with the complexities of the shipping process.**\n\n## Risk Mitigation\n\n| Risk                                     | Mitigation Strategy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          the |\n| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:0",
+  "solution_complete": true,
+  "solution_metadata": {
+    "model": "gemini-2.0-flash-exp",
+    "timestamp": "2025-03-30T08:27:17.155967",
+    "datapoints_referenced": 30,
+    "solution_version": "2.0",
+    "generation_duration": 35.482834,
+    "prompt_tokens": 8650,
+    "solution_structure": "four_part"
+  }
+}

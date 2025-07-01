@@ -1,0 +1,821 @@
+{
+  "case_id": "case-20250329-001540-kh1fug",
+  "checkpoint_file": "/Users/max/Documents/Code/magdeburg25/Data/Checkpoints/case_case-20250329-001540-kh1fug.json",
+  "checkpoint_history": [
+    {
+      "stage": "initialized",
+      "timestamp": "2025-03-29T00:15:40.678865"
+    },
+    {
+      "stage": "draft",
+      "timestamp": "2025-03-29T00:15:47.405368"
+    },
+    {
+      "stage": "analyzed",
+      "timestamp": "2025-03-29T00:15:54.858498"
+    },
+    {
+      "stage": "datapoints_retrieved",
+      "timestamp": "2025-03-29T00:16:01.721949"
+    },
+    {
+      "stage": "enhanced",
+      "timestamp": "2025-03-29T00:16:11.293660"
+    },
+    {
+      "stage": "completed",
+      "timestamp": "2025-03-29T00:16:23.142817"
+    }
+  ],
+  "last_checkpoint": "completed",
+  "creation_timestamp": "2025-03-29T00:15:40.678860",
+  "checkpoint_time": "2025-03-29 00:16:23",
+  "example_inspiration": "CASE • Barbara’s Blouses",
+  "example_filename": "Case_Barbara_Blouse.md",
+  "draft_case": "## Case Study: The Baltic Bottleneck - \"Nordic Breeze\" Container Shipment\n\n**Scenario:** Johan Eriksson is the Head of Logistics at \"ScandiHome,\" a rapidly growing Scandinavian furniture retailer headquartered in Stockholm, Sweden. ScandiHome sources a significant portion of its flat-pack furniture components from various manufacturers in Southeast Asia, primarily Vietnam and Malaysia. ScandiHome relies on efficient and cost-effective container shipping to maintain its competitive pricing and meet growing customer demand across Northern Europe and the Baltic states.\n\n**Key Entities:**\n\n*   **Johan Eriksson:** Head of Logistics, ScandiHome (Stockholm, Sweden)\n*   **ScandiHome:** Scandinavian furniture retailer (Stockholm, Sweden)\n*   **Hai Phong Furniture Co.:** Vietnamese furniture component manufacturer (Hai Phong, Vietnam)\n*   **Kuala Lumpur Woodworks:** Malaysian furniture component manufacturer (Kuala Lumpur, Malaysia)\n*   **Nordic Lines:** Container shipping company operating the \"Aurora Borealis\" container vessel.\n*   **Aurora Borealis:** A Panamax-class container vessel operated by Nordic Lines, scheduled to transport ScandiHome's shipments.\n*   **Port of Gothenburg:** Key transshipment port for ScandiHome's shipments.\n*   **Port of Gdansk:** Destination port for a significant portion of ScandiHome's shipments to Poland and surrounding Baltic states.\n*   **Baltic Distribution Solutions (BDS):** Third-party logistics provider (3PL) responsible for final distribution in the Baltic region.\n\n**The Situation:**\n\nJohan is currently facing a critical situation involving a large shipment of furniture components from both Hai Phong and Kuala Lumpur, consolidated onto the \"Aurora Borealis\" vessel operated by Nordic Lines. The vessel is on its scheduled route from Southeast Asia, heading towards Northern Europe via the Suez Canal. ScandiHome has contracted Baltic Distribution Solutions (BDS) in Gdansk to handle the unloading, customs clearance, and final distribution to ScandiHome stores and regional distribution centers across Poland, Latvia, Lithuania, and Estonia.\n\nThe \"Aurora Borealis\" is experiencing a series of escalating delays:\n\n1.  **Initial Delay - Suez Canal Congestion:** The vessel encountered significant congestion entering the Suez Canal, resulting in a 3-day delay. This was initially absorbed into the schedule with minimal impact.\n2.  **Equipment Malfunction - Gothenburg:** Upon arrival at the Port of Gothenburg, a crucial straddle carrier malfunctioned, causing a bottleneck in unloading operations. This added another 24 hours to the vessel's stay in Gothenburg. ScandiHome has a large volume of containers scheduled for transshipment here.\n3.  **Unexpected Port Congestion - Gdansk:** Johan receives an urgent notification from BDS in Gdansk. Due to unforeseen circumstances – a combination of severe weather conditions (gale-force winds) and a surge in container volume – the Port of Gdansk is experiencing severe congestion. BDS estimates that the \"Aurora Borealis\" may face a further delay of up to 4-5 days before it can berth and unload. Furthermore, BDS is warning of potential demurrage charges due to the delays in container retrieval.\n\n**The Problem:**\n\nThe delays are now creating a significant disruption to ScandiHome's supply chain. Several of ScandiHome's best-selling furniture lines are facing stockouts in key Baltic markets, impacting sales and customer satisfaction. Johan needs to urgently evaluate the situation, assess the potential impact, and develop a contingency plan to mitigate the damage. He needs to consider:\n\n*   The escalating costs associated with the delays (demurrage, potential penalties from stockouts)\n*   The feasibility of alternative transportation options (e.g., diverting containers to other Baltic ports)\n*   The impact on ScandiHome's relationship with its customers and its 3PL provider, BDS.\n*   The long-term implications for ScandiHome's supply chain strategy and risk mitigation measures.\n\nJohan has limited time to react before the situation escalates further. He needs to make a decision quickly to minimize the negative impact on ScandiHome's operations and reputation. What should he do?\n",
+  "creation_date": "2025-03-29",
+  "stage": "datapoints_retrieved",
+  "model": "gemini-2.0-flash-exp",
+  "generation_duration": 5.824316,
+  "draft_complete": true,
+  "analysis": "## Case Analysis\n\nThe draft case provides a good starting point, but it needs significant enhancement to align with the provided guidelines, particularly regarding documentation, B/L errors, and digital workflows.\n\n**Strengths:**\n\n*   **Realistic Scenario:** The scenario presents a plausible supply chain disruption with multiple contributing factors.\n*   **Clear Stakeholders:** The key entities and their roles are well-defined.\n*   **Business Impact:** The case clearly outlines the potential consequences of the delays on ScandiHome's business.\n*   **Geographic Specificity:** Focus on the Baltic region and specific ports adds realism.\n\n**Weaknesses:**\n\n*   **Lack of Documentation Focus:** The case mentions customs clearance, but it lacks specific details about the required import documentation. It doesn't explicitly require the LLM to generate or analyze a document checklist.\n*   **No Bill of Lading Issues:** The case doesn't incorporate any Bill of Lading errors or data quality problems. This is a major omission given the emphasis in the guidelines.\n*   **Limited Workflow Detail:** The case describes the overall flow of goods, but it doesn't delve into the specific steps of the Import Documentation Workflow.\n*   **No Digital vs. Manual Comparison:** The case doesn't explicitly contrast digital and manual processes or prompt the LLM to recommend digital solutions.\n*   **Incoterms Ignored:** The case doesn't specify the Incoterms used in the transactions, which would influence documentation responsibilities.\n*   **Security Regulations Missing:** The case doesn't mention any security regulations or documentation requirements related to port security or customs controls.\n\n**Improvements Needed:**\n\n*   **Incorporate Bill of Lading Errors:** Introduce a B/L error (e.g., incorrect weight, misdeclared goods, missing consignee details) that complicates the customs clearance process.\n*   **Add Documentation Requirements:** Explicitly state that Johan needs to review the required import documentation for both Vietnam and Malaysia, considering the destination ports (Gothenburg and Gdansk).\n*   **Specify Incoterms:** Define the Incoterms used for the shipments from Vietnam and Malaysia (e.g., CIF Gdansk, DAP Stockholm).\n*   **Introduce a Digital vs. Manual Element:** Suggest that BDS in Gdansk is still partially reliant on manual processes, while Gothenburg has a more advanced PCS.\n*   **Add Security Regulations:** Mention the need to comply with ISPS code requirements at the ports.\n*   **Detail the Import Documentation Workflow:** The case should prompt the LLM to analyze the workflow for import clearance in Gdansk, identifying potential bottlenecks.\n\n## Knowledge Gaps\n\n1.  **Specific Import Documentation Requirements for Gdansk (Poland) from Vietnam and Malaysia:** This includes customs declarations, certificates of origin, packing lists, commercial invoices, and any specific requirements for furniture components.\n2.  **Bill of Lading Error Handling Procedures in Poland:** How are B/L discrepancies typically resolved with Polish customs? What are the potential penalties?\n3.  **Port of Gdansk Regulations and Procedures:** Specific rules regarding demurrage, container retrieval, and handling of delayed shipments.\n4.  **ISPS Code Requirements for Container Security:** What documentation is required to demonstrate compliance with ISPS code at the Port of Gdansk?\n5.  **EDI and Port Community System (PCS) Implementation in Gdansk:** What is the current level of digital integration at the Port of Gdansk?\n6.  **Impact of Incoterms (CIF, DAP, etc.) on Documentation Responsibilities:** How do different Incoterms affect who is responsible for providing specific import documents?\n7.  **Customs Clearance Procedures in Poland:** What are the specific steps involved in customs clearance for containerized goods in Poland?\n8.  **Regulations regarding wood imports into the EU:** Are there any specific regulations concerning wood imports from Vietnam and Malaysia?\n9.  **Demurrage and Detention Charges in the Port of Gdansk:** What are the standard rates and conditions for demurrage and detention charges in the Port of Gdansk?\n10. **Alternative Baltic Ports for Diversion:** What are the import regulations and procedures for other Baltic ports (e.g., Riga, Klaipeda) and how do they compare to Gdansk?\n\n## Search Queries\n\n1.  \"Poland import regulations furniture components Vietnam\"\n2.  \"Poland customs clearance procedures containerized goods\"\n3.  \"Port of Gdansk demurrage charges container\"\n4.  \"ISPS code container security requirements Poland\"\n5.  \"Bill of Lading discrepancy resolution Poland customs\"\n6.  \"EDI implementation Port of Gdansk\"\n7.  \"CIF Gdansk import documentation requirements\"\n8.  \"DAP Stockholm import documentation requirements Poland\"\n9.  \"EU wood import regulations Vietnam Malaysia\"\n10. \"Alternative Baltic ports container diversion\"\n\n## Keywords\n\n*   Import Documentation\n*   Bill of Lading\n*   Customs Clearance\n*   Port of Gdansk\n*   Suez Canal Congestion\n*   Demurrage\n*   Incoterms (CIF, DAP)\n*   ISPS Code\n*   Supply Chain Disruption\n*   Baltic States\n*   Container Shipping\n*   EDI\n*   Port Community System (PCS)\n*   Poland\n*   Vietnam\n*   Malaysia\n",
+  "analysis_timestamp": "2025-03-29T00:15:54.856875",
+  "analysis_duration": 6.807314,
+  "analysis_model": "gemini-2.0-flash-exp",
+  "search_queries": [
+    "\"Poland import regulations furniture components Vietnam\"",
+    "\"Poland customs clearance procedures containerized goods\"",
+    "\"Port of Gdansk demurrage charges container\"",
+    "\"ISPS code container security requirements Poland\"",
+    "\"Bill of Lading discrepancy resolution Poland customs\"",
+    "\"EDI implementation Port of Gdansk\"",
+    "\"CIF Gdansk import documentation requirements\"",
+    "\"DAP Stockholm import documentation requirements Poland\"",
+    "\"EU wood import regulations Vietnam Malaysia\"",
+    "\"Alternative Baltic ports container diversion\""
+  ],
+  "keywords": [
+    "*   Import Documentation",
+    "*   Bill of Lading",
+    "*   Customs Clearance",
+    "*   Port of Gdansk",
+    "*   Suez Canal Congestion",
+    "*   Demurrage",
+    "*   Incoterms (CIF",
+    "DAP)",
+    "*   ISPS Code",
+    "*   Supply Chain Disruption",
+    "*   Baltic States",
+    "*   Container Shipping",
+    "*   EDI",
+    "*   Port Community System (PCS)",
+    "*   Poland",
+    "*   Vietnam",
+    "*   Malaysia"
+  ],
+  "analysis_complete": true,
+  "relevant_datapoints": [
+    {
+      "datapoint_id": "IMO_DP_B_L_ACCURACY_CRUCIAL_080",
+      "datapoint_type": "Guideline",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shippers, Freight Forwarders",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Handling Guidelines",
+      "regulation_detail": "Accuracy of all information on the Bill of Lading (B/L) is crucial and must be ensured to match other shipping documents, avoiding discrepancies and delays.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "4. Guidelines for Handling Bills of Lading - Accuracy",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "accuracy",
+        "data accuracy",
+        "document accuracy",
+        "guideline",
+        "shipping documents",
+        "avoid discrepancies"
+      ],
+      "search_score": 0.8324769,
+      "matched_query": "\"Bill of Lading discrepancy resolution Poland customs\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_SOLAS_ISPS_MANDATORY_PORT_009",
+      "datapoint_type": "Requirement",
+      "port_area": "International - IMO",
+      "relevant_entity": "Port Facilities",
+      "regulation_category": "Security Regulations",
+      "regulation_subcategory": "ISPS Code (SOLAS Chapter XI-2)",
+      "regulation_detail": "Port facilities serving ships engaged in international voyages must comply with the International Ship and Port Facility Security (ISPS) Code, mandated by SOLAS Chapter XI-2.",
+      "source_document": "ISPS Code (Mandatory under SOLAS Chapter XI-2)",
+      "source_section": "ISPS Code - Part B",
+      "keywords": [
+        "SOLAS",
+        "ISPS Code",
+        "port facility",
+        "port security",
+        "maritime security",
+        "mandatory",
+        "international voyages"
+      ],
+      "search_score": 0.8241907,
+      "matched_query": "\"ISPS code container security requirements Poland\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.82174814,
+      "matched_query": "\"Bill of Lading discrepancy resolution Poland customs\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.81374604,
+      "matched_query": "\"CIF Gdansk import documentation requirements\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "INCO_DP_248_Suitability_General_AnyModeTermsRecommendedContainer",
+      "datapoint_type": "Guideline",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "Container Suitability",
+      "regulation_subcategory": "Recommendation",
+      "regulation_detail": "For container shipments, it is generally recommended to use Incoterms designed for any mode of transport (EXW, FCA, CPT, CIP, DAP, DPU, DDP).",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Section 3 [Source 1]",
+      "keywords": [
+        "suitability",
+        "container",
+        "any mode terms",
+        "exw",
+        "fca",
+        "cpt",
+        "cip",
+        "dap",
+        "dpu",
+        "ddp",
+        "recommended"
+      ],
+      "search_score": 0.81079304,
+      "matched_query": "\"CIF Gdansk import documentation requirements\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.8092947,
+      "matched_query": "\"Poland customs clearance procedures containerized goods\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.80804515,
+      "matched_query": "\"CIF Gdansk import documentation requirements\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "INCO_DP_176_Cost_CIF_ImportClearance_Buyer",
+      "datapoint_type": "Cost Allocation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Cost Allocation",
+      "regulation_subcategory": "Import Formalities",
+      "regulation_detail": "Under CIF, the buyer bears the costs associated with import clearance.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "CIF B9 / B7 [Source 4, Table]",
+      "keywords": [
+        "cif",
+        "cost insurance freight",
+        "cost",
+        "buyer",
+        "import clearance",
+        "formalities",
+        "customs"
+      ],
+      "search_score": 0.8063581,
+      "matched_query": "\"CIF Gdansk import documentation requirements\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.8053502,
+      "matched_query": "\"Bill of Lading discrepancy resolution Poland customs\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "INCO_DP_061_Obligation_CIF_Buyer_ImportClearance",
+      "datapoint_type": "Obligation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Obligations:Buyer",
+      "regulation_subcategory": "A7/B7 Export/Import Clearance",
+      "regulation_detail": "Under CIF, the buyer is responsible for carrying out and paying for import clearance formalities.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "CIF B7 [Source 4]",
+      "keywords": [
+        "cif",
+        "cost insurance freight",
+        "buyer",
+        "obligation",
+        "import clearance",
+        "formalities",
+        "customs"
+      ],
+      "search_score": 0.80499154,
+      "matched_query": "\"CIF Gdansk import documentation requirements\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_STORAGE_TARIFF_EXAMPLE_DAILY_CHARGE_060",
+      "datapoint_type": "Tariff Example",
+      "relevant_entity": "Container Storage Cost",
+      "regulation_category": "Port Tariffs - Rotterdam",
+      "regulation_subcategory": "Extended Storage Costs",
+      "regulation_detail": "Example extended storage charge at Port of Rotterdam: approximately €20 per day for a standard 20-foot container beyond the free storage period (rates vary).",
+      "source_document": "Perplexity Web Search - \"Regulations and Tariff Structures for Extended Container Storage in the Port of Rotterdam\" Report",
+      "keywords": [
+        "extended storage",
+        "daily charge",
+        "20 euro",
+        "20-foot container",
+        "free storage period",
+        "Port of Rotterdam",
+        "port tariffs",
+        "tariff example"
+      ],
+      "search_score": 0.8035263,
+      "matched_query": "\"Port of Gdansk demurrage charges container\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_STORAGE_EXTENDED_CHARGES_APPLY_057",
+      "datapoint_type": "Tariff Policy",
+      "relevant_entity": "Container Storage",
+      "regulation_category": "Port Tariffs - Rotterdam",
+      "regulation_subcategory": "Extended Storage",
+      "regulation_detail": "Extended storage charges are levied on containers stored beyond the standard free time at Port of Rotterdam terminals. Rates vary by terminal and container type.",
+      "source_document": "Perplexity Web Search - \"Regulations and Tariff Structures for Extended Container Storage in the Port of Rotterdam\" Report",
+      "keywords": [
+        "extended storage",
+        "storage charges",
+        "free time",
+        "container terminals",
+        "Port of Rotterdam",
+        "port tariffs",
+        "tariff policy",
+        "container type"
+      ],
+      "search_score": 0.79663754,
+      "matched_query": "\"Port of Gdansk demurrage charges container\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.7938016,
+      "matched_query": "\"Poland customs clearance procedures containerized goods\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_CUSTOMS_DP_PROCEDURE_TEMPORARYSTORAGE_DEFINITION_12",
+      "datapoint_type": "Customs Procedure",
+      "relevant_entity": "Goods (Customs Sea Port)",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Customs Temporary Storage",
+      "source_document": "Waltershof Customs Office - Information on Temporary Storage and General German Customs Clearance",
+      "regulation_detail": "Goods in customs seaport are under customs supervision and placed under temporary storage upon arrival (AT/B number).",
+      "keywords": [
+        "customs procedure",
+        "temporary storage",
+        "definition",
+        "customs seaport",
+        "AT/B number"
+      ],
+      "search_score": 0.79167473,
+      "matched_query": "\"Poland customs clearance procedures containerized goods\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_INSPECTION_TRIGGERS_029",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Latvian Customs (VID)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Customs Inspections",
+      "source_document": "Riga Port Report, Latvia Customs Information",
+      "regulation_detail": "Shipments may be selected for inspection by Latvian Customs officials, involving document review and/or physical container inspection, particularly for high-risk shipments or goods requiring closer scrutiny.",
+      "keywords": [
+        "customs",
+        "inspection",
+        "procedure",
+        "Latvia",
+        "VID",
+        "risk-based",
+        "document review",
+        "physical inspection"
+      ],
+      "search_score": 0.79066956,
+      "matched_query": "\"Poland customs clearance procedures containerized goods\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_IMPORT_CLEARANCE_TIME_051",
+      "datapoint_type": "Fact",
+      "relevant_entity": "Customs Clearance/Importer",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Import Procedures",
+      "source_document": "Eurobrokers, Latvia Customs Information",
+      "regulation_detail": "Customs clearance in Latvia can often be completed within 24 hours of the submission of all required documentation.",
+      "keywords": [
+        "customs",
+        "import",
+        "customs clearance time",
+        "processing time",
+        "efficiency",
+        "Latvia"
+      ],
+      "search_score": 0.7891013,
+      "matched_query": "\"Poland customs clearance procedures containerized goods\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "ANTWERP_DP_SECURITY_ISPS_VESSEL_ACCESS_PREVENTION_064",
+      "datapoint_type": "Regulation",
+      "relevant_entity": "Container Vessel",
+      "regulation_category": "Security Regulations - ISPS Code",
+      "regulation_subcategory": "Vessel Security Procedures",
+      "source_document": "Port Instructions",
+      "source_section": "Chapter 4.2 (referencing ISPS)",
+      "regulation_detail": "Vessels, including container vessels, at the Port of Antwerp must ensure that no unauthorized persons can access concessions or port property via the vessel, in line with ISPS regulations.",
+      "keywords": [
+        "security regulations",
+        "ISPS code",
+        "vessel access prevention",
+        "container vessels",
+        "unauthorized persons",
+        "Port of Antwerp",
+        "regulation"
+      ],
+      "search_score": 0.7858885,
+      "matched_query": "\"ISPS code container security requirements Poland\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "INCO_DP_188_Cost_DAP_ImportClearance_Buyer",
+      "datapoint_type": "Cost Allocation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Cost Allocation",
+      "regulation_subcategory": "Import Formalities",
+      "regulation_detail": "Under DAP, the buyer bears the costs associated with import clearance.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "DAP B9 / B7 [Source 7, Table]",
+      "keywords": [
+        "dap",
+        "delivered at place",
+        "cost",
+        "buyer",
+        "import clearance",
+        "formalities",
+        "customs"
+      ],
+      "search_score": 0.78344375,
+      "matched_query": "\"DAP Stockholm import documentation requirements Poland\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ESSENTIAL_CARGO_RELEASE_075",
+      "datapoint_type": "Requirement",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Consignee",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Importance",
+      "regulation_detail": "Presenting the original Bill of Lading (B/L) is essential for the consignee to obtain release of cargo from the carrier at the destination port.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Importance",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "cargo release",
+        "delivery of goods",
+        "original B/L",
+        "consignee",
+        "requirement",
+        "port operations"
+      ],
+      "search_score": 0.7832661,
+      "matched_query": "\"Bill of Lading discrepancy resolution Poland customs\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "INCO_DP_270_Issue_DAP_BuyerResponsibleForUnloadingPreparedness",
+      "datapoint_type": "Guideline",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Challenges",
+      "regulation_subcategory": "DAP",
+      "regulation_detail": "Buyers using DAP need to be prepared to handle the unloading of goods from the arriving means of transport.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "DAP Guidance Note [Source 34]",
+      "keywords": [
+        "dap",
+        "delivered at place",
+        "issue",
+        "challenge",
+        "buyer",
+        "unloading",
+        "preparedness"
+      ],
+      "search_score": 0.78215754,
+      "matched_query": "\"DAP Stockholm import documentation requirements Poland\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.7802669,
+      "matched_query": "\"DAP Stockholm import documentation requirements Poland\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_EMPTY_REPOS_DOC_PORT_COOPERATION_AGREEMENTS_075",
+      "datapoint_type": "Documentation Requirement",
+      "relevant_entity": "Port Cooperation Agreement",
+      "regulation_category": "Inland Logistics Optimization - Rotterdam",
+      "regulation_subcategory": "Agreements & Documentation",
+      "regulation_detail": "Port cooperation agreements for empty container repositioning in Rotterdam should specify carbon cost allocation formulas and emergency leasing protocols.",
+      "source_document": "Perplexity Web Search - \"Rotterdam Port's Empty Container Repositioning Strategies...\" Report",
+      "keywords": [
+        "port cooperation agreements",
+        "empty container",
+        "carbon cost allocation",
+        "emergency leasing",
+        "Port of Rotterdam",
+        "inland logistics",
+        "documentation"
+      ],
+      "search_score": 0.7794372,
+      "matched_query": "\"Alternative Baltic ports container diversion\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_EMPTY_REPOS_BEST_PRACTICE_DEMURRAGE_073",
+      "datapoint_type": "Best Practice",
+      "relevant_entity": "Empty Container Logistics",
+      "regulation_category": "Inland Logistics Optimization - Rotterdam",
+      "regulation_subcategory": "Demurrage Management",
+      "regulation_detail": "For empty container repositioning in Rotterdam, set explicit demurrage agreements with shipping companies using actual lead time data, not standard clauses, as a best practice.",
+      "source_document": "Perplexity Web Search - \"Rotterdam Port's Empty Container Repositioning Strategies...\" Report",
+      "keywords": [
+        "empty container",
+        "demurrage agreements",
+        "shipping companies",
+        "lead time data",
+        "Port of Rotterdam",
+        "inland logistics",
+        "best practice"
+      ],
+      "search_score": 0.7791545,
+      "matched_query": "\"Port of Gdansk demurrage charges container\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "INCO_DP_067_Obligation_DAP_Buyer_ImportClearance",
+      "datapoint_type": "Obligation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Obligations:Buyer",
+      "regulation_subcategory": "A7/B7 Export/Import Clearance",
+      "regulation_detail": "Under DAP, the buyer is responsible for carrying out and paying for import clearance formalities.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "DAP B7 [Source 7]",
+      "keywords": [
+        "dap",
+        "delivered at place",
+        "buyer",
+        "obligation",
+        "import clearance",
+        "formalities",
+        "customs"
+      ],
+      "search_score": 0.776441,
+      "matched_query": "\"DAP Stockholm import documentation requirements Poland\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "INCO_DP_189_Cost_DAP_ImportDutiesTaxes_Buyer",
+      "datapoint_type": "Cost Allocation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Cost Allocation",
+      "regulation_subcategory": "Import Duties and Taxes",
+      "regulation_detail": "Under DAP, the buyer bears the cost of import duties and taxes.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "DAP B9 / B7 [Source 7, Table]",
+      "keywords": [
+        "dap",
+        "delivered at place",
+        "cost",
+        "buyer",
+        "import duties",
+        "taxes",
+        "vat"
+      ],
+      "search_score": 0.7764124,
+      "matched_query": "\"DAP Stockholm import documentation requirements Poland\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_EMPTY_REPOS_STRATEGY_DEPOT_DIRECT_072",
+      "datapoint_type": "Repositioning Strategy",
+      "relevant_entity": "Empty Container Logistics",
+      "regulation_category": "Inland Logistics Optimization - Rotterdam",
+      "regulation_subcategory": "Empty Container Repositioning",
+      "regulation_detail": "Direct depot-to-depot transfers for empty containers in Rotterdam achieve 15% cost savings and enhance turnaround by 2-3 days by eliminating intermediate port stops.",
+      "source_document": "Perplexity Web Search - \"Rotterdam Port's Empty Container Repositioning Strategies...\" Report",
+      "keywords": [
+        "empty container",
+        "depot-to-depot transfer",
+        "cost savings",
+        "turnaround",
+        "Port of Rotterdam",
+        "inland logistics",
+        "optimization"
+      ],
+      "search_score": 0.7728144,
+      "matched_query": "\"Alternative Baltic ports container diversion\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_OVERVIEW_071",
+      "datapoint_type": "Document Function",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shipper/Carrier/Consignee",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Overview",
+      "regulation_detail": "The Bill of Lading (B/L) is a fundamental document in international trade, acting as a contract of carriage, receipt for goods, and document of title.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Description",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "shipping document",
+        "contract of carriage",
+        "receipt for goods",
+        "document of title",
+        "international trade"
+      ],
+      "search_score": 0.7725332,
+      "matched_query": "\"Bill of Lading discrepancy resolution Poland customs\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "INCO_DP_248_Suitability_General_AnyModeTermsRecommendedContainer",
+      "datapoint_type": "Guideline",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "Container Suitability",
+      "regulation_subcategory": "Recommendation",
+      "regulation_detail": "For container shipments, it is generally recommended to use Incoterms designed for any mode of transport (EXW, FCA, CPT, CIP, DAP, DPU, DDP).",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Section 3 [Source 1]",
+      "keywords": [
+        "suitability",
+        "container",
+        "any mode terms",
+        "exw",
+        "fca",
+        "cpt",
+        "cip",
+        "dap",
+        "dpu",
+        "ddp",
+        "recommended"
+      ],
+      "search_score": 0.77228,
+      "matched_query": "\"ISPS code container security requirements Poland\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_SPECIAL_POLICIES_CABOTAGE_CARGO_TYPE_REQUIREMENT_042",
+      "datapoint_type": "Requirement",
+      "port_area": "Yangshan",
+      "relevant_entity": "Cargo (Cabotage Pilot)",
+      "regulation_category": "Special Policies",
+      "regulation_subcategory": "Cabotage Pilot Program - Cargo Requirements",
+      "regulation_detail": "Participating vessels can only carry 'foreign trade container cargo for which the international container liner company has issued a full bill of lading'.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Special Policies for Yangshan Port: Pilot Programs and Provisional Adjustments",
+      "keywords": [
+        "special policies",
+        "cabotage pilot program",
+        "cargo requirement",
+        "foreign trade container cargo",
+        "bill of lading",
+        "B/L",
+        "cargo type",
+        "eligibility criteria"
+      ],
+      "search_score": 0.7721174,
+      "matched_query": "\"Alternative Baltic ports container diversion\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_EMPTY_REPOS_STRATEGY_COMPLETE_NETWORK_071",
+      "datapoint_type": "Repositioning Strategy",
+      "relevant_entity": "Empty Container Logistics",
+      "regulation_category": "Inland Logistics Optimization - Rotterdam",
+      "regulation_subcategory": "Empty Container Repositioning",
+      "regulation_detail": "Complete repositioning networks with full container sharing in Rotterdam achieve lowest operational costs (23% below threshold models) and 30% carbon emission reduction.",
+      "source_document": "Perplexity Web Search - \"Rotterdam Port's Empty Container Repositioning Strategies...\" Report",
+      "keywords": [
+        "empty container",
+        "repositioning network",
+        "container sharing",
+        "operational costs",
+        "carbon emission reduction",
+        "Port of Rotterdam",
+        "inland logistics",
+        "optimization"
+      ],
+      "search_score": 0.7719158,
+      "matched_query": "\"Alternative Baltic ports container diversion\"",
+      "result_position": 4
+    }
+  ],
+  "datapoints_complete": true,
+  "search_metadata": {
+    "collection_name": "logistics_datapoints",
+    "queries_used": 10,
+    "total_results": 50,
+    "unique_datapoints": 30,
+    "retrieval_duration": 6.859692,
+    "timestamp": "2025-03-29T00:16:01.720356",
+    "query_stats": [
+      {
+        "query": "\"Poland import regulations furniture components Vietnam\"",
+        "results_found": 5,
+        "top_score": 0.7466217
+      },
+      {
+        "query": "\"Poland customs clearance procedures containerized goods\"",
+        "results_found": 5,
+        "top_score": 0.8092947
+      },
+      {
+        "query": "\"Port of Gdansk demurrage charges container\"",
+        "results_found": 5,
+        "top_score": 0.8035263
+      },
+      {
+        "query": "\"ISPS code container security requirements Poland\"",
+        "results_found": 5,
+        "top_score": 0.8241907
+      },
+      {
+        "query": "\"Bill of Lading discrepancy resolution Poland customs\"",
+        "results_found": 5,
+        "top_score": 0.8324769
+      },
+      {
+        "query": "\"EDI implementation Port of Gdansk\"",
+        "results_found": 5,
+        "top_score": 0.7657028
+      },
+      {
+        "query": "\"CIF Gdansk import documentation requirements\"",
+        "results_found": 5,
+        "top_score": 0.81374604
+      },
+      {
+        "query": "\"DAP Stockholm import documentation requirements Poland\"",
+        "results_found": 5,
+        "top_score": 0.78344375
+      },
+      {
+        "query": "\"EU wood import regulations Vietnam Malaysia\"",
+        "results_found": 5,
+        "top_score": 0.74026066
+      },
+      {
+        "query": "\"Alternative Baltic ports container diversion\"",
+        "results_found": 5,
+        "top_score": 0.7794372
+      }
+    ]
+  },
+  "title": "Baltic Bottleneck: Navigating Congestion and Demurrage in ScandiHome's Supply Chain",
+  "enhanced_case": "**Case Study: Baltic Bottleneck - \"Nordic Breeze\" Container Shipment**\n\n**Scenario:** Johan Eriksson is the Head of Logistics at \"ScandiHome,\" a rapidly growing Scandinavian furniture retailer headquartered in Stockholm, Sweden. ScandiHome sources a significant portion of its flat-pack furniture components from various manufacturers in Southeast Asia, primarily Vietnam and Malaysia. ScandiHome relies on efficient and cost-effective container shipping to maintain its competitive pricing and meet growing customer demand across Northern Europe and the Baltic states.\n\n**Key Entities:**\n\n*   **Johan Eriksson:** Head of Logistics, ScandiHome (Stockholm, Sweden)\n*   **ScandiHome:** Scandinavian furniture retailer (Stockholm, Sweden)\n*   **Hai Phong Furniture Co.:** Vietnamese furniture component manufacturer (Hai Phong, Vietnam)\n*   **Kuala Lumpur Woodworks:** Malaysian furniture component manufacturer (Kuala Lumpur, Malaysia)\n*   **Nordic Lines:** Container shipping company operating the \"Aurora Borealis\" container vessel.\n*   **Aurora Borealis:** A Panamax-class container vessel operated by Nordic Lines, scheduled to transport ScandiHome's shipments.\n*   **Port of Gothenburg:** Key transshipment port for ScandiHome's shipments.\n*   **Port of Gdansk:** Destination port for a significant portion of ScandiHome's shipments to Poland and surrounding Baltic states.\n*   **Baltic Distribution Solutions (BDS):** Third-party logistics provider (3PL) responsible for final distribution in the Baltic region.\n\n**The Situation:**\n\nJohan is currently facing a critical situation involving a large shipment of furniture components from both Hai Phong and Kuala Lumpur, consolidated onto the \"Aurora Borealis\" vessel operated by Nordic Lines. The vessel is on its scheduled route from Southeast Asia, heading towards Northern Europe via the Suez Canal. ScandiHome has contracted Baltic Distribution Solutions (BDS) in Gdansk to handle the unloading, customs clearance, and final distribution to ScandiHome stores and regional distribution centers across Poland, Latvia, Lithuania, and Estonia.\n\nThe \"Aurora Borealis\" is experiencing a series of escalating delays:\n\n1.  **Initial Delay - Suez Canal Congestion:** The vessel encountered significant congestion entering the Suez Canal, resulting in a 3-day delay. This was initially absorbed into the schedule with minimal impact.\n2.  **Equipment Malfunction - Gothenburg:** Upon arrival at the Port of Gothenburg, a crucial straddle carrier malfunctioned, causing a bottleneck in unloading operations. This added another 24 hours to the vessel's stay in Gothenburg. ScandiHome has a large volume of containers scheduled for transshipment here.\n3.  **Unexpected Port Congestion - Gdansk:** Johan receives an urgent notification from BDS in Gdansk. Due to unforeseen circumstances – a combination of severe weather conditions (gale-force winds) and a surge in container volume – the Port of Gdansk is experiencing severe congestion. BDS estimates that the \"Aurora Borealis\" may face a further delay of up to 4-5 days before it can berth and unload. Furthermore, BDS is warning of potential demurrage charges due to the delays in container retrieval.\n\n**The Problem:**\n\nThe delays are now creating a significant disruption to ScandiHome's supply chain. Several of ScandiHome's best-selling furniture lines are facing stockouts in key Baltic markets, impacting sales and customer satisfaction. Johan needs to urgently evaluate the situation, assess the potential impact, and develop a contingency plan to mitigate the damage. He needs to consider:\n\n*   **The escalating costs associated with the delays:** This includes not only demurrage charges at the Port of Gdansk (which can quickly accumulate based on a per-container, per-day rate, as per DATAPOINT 11 & 12), but also potential penalties from stockouts due to breach of contract with retailers and lost sales.\n*   **Customs Implications:** The delay may impact the validity of customs declarations and require amendments. The delays also increase the risk of customs inspections and potential fines due to prolonged storage and possible non-compliance (DATAPOINT 14).\n*   **Demurrage and Detention:** Understanding the difference between demurrage (charges for containers remaining in the port beyond the allowed free time) and detention (charges for keeping the container outside the port beyond the allowed free time) is crucial. Johan needs to review the agreements with Nordic Lines and BDS to understand the specific terms and conditions related to these charges.\n*   **Feasibility of alternative transportation options:**  Johan needs to explore the possibility of diverting containers to other Baltic ports like Riga or Klaipeda. He must consider the additional costs (transport, handling, customs clearance) and time involved in transshipping the goods to their final destinations. He also needs to verify port capacity and available handling equipment at these alternative ports.\n*   **Impact on ScandiHome's relationship with its customers and its 3PL provider, BDS:** Clear and transparent communication with customers about the delays is essential to manage expectations and minimize dissatisfaction (DATAPOINT 3, 4, 6, 7, 9, 13). Johan needs to work closely with BDS to explore all possible solutions and maintain a strong working relationship. He needs to assess if BDS is proactively managing the situation and exploring alternative solutions.\n*   **Long-term implications for ScandiHome's supply chain strategy and risk mitigation measures:** This incident highlights the vulnerability of ScandiHome's supply chain to disruptions. Johan needs to re-evaluate ScandiHome's reliance on a single shipping route and port of entry. Diversification of sourcing and transportation options should be considered.  He also needs to assess the effectiveness of ScandiHome's current risk mitigation strategies and implement improvements.\n*   **Compliance with ISPS Code:** Johan needs to ensure that all parties involved (Nordic Lines, BDS, and the ports) are compliant with the International Ship and Port Facility Security (ISPS) Code to prevent any security-related delays or disruptions (DATAPOINT 2).\n*   **Latvian Customs (VID) Regulations (if diverting to Riga):** If considering diverting shipments to the Port of Riga, Johan needs to familiarize himself with the specific customs regulations and requirements of the Latvian Customs (VID) to ensure smooth and compliant import clearance (DATAPOINT 15).\n*   **Bill of Lading Review:** Check the bill of lading for accuracy and ensure it reflects the correct weight, dimensions, and description of the goods. Any discrepancies could lead to further delays during customs clearance. Ensure proper documentation for goods (DATAPOINT 14).\n\n**Specific Questions for Johan to consider:**\n\n*   What is the current status of the \"Aurora Borealis\"? Is it still at sea, waiting to berth, or anchored outside the port?\n*   What is the exact estimated time of arrival (ETA) at the Port of Gdansk, taking into account the congestion?\n*   What is the daily demurrage rate per container at the Port of Gdansk?\n*   What are the terms and conditions of the contract with Nordic Lines regarding delays and liability?\n*   What are the terms and conditions of the contract with BDS regarding their responsibilities in case of delays?\n*   What alternative transportation options are available and what are the associated costs and lead times?\n*   How many containers are affected by the delays and what is the estimated value of the goods?\n*   What is the potential impact on ScandiHome's sales and customer satisfaction in the Baltic markets?\n*   What are the potential penalties from stockouts and breach of contract with retailers?\n*   What is the status of the Entry Summary Declarations (ENS) and Summary Arrival Declarations (SAL) for the affected shipments? Are they still valid, or do they need to be amended?\n\nJohan has limited time to react before the situation escalates further. He needs to make a decision quickly to minimize the negative impact on ScandiHome's operations and reputation. What should he do?",
+  "domain_guideline": "maritime",
+  "enhancement_metadata": {
+    "model": null,
+    "timestamp": "2025-03-29 00:16:11",
+    "datapoints_used": 30,
+    "guideline_type": "maritime",
+    "guideline_chunks": 5,
+    "enhancement_duration": 8.909009
+  },
+  "enhancement_complete": true,
+  "solution": "## Executive Summary\n\nThe \"Aurora Borealis\" shipment is facing significant delays due to congestion at the Suez Canal, equipment malfunction in Gothenburg, and severe congestion at the Port of Gdansk. This threatens ScandiHome's Baltic market sales, customer satisfaction, and profitability due to stockouts and potential demurrage charges. The solution involves immediate assessment of the situation, communication with stakeholders, exploration of alternative port options (Riga/Klaipeda), negotiation with Nordic Lines and BDS, expedited customs clearance, and implementation of a long-term risk mitigation strategy. This plan prioritizes minimizing immediate costs, maintaining customer relationships, and improving supply chain resilience.\n\n## Detailed Solution Steps\n\n**Phase 1: Immediate Assessment and Communication (Within 24 Hours)**\n\n**Step 1: Gather Critical Information (Regulatory Reference: SOLAS Convention, Chapter VI, Regulation 2 - Cargo Information):**\n\n*   **Action:** Contact Nordic Lines and BDS to obtain precise information:\n    *   Current location and ETA of the \"Aurora Borealis\" at Gdansk.\n    *   Number of ScandiHome containers on board.\n    *   Daily demurrage rate per container at Gdansk.\n    *   Terms and conditions of contracts with Nordic Lines and BDS regarding delays, liability, and force majeure clauses.\n    *   Status of Entry Summary Declarations (ENS) and Summary Arrival Declarations (SAL) for the affected shipments.\n    *   Confirm ISPS Code compliance (DATAPOINT 2) of all parties involved (Nordic Lines, BDS, and the ports).\n*   **Reasoning:** Accurate information is crucial for informed decision-making. SOLAS (Safety of Life at Sea) requires accurate cargo information for safe and efficient maritime transport. Understanding contract terms is essential for managing liabilities.\n\n**Step 2: Quantify Impact (Regulatory Reference: Incoterms 2020):**\n\n*   **Action:** Determine:\n    *   Value of goods in the affected containers.\n    *   Potential lost sales due to stockouts in the Baltic markets.\n    *   Potential penalties from breach of contract with retailers.\n    *   Breakdown of Incoterms for each shipment to determine responsibility for costs and risks at each stage.\n*   **Reasoning:** Quantifying the financial impact justifies the urgency and resources required for mitigation. Incoterms define responsibilities and liabilities between buyer and seller.\n\n**Step 3: Communicate with Stakeholders (Regulatory Reference: GDPR - General Data Protection Regulation):**\n\n*   **Action:**\n    *   Inform ScandiHome's management about the situation and potential impact.\n    *   Proactively communicate with customers in the Baltic markets about potential delays (DATAPOINT 3, 4, 6, 7, 9, 13). Offer realistic timelines and potential solutions.\n    *   Maintain open communication with Hai Phong Furniture Co. and Kuala Lumpur Woodworks.\n*   **Reasoning:** Transparency builds trust and manages expectations. GDPR compliance is necessary when communicating with customers regarding their orders and delivery schedules.\n\n**Phase 2: Contingency Planning and Execution (Within 48 Hours)**\n\n**Step 4: Explore Alternative Port Options (Regulatory Reference: EU Customs Code - UCC):**\n\n*   **Action:**\n    *   Contact BDS to investigate the feasibility of diverting containers to alternative Baltic ports like Riga (Latvia) or Klaipeda (Lithuania).\n    *   Assess port capacity, available handling equipment, and customs clearance processes at these alternative ports.\n    *   Obtain quotes for additional transportation costs (trucking) from Riga/Klaipeda to the final destinations in Poland, Latvia, Lithuania, and Estonia.\n    *   Familiarize with Latvian Customs (VID) regulations if diverting to Riga (DATAPOINT 15).\n*   **Reasoning:** Diversion can bypass congestion at Gdansk. The EU Customs Code governs customs procedures across member states, but local regulations may vary.\n\n**Step 5: Negotiate with Nordic Lines and BDS (Regulatory Reference: Hague-Visby Rules):**\n\n*   **Action:**\n    *   Negotiate with Nordic Lines to minimize demurrage charges at Gdansk, citing the unforeseen circumstances (port congestion and equipment malfunction). Refer to the Hague-Visby Rules regarding carrier liability.\n    *   Negotiate with BDS to optimize unloading and distribution processes at Gdansk or alternative ports. Explore potential cost savings.\n*   **Reasoning:** Negotiation can reduce financial losses. The Hague-Visby Rules define the responsibilities and liabilities of carriers in international maritime transport.\n\n**Step 6: Expedite Customs Clearance (Regulatory Reference: EU Customs Code - UCC):**\n\n*   **Action:**\n    *   Work with BDS to ensure all necessary customs documentation is prepared and ready for submission.\n    *   Explore the possibility of pre-clearance procedures to expedite the customs process.\n    *   Verify the accuracy of the Bill of Lading and ensure proper documentation for goods (DATAPOINT 14).\n    *   Amend Entry Summary Declarations (ENS) and Summary Arrival Declarations (SAL) if necessary due to the delays.\n*   **Reasoning:** Efficient customs clearance minimizes delays and potential fines. The EU Customs Code (UCC) aims to harmonize customs procedures across the EU.\n\n**Step 7: Implement Diversion Plan (If Feasible)**\n\n*   **Action:**\n    *   If diverting to Riga or Klaipeda is cost-effective and time-efficient, implement the diversion plan immediately.\n    *   Coordinate with BDS to arrange for trucking and final distribution from the alternative port.\n    *   Ensure compliance with all relevant customs regulations in Latvia or Lithuania.\n*   **Reasoning:** Diversion can mitigate the impact of congestion at Gdansk.\n\n**Phase 3: Long-Term Risk Mitigation (Ongoing)**\n\n**Step 8: Review Supply Chain Strategy:**\n\n*   **Action:**\n    *   Evaluate ScandiHome's reliance on a single shipping route and port of entry.\n    *   Consider diversifying sourcing and transportation options to reduce vulnerability to disruptions.\n    *   Explore alternative shipping routes and ports in the Baltic region.\n*   **Reasoning:** Diversification enhances supply chain resilience.\n\n**Step 9: Enhance Risk Mitigation Measures:**\n\n*   **Action:**\n    *   Develop a comprehensive risk management plan that addresses potential disruptions such as port congestion, weather events, and equipment malfunctions.\n    *   Implement early warning systems to detect potential disruptions in advance.\n    *   Establish contingency plans for alternative transportation and warehousing options.\n*   **Reasoning:** Proactive risk management minimizes the impact of future disruptions.\n\n**Step 10: Strengthen Relationships with Suppliers and 3PL Providers:**\n\n*   **Action:**\n    *   Foster strong relationships with key suppliers and 3PL providers.\n    *   Establish clear communication channels and escalation procedures.\n    *   Regularly review performance and identify areas for improvement.\n*   **Reasoning:** Strong relationships facilitate collaboration and problem-solving during disruptions.\n\n## Recommendations\n\n*   **Prioritize Communication:** Maintain open and transparent communication with all stakeholders, including customers, suppliers, Nordic Lines, and BDS.\n*   **Negotiate Aggressively:** Negotiate with Nordic Lines and BDS to minimize demurrage charges and optimize logistics processes.\n*   **Diversify Supply Chain:** Reduce reliance on a single shipping route and port of entry. Explore alternative sourcing and transportation options.\n*   **Implement Risk Management Plan:** Develop a comprehensive risk management plan to address potential disruptions.\n*   **Strengthen Relationships:** Foster strong relationships with key suppliers and 3PL providers.\n*   **Regularly Review Contracts:** Ensure that contracts with Nordic Lines and BDS include clear clauses regarding delays, liability, and force majeure.\n\n## Risk Mitigation\n\n| Risk                                   | Mitigation Strategy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |\n| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Further Delays at Gdansk               | Secure priority berthing with port authorities. Pre-arrange trucking from Gdansk to distribution centers.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |\n| Higher Than Expected Demurrage Charges | Aggressively negotiate with Nordic Lines. Explore options for off-dock storage to minimize demurrage.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |\n| Increased Transportation Costs (Diversion) | Obtain competitive quotes from trucking companies. Optimize truck routes and load utilization.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |\n| Customs Clearance Issues (Diversion)   | Engage experienced customs brokers in Latvia/Lithuania. Ensure all documentation is accurate and complete.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |\n| Damage to Goods During Transshipment   | Ensure proper handling and securing of containers during transshipment. Obtain adequate insurance coverage.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |\n| Loss of Customer Confidence             | Proactively communicate with customers, offering realistic timelines and potential solutions. Provide compensation or discounts for delayed orders.                                                                                                                                                                                                                                                                                                                                                                                                                         |\n| Contractual Disputes                   | Review contracts with Nordic Lines and BDS carefully. Seek legal advice if necessary.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n| Security Risks (ISPS Code Violations) | Ensure all parties involved (Nordic Lines, BDS, and the ports) are compliant with the International Ship and Port Facility Security (ISPS) Code to prevent any security-related delays or disruptions. Regularly audit security procedures and protocols. Conduct background checks on personnel handling the shipments. Implement robust cybersecurity measures to protect against cyber threats. |\n",
+  "solution_complete": true,
+  "solution_metadata": {
+    "model": "gemini-2.0-flash-exp",
+    "timestamp": "2025-03-29T00:16:23.141803",
+    "datapoints_referenced": 30,
+    "solution_version": "2.0",
+    "generation_duration": 11.843954,
+    "prompt_tokens": 9857,
+    "solution_structure": "four_part"
+  }
+}

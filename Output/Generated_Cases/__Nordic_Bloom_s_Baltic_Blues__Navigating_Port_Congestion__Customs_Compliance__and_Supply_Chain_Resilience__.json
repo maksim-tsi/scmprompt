@@ -1,0 +1,809 @@
+{
+  "case_id": "case-20250329-210913-gkn185",
+  "checkpoint_file": "/Users/max/Documents/Code/magdeburg25/Data/Checkpoints/case_case-20250329-210913-gkn185.json",
+  "checkpoint_history": [
+    {
+      "stage": "initialized",
+      "timestamp": "2025-03-29T21:09:13.560192"
+    },
+    {
+      "stage": "draft",
+      "timestamp": "2025-03-29T21:09:19.366283"
+    },
+    {
+      "stage": "analyzed",
+      "timestamp": "2025-03-29T21:09:27.285858"
+    },
+    {
+      "stage": "datapoints_retrieved",
+      "timestamp": "2025-03-29T21:09:34.181856"
+    },
+    {
+      "stage": "enhanced",
+      "timestamp": "2025-03-29T21:09:41.111645"
+    },
+    {
+      "stage": "completed",
+      "timestamp": "2025-03-29T21:10:16.975407"
+    }
+  ],
+  "last_checkpoint": "completed",
+  "creation_timestamp": "2025-03-29T21:09:13.560186",
+  "checkpoint_time": "2025-03-29 21:10:16",
+  "example_inspiration": "CASE • Barbara’s Blouses",
+  "example_filename": "Case_Barbara_Blouse.md",
+  "draft_case": "**Case Title: The Baltic Bottleneck: Navigating Congestion and Costs for \"Nordic Bloom\"**\n\n**Scenario:** \"Nordic Bloom,\" a rapidly expanding Scandinavian furniture retailer specializing in minimalist, flat-pack designs, is experiencing significant supply chain disruptions impacting their ability to meet growing customer demand. The company relies heavily on sourcing furniture components from manufacturers in Vietnam and China, shipping them via container vessels to ports in Northern Europe and the Baltic Sea for final assembly and distribution.\n\n**Key Entities:**\n\n*   **Astrid Holm:** Head of Logistics at Nordic Bloom, responsible for overseeing the entire supply chain from factory to customer.\n*   **Oceanic Horizon Lines:** A major container shipping company operating regular services between Asia and Europe, used extensively by Nordic Bloom.\n*   **Hai Phong Furniture Co. Ltd:** A key supplier of wooden components to Nordic Bloom, based in Hai Phong, Vietnam.\n*   **Shanghai Metalworks Inc.:** A supplier of metal fittings and hardware to Nordic Bloom, based in Shanghai, China.\n*   **The \"MS Baltic Breeze\":** A fictional container vessel operated by Oceanic Horizon Lines, frequently used on the Asia-Europe route.\n*   **Port of Gdansk (Poland):** A major Baltic Sea port used by Nordic Bloom as a primary entry point for goods.\n*   **Port of Rotterdam (Netherlands):** A major North Sea port, an alternative entry point being considered by Nordic Bloom.\n*   **Baltic Distribution Solutions (BDS):** A fictional third-party logistics (3PL) provider offering warehousing and distribution services in the Baltic region.\n\n**Operational Challenges:**\n\n*   **Port Congestion:** The Port of Gdansk is experiencing increasing congestion due to a surge in import volumes and infrastructure limitations. This is leading to significant delays in unloading vessels, impacting Nordic Bloom's ability to receive components on time. The \"MS Baltic Breeze,\" carrying a critical shipment of bed frames from Hai Phong, is currently experiencing a 5-day delay waiting for a berth in Gdansk.\n*   **Rising Shipping Costs:** Oceanic Horizon Lines has announced a significant increase in freight rates due to higher fuel costs and increased demand. Astrid is concerned about the impact of these rising costs on Nordic Bloom's profitability.\n*   **Inventory Management:** Delays in receiving components are causing stockouts at Nordic Bloom's assembly plants, leading to production stoppages and lost sales. Astrid is struggling to balance the cost of holding excess inventory with the risk of stockouts.\n*   **Supplier Reliability:** Shanghai Metalworks Inc. has recently experienced a series of quality control issues, resulting in several shipments of defective hardware. This is further disrupting Nordic Bloom's production schedule and damaging its reputation.\n*   **Geopolitical Risk:** Increased tensions in the South China Sea are raising concerns about the potential for disruptions to shipping lanes. Astrid is worried about the impact of a potential conflict on Nordic Bloom's supply chain.\n\n**The Problem:**\n\nAstrid Holm needs to develop a comprehensive strategy to mitigate the risks and challenges facing Nordic Bloom's supply chain. She must find ways to reduce the impact of port congestion, control shipping costs, improve inventory management, ensure supplier reliability, and address geopolitical risks. Specifically, Astrid needs to determine whether to continue relying solely on the Port of Gdansk, consider diversifying to other ports like Rotterdam, renegotiate contracts with Oceanic Horizon Lines, and implement a more robust quality control program for suppliers. She must also assess the potential impact of geopolitical instability and develop contingency plans to minimize disruptions. The board is demanding a cost-effective and resilient solution that ensures Nordic Bloom can meet its delivery commitments and maintain its competitive edge in the Scandinavian furniture market.\n",
+  "creation_date": "2025-03-29",
+  "stage": "datapoints_retrieved",
+  "model": "gemini-2.0-flash-exp",
+  "generation_duration": 4.931887,
+  "draft_complete": true,
+  "analysis": "## Case Analysis\n\nThe draft case, \"The Baltic Bottleneck: Navigating Congestion and Costs for 'Nordic Bloom',\" presents a good starting point but needs further development to fully align with the provided guidelines.\n\n**Strengths:**\n\n*   **Realistic Scenario:** The case presents a plausible scenario faced by many companies relying on global supply chains.\n*   **Multiple Challenges:** It incorporates several interconnected challenges, including port congestion, rising shipping costs, inventory management, supplier reliability, and geopolitical risk.\n*   **Clear Problem Statement:** The problem Astrid faces is clearly defined, requiring a strategic solution.\n*   **Identified Entities:** The key entities involved are well-defined.\n\n**Weaknesses & Areas for Improvement:**\n\n*   **Lack of Focus on Documentation:** The case currently lacks a strong focus on import documentation workflows and the specific challenges related to documentation errors, delays, and inefficiencies. It mentions delays and costs, but not the *documentation* that causes or exacerbates them.\n*   **Missing Bill of Lading Focus:** The case doesn't explicitly address Bill of Lading issues or data quality problems. This is a significant omission given the emphasis on B/L challenges in the guidelines.\n*   **Limited Incoterms Consideration:** The case doesn't mention Incoterms or how they affect the responsibilities for documentation and costs.\n*   **No Digitalization/Technology Element:** The case doesn't explore the potential for digital solutions (e.g., Port Community Systems, EDI, OCR) to address the challenges.\n*   **Missing Checklist Opportunity:** The case could be enhanced by requiring the LLM to generate a checklist of documents needed for import clearance at Gdansk or Rotterdam, considering the specific goods (furniture components) and the origin countries (Vietnam, China).\n*   **No Workflow Detail:** The case lacks detail about the specific steps in the Import Documentation Workflow.\n\n**Recommendations for Improvement:**\n\n1.  **Integrate Documentation Challenges:** Introduce scenarios where documentation errors (e.g., incorrect weight, misdeclared HS codes on the commercial invoice, discrepancies between the packing list and the B/L) contribute to delays and costs.\n2.  **Incorporate Bill of Lading Errors:** Add a scenario where a B/L contains incorrect information (e.g., wrong consignee, inaccurate description of goods) leading to customs clearance issues.\n3.  **Specify Incoterms:** Define the Incoterms used in the contracts with Hai Phong Furniture Co. Ltd and Shanghai Metalworks Inc. and require the LLM to consider how these terms affect the responsibilities for documentation.\n4.  **Introduce Digitalization:** Explore the potential for implementing a Port Community System (PCS) at the Port of Gdansk or Rotterdam and assess the impact on efficiency and cost.\n5.  **Require Checklist Generation:** Task the LLM with generating a checklist of required documents for import clearance at Gdansk and Rotterdam, considering the origin of the goods and any specific regulations.\n6.  **Add Workflow Detail:** Describe the current Import Documentation Workflow and identify bottlenecks.\n7.  **Security Regulations:** Add a layer of complexity by mentioning security regulations (e.g., ISPS code, customs security filings) and their impact on documentation requirements.\n\n## Knowledge Gaps\n\n1.  **Import regulations for furniture components in Poland and the Netherlands:** Specific regulations related to wood products, metal fittings, and hardware.\n2.  **Customs clearance procedures at the Port of Gdansk and the Port of Rotterdam:** Detailed steps involved in clearing goods through customs at these ports.\n3.  **Required documentation for imports from Vietnam and China to Poland and the Netherlands:** Specific documents required for customs clearance, including commercial invoices, packing lists, certificates of origin, and Bills of Lading.\n4.  **Common Bill of Lading errors and their consequences:** Examples of frequent B/L errors and how they can impact customs clearance and delivery.\n5.  **Port Community Systems (PCS) in Gdansk and Rotterdam:** Information about the PCS used at these ports and their functionalities.\n6.  **EDI standards for import documentation:** Relevant EDI standards for exchanging import documentation electronically.\n7.  **Regulations related to ISPM 15 (International Standards for Phytosanitary Measures No. 15) for wood packaging:** Requirements for treating wood packaging to prevent the spread of pests.\n8.  **Security regulations for imports into the EU:** Requirements related to customs security filings and risk assessments.\n9.  **Impact of Incoterms on documentation responsibilities:** How different Incoterms allocate responsibilities for documentation between buyer and seller.\n10. **Specific regulations for furniture imports related to safety and environmental standards in the EU.**\n\n## Search Queries\n\n1.  \"Import regulations furniture components Poland\"\n2.  \"Customs clearance procedures Port of Gdansk\"\n3.  \"Required documents import China Poland\"\n4.  \"Bill of Lading errors customs clearance\"\n5.  \"Port Community System Gdansk Rotterdam\"\n6.  \"EDI standards import documentation\"\n7.  \"ISPM 15 regulations wood packaging EU\"\n8.  \"EU import security regulations\"\n9.  \"Incoterms documentation responsibilities\"\n10. \"Furniture import safety standards EU\"\n\n## Keywords\n\n*   Import Documentation\n*   Bill of Lading\n*   Port Congestion\n*   Port of Gdansk\n*   Port of Rotterdam\n*   Customs Clearance\n*   Incoterms\n*   Supply Chain Disruption\n*   EDI\n*   Port Community System (PCS)\n*   ISPM 15\n*   Security Regulations\n*   Furniture Components\n*   Vietnam\n*   China\n",
+  "analysis_timestamp": "2025-03-29T21:09:27.284074",
+  "analysis_duration": 7.14889,
+  "analysis_model": "gemini-2.0-flash-exp",
+  "search_queries": [
+    "\"Import regulations furniture components Poland\"",
+    "\"Customs clearance procedures Port of Gdansk\"",
+    "\"Required documents import China Poland\"",
+    "\"Bill of Lading errors customs clearance\"",
+    "\"Port Community System Gdansk Rotterdam\"",
+    "\"EDI standards import documentation\"",
+    "\"ISPM 15 regulations wood packaging EU\"",
+    "\"EU import security regulations\"",
+    "\"Incoterms documentation responsibilities\"",
+    "\"Furniture import safety standards EU\""
+  ],
+  "keywords": [
+    "*   Import Documentation",
+    "*   Bill of Lading",
+    "*   Port Congestion",
+    "*   Port of Gdansk",
+    "*   Port of Rotterdam",
+    "*   Customs Clearance",
+    "*   Incoterms",
+    "*   Supply Chain Disruption",
+    "*   EDI",
+    "*   Port Community System (PCS)",
+    "*   ISPM 15",
+    "*   Security Regulations",
+    "*   Furniture Components",
+    "*   Vietnam",
+    "*   China"
+  ],
+  "analysis_complete": true,
+  "relevant_datapoints": [
+    {
+      "datapoint_id": "INCO_DP_001_Definition_Incoterms",
+      "datapoint_type": "Definition",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Definition",
+      "regulation_detail": "Incoterms (International Commercial Terms) are a set of globally recognized rules defining buyer and seller responsibilities in international trade.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1]",
+      "keywords": [
+        "incoterms",
+        "definition",
+        "rules",
+        "international trade",
+        "icc"
+      ],
+      "search_score": 0.9042345,
+      "matched_query": "\"Incoterms documentation responsibilities\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "INCO_DP_002_Purpose_Incoterms_DefineResponsibilities",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Purpose",
+      "regulation_detail": "Incoterms provide a framework for understanding the division of responsibilities between buyer and seller.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1, 4]",
+      "keywords": [
+        "incoterms",
+        "purpose",
+        "responsibilities",
+        "obligations",
+        "buyer",
+        "seller"
+      ],
+      "search_score": 0.89901745,
+      "matched_query": "\"Incoterms documentation responsibilities\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "INCO_DP_003_Purpose_Incoterms_DefineCosts",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Purpose",
+      "regulation_detail": "Incoterms clarify the allocation of costs associated with the delivery of goods between buyer and seller.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1, 4]",
+      "keywords": [
+        "incoterms",
+        "purpose",
+        "costs",
+        "allocation",
+        "buyer",
+        "seller"
+      ],
+      "search_score": 0.8915206,
+      "matched_query": "\"Incoterms documentation responsibilities\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "INCO_DP_004_Purpose_Incoterms_DefineRisks",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Purpose",
+      "regulation_detail": "Incoterms define the point at which the risk of loss or damage to goods transfers from seller to buyer.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 1, 4]",
+      "keywords": [
+        "incoterms",
+        "purpose",
+        "risk",
+        "risk transfer",
+        "buyer",
+        "seller"
+      ],
+      "search_score": 0.8902086,
+      "matched_query": "\"Incoterms documentation responsibilities\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "INCO_DP_006_Nature_NonMandatory_AgreementBased",
+      "datapoint_type": "Fact",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "General",
+      "regulation_category": "General",
+      "regulation_subcategory": "Nature",
+      "regulation_detail": "Incoterms are not mandatory laws; they are guidelines parties mutually agree upon in a contract.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "Introduction [Source 6]",
+      "keywords": [
+        "incoterms",
+        "nature",
+        "non-mandatory",
+        "agreement",
+        "contract",
+        "guidelines"
+      ],
+      "search_score": 0.8740118,
+      "matched_query": "\"Incoterms documentation responsibilities\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ACCURACY_CRUCIAL_080",
+      "datapoint_type": "Guideline",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shippers, Freight Forwarders",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Handling Guidelines",
+      "regulation_detail": "Accuracy of all information on the Bill of Lading (B/L) is crucial and must be ensured to match other shipping documents, avoiding discrepancies and delays.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "4. Guidelines for Handling Bills of Lading - Accuracy",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "accuracy",
+        "data accuracy",
+        "document accuracy",
+        "guideline",
+        "shipping documents",
+        "avoid discrepancies"
+      ],
+      "search_score": 0.84668696,
+      "matched_query": "\"Bill of Lading errors customs clearance\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.83489454,
+      "matched_query": "\"Required documents import China Poland\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.825547,
+      "matched_query": "\"Required documents import China Poland\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.82451665,
+      "matched_query": "\"Customs clearance procedures Port of Gdansk\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_CUSTOMS_DOCUMENTS_CONTAINER_SHIPMENTS_ADDITIONAL_175",
+      "datapoint_type": "Document Requirement",
+      "port_area": "Yangshan Port Customs",
+      "relevant_entity": "Customs Declaration (Container Shipment)",
+      "regulation_category": "Customs Clearance",
+      "regulation_subcategory": "Documentation - Container Shipments (Additional)",
+      "regulation_detail": "For container shipments at Yangshan Port, additional documents beyond those for personal items are likely required for customs clearance.",
+      "source_document": "Documentation, Customs Clearance, and Cargo Handling Procedures at Yangshan Port",
+      "source_section": "Customs Clearance and Single Window System - Documentation Requirements",
+      "keywords": [
+        "customs clearance",
+        "documentation requirements",
+        "container shipments",
+        "additional documents",
+        "port-specific requirements",
+        "yangshan port customs",
+        "commercial shipments"
+      ],
+      "search_score": 0.82396746,
+      "matched_query": "\"Required documents import China Poland\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "RCT_CUSTOMS_DOCS_CUSTOMER_RESPONSIBILITY_039",
+      "datapoint_type": "Responsibility",
+      "relevant_entity": "Customer",
+      "regulation_category": "RCT Customs Formalities",
+      "regulation_subcategory": "Document Responsibility",
+      "source_document": "RCT General Conditions Analysis",
+      "regulation_detail": "The CUSTOMER is responsible for the accuracy and truthfulness of the customs documents, documents accompanying Cargo and additional information related to these documents, as well as the information on Cargo...submitted to RCT.",
+      "keywords": [
+        "RCT",
+        "customs documents",
+        "responsibility",
+        "customer obligation",
+        "accuracy",
+        "truthfulness"
+      ],
+      "search_score": 0.819518,
+      "matched_query": "\"Bill of Lading errors customs clearance\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "SINGAPORE_DP_PORT_CLEARANCE_CUSTOMS_COMPLIANCE_CONDITION_203",
+      "datapoint_type": "Requirement",
+      "port_area": "Singapore",
+      "relevant_entity": "Vessel Operator",
+      "regulation_category": "Port Clearance",
+      "regulation_subcategory": "Port Clearance Conditions",
+      "regulation_detail": "Port clearance not granted if owner/agent/master has not complied with Regulation of Imports and Exports Act.",
+      "source_document": "Maritime and Port Authority of Singapore Act 1996",
+      "source_section": "Section 46(5)(a) - No vessel to leave port without port clearance",
+      "keywords": [
+        "port clearance condition",
+        "customs compliance",
+        "import/export regulations",
+        "regulatory compliance"
+      ],
+      "search_score": 0.8148763,
+      "matched_query": "\"Bill of Lading errors customs clearance\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "INCO_DP_258_Insurance_General_BuyerMayNeedAdditionalCover",
+      "datapoint_type": "Guideline",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Insurance",
+      "regulation_subcategory": "CIF",
+      "regulation_detail": "Buyers using CIF should be aware the minimum cover may be insufficient and might need to arrange additional insurance.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "CIF Guidance Note [Source 31]",
+      "keywords": [
+        "cif",
+        "cost insurance freight",
+        "insurance",
+        "buyer",
+        "additional cover",
+        "minimum cover",
+        "icc c"
+      ],
+      "search_score": 0.8125453,
+      "matched_query": "\"Required documents import China Poland\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "INCO_DP_013_Obligation_EXW_Buyer_ImportClearance",
+      "datapoint_type": "Obligation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Obligations:Buyer",
+      "regulation_subcategory": "A7/B7 Export/Import Clearance",
+      "regulation_detail": "Under EXW, the buyer is responsible for handling and paying for import clearance in the destination country.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "EXW B7 [Source 1]",
+      "keywords": [
+        "exw",
+        "ex works",
+        "buyer",
+        "obligation",
+        "import clearance",
+        "formalities",
+        "customs"
+      ],
+      "search_score": 0.8100641,
+      "matched_query": "\"Required documents import China Poland\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_PORT_CUSTOMS_INSPECTION_009",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Customs Authority/Importer",
+      "regulation_category": "Customs Inspection - Rotterdam",
+      "regulation_subcategory": "Inspection Procedures",
+      "regulation_detail": "Customs inspections at Port of Rotterdam often use scans at terminals. Physical inspections possible. Importer pays for 3rd party inspection costs.",
+      "source_document": "Comparative Analysis Report",
+      "keywords": [
+        "customs inspection",
+        "scans",
+        "terminals",
+        "physical inspection",
+        "importer",
+        "inspection costs",
+        "Rotterdam"
+      ],
+      "search_score": 0.8059941,
+      "matched_query": "\"Customs clearance procedures Port of Gdansk\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ESSENTIAL_CARGO_RELEASE_075",
+      "datapoint_type": "Requirement",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Consignee",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Importance",
+      "regulation_detail": "Presenting the original Bill of Lading (B/L) is essential for the consignee to obtain release of cargo from the carrier at the destination port.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Importance",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "cargo release",
+        "delivery of goods",
+        "original B/L",
+        "consignee",
+        "requirement",
+        "port operations"
+      ],
+      "search_score": 0.8052418,
+      "matched_query": "\"Bill of Lading errors customs clearance\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.8000935,
+      "matched_query": "\"Bill of Lading errors customs clearance\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "HAMBURG_CUSTOMS_DP_PROCEDURE_TEMPORARYSTORAGE_DEFINITION_12",
+      "datapoint_type": "Customs Procedure",
+      "relevant_entity": "Goods (Customs Sea Port)",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Customs Temporary Storage",
+      "source_document": "Waltershof Customs Office - Information on Temporary Storage and General German Customs Clearance",
+      "regulation_detail": "Goods in customs seaport are under customs supervision and placed under temporary storage upon arrival (AT/B number).",
+      "keywords": [
+        "customs procedure",
+        "temporary storage",
+        "definition",
+        "customs seaport",
+        "AT/B number"
+      ],
+      "search_score": 0.798762,
+      "matched_query": "\"Customs clearance procedures Port of Gdansk\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "CONTAINER_HANDLING_IMPORT_CUSTOMS_CLEARANCE_112",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Import Container/Importer/Customs Authority",
+      "regulation_category": "Terminal Operations - Container Handling",
+      "regulation_subcategory": "Import Procedures - Customs Clearance",
+      "source_document": "Container Handling Report",
+      "regulation_detail": "Import containers at Riga Port terminals undergo Customs Clearance procedures if required, with customs operating 24/7 to facilitate the process.",
+      "keywords": [
+        "container handling",
+        "import",
+        "customs clearance",
+        "customs inspection",
+        "procedure",
+        "24/7 customs",
+        "terminal operations"
+      ],
+      "search_score": 0.79775584,
+      "matched_query": "\"Customs clearance procedures Port of Gdansk\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "HAMBURG_EUROGATE_DP_HANDLING_ORDER_EDI_04",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Goods Handling Orders",
+      "source_document": "EUROGATE Hamburg - General Terms & Conditions of Business Analysis",
+      "regulation_detail": "Orders for goods handling must be submitted by EDI or exceptionally in text form using stipulated forms/templates.",
+      "keywords": [
+        "goods handling",
+        "order",
+        "EDI",
+        "forms",
+        "templates"
+      ],
+      "search_score": 0.79530776,
+      "matched_query": "\"EDI standards import documentation\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "SINGAPORE_DP_PORT_CLEARANCE_FRESH_PCC_AFTER_48H_DEPARTURE_DELAY_213",
+      "datapoint_type": "Requirement",
+      "port_area": "Singapore",
+      "relevant_entity": "Vessel Operator",
+      "regulation_category": "Port Clearance",
+      "regulation_subcategory": "Port Clearance Certificate - Renewal",
+      "regulation_detail": "Fresh port clearance required if vessel does not leave within 48 hours (or shorter period) and if required by Port Master.",
+      "source_document": "Maritime and Port Authority of Singapore Act 1996",
+      "source_section": "Section 47(1) - Owner, agent or master of vessel not leaving within 48 hours after port clearance to return port clearance to Port Master",
+      "keywords": [
+        "port clearance certificate",
+        "fresh PCC",
+        "port clearance renewal",
+        "departure delay",
+        "48 hours",
+        "Port Master discretion"
+      ],
+      "search_score": 0.79308414,
+      "matched_query": "\"Customs clearance procedures Port of Gdansk\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_PORT_AUTHORITY_PRA_001",
+      "datapoint_type": "Port Authority Information",
+      "relevant_entity": "Port of Rotterdam",
+      "regulation_category": "Port Context - Rotterdam",
+      "regulation_subcategory": "Port Authority",
+      "regulation_detail": "Port of Rotterdam Authority (PRA) manages the Port of Rotterdam, prioritizing sustainability and efficient/safe services, and digitalization.",
+      "source_document": "Comparative Analysis Report",
+      "keywords": [
+        "port authority",
+        "PRA",
+        "Rotterdam",
+        "sustainability",
+        "digitalization",
+        "efficiency",
+        "safety"
+      ],
+      "search_score": 0.7863203,
+      "matched_query": "\"Port Community System Gdansk Rotterdam\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "ASIA_EUROPE_DIFF_REGULATORY_CHINA_STATE_CONTROLLED_031",
+      "datapoint_type": "Difference",
+      "port_area": [
+        "Shanghai",
+        "Rotterdam",
+        "Hamburg",
+        "Singapore"
+      ],
+      "relevant_entity": "Regulatory Environment",
+      "regulation_category": "Regulatory Environment",
+      "regulation_subcategory": "General Regulatory Style",
+      "regulation_detail": "China's customs regulations (Shanghai) are part of a comprehensive state-controlled system, potentially more bureaucratic compared to EU.",
+      "source_document": "Comparative Report",
+      "source_section": "7. Key Differences in Regulatory Environments and Operational Practices",
+      "keywords": [
+        "regulatory environment",
+        "state-controlled",
+        "bureaucracy",
+        "China",
+        "EU",
+        "comparison"
+      ],
+      "search_score": 0.7799736,
+      "matched_query": "\"EU import security regulations\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "INCO_DP_258_Insurance_General_BuyerMayNeedAdditionalCover",
+      "datapoint_type": "Guideline",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Insurance",
+      "regulation_subcategory": "CIF",
+      "regulation_detail": "Buyers using CIF should be aware the minimum cover may be insufficient and might need to arrange additional insurance.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "CIF Guidance Note [Source 31]",
+      "keywords": [
+        "cif",
+        "cost insurance freight",
+        "insurance",
+        "buyer",
+        "additional cover",
+        "minimum cover",
+        "icc c"
+      ],
+      "search_score": 0.77851677,
+      "matched_query": "\"EU import security regulations\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_KBO_DP_GENERAL_CUSTOMER_DATATRANSFER_EDI_PREFERRED_03",
+      "datapoint_type": "Recommendation",
+      "relevant_entity": "Customer",
+      "regulation_category": "IT Systems in Port",
+      "regulation_subcategory": "Data Exchange - EDI (Recommended)",
+      "source_document": "Hafen Hamburg e.V. - Kaibetriebsordnung Analysis",
+      "regulation_detail": "Customer is recommended to use quay operator's printed forms or EDI for application data transfer. EDI preferred if available.",
+      "keywords": [
+        "data transfer",
+        "EDI",
+        "forms",
+        "recommendation",
+        "communication"
+      ],
+      "search_score": 0.77497417,
+      "matched_query": "\"EDI standards import documentation\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "INCO_DP_103_Cost_FCA_ImportDutiesTaxes_Buyer",
+      "datapoint_type": "Cost Allocation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Cost Allocation",
+      "regulation_subcategory": "Import Duties and Taxes",
+      "regulation_detail": "Under FCA, the buyer bears the cost of import duties and taxes.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "FCA B9 / B7 [Source Table]",
+      "keywords": [
+        "fca",
+        "free carrier",
+        "cost",
+        "buyer",
+        "import duties",
+        "taxes",
+        "vat"
+      ],
+      "search_score": 0.7737915,
+      "matched_query": "\"EU import security regulations\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.7678251,
+      "matched_query": "\"EU import security regulations\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "INCO_DP_189_Cost_DAP_ImportDutiesTaxes_Buyer",
+      "datapoint_type": "Cost Allocation",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "Buyer",
+      "regulation_category": "Cost Allocation",
+      "regulation_subcategory": "Import Duties and Taxes",
+      "regulation_detail": "Under DAP, the buyer bears the cost of import duties and taxes.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "DAP B9 / B7 [Source 7, Table]",
+      "keywords": [
+        "dap",
+        "delivered at place",
+        "cost",
+        "buyer",
+        "import duties",
+        "taxes",
+        "vat"
+      ],
+      "search_score": 0.76479626,
+      "matched_query": "\"EU import security regulations\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_PORT_CALL_OPTIMIZATION_SYSTEM_067",
+      "datapoint_type": "Digital Platform",
+      "relevant_entity": "Port Stakeholder",
+      "regulation_category": "Port Operations - Rotterdam",
+      "regulation_subcategory": "Port Call Optimization (PCO)",
+      "regulation_detail": "Port Call Optimization (PCO) system in Rotterdam collects/shares dynamic port call data, static data (tides), to improve vessel scheduling and reduce port stay time.",
+      "source_document": "Perplexity Web Search - \"Inland Container Logistics at Port of Rotterdam: Operational Systems and Best Practices\" Report",
+      "keywords": [
+        "Port Call Optimization",
+        "PCO",
+        "port call data",
+        "static data",
+        "vessel scheduling",
+        "port stay time",
+        "Port of Rotterdam",
+        "port operations"
+      ],
+      "search_score": 0.7647857,
+      "matched_query": "\"Port Community System Gdansk Rotterdam\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_MARITIME_CODE_CARRIER_DUE_DILIGENCE_CARGO_FITNESS_022",
+      "datapoint_type": "Regulation",
+      "port_area": "International",
+      "relevant_entity": "Carrier",
+      "regulation_category": "Carrier Obligations",
+      "regulation_subcategory": "Due Diligence - Cargo Fitness",
+      "regulation_detail": "Carriers must ensure vessel components are 'fit and safe for their reception, carriage and preservation' of goods.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Maritime Code of the People's Republic of China: Fundamental Framework (Article 47)",
+      "keywords": [
+        "legal framework",
+        "maritime code",
+        "carrier obligation",
+        "due diligence",
+        "cargo fitness",
+        "vessel components",
+        "cargo reception",
+        "cargo carriage",
+        "cargo preservation",
+        "article 47"
+      ],
+      "search_score": 0.76311135,
+      "matched_query": "\"Furniture import safety standards EU\"",
+      "result_position": 1
+    }
+  ],
+  "datapoints_complete": true,
+  "search_metadata": {
+    "collection_name": "logistics_datapoints",
+    "queries_used": 10,
+    "total_results": 50,
+    "unique_datapoints": 30,
+    "retrieval_duration": 6.891232,
+    "timestamp": "2025-03-29T21:09:34.180205",
+    "query_stats": [
+      {
+        "query": "\"Import regulations furniture components Poland\"",
+        "results_found": 5,
+        "top_score": 0.7443961
+      },
+      {
+        "query": "\"Customs clearance procedures Port of Gdansk\"",
+        "results_found": 5,
+        "top_score": 0.82451665
+      },
+      {
+        "query": "\"Required documents import China Poland\"",
+        "results_found": 5,
+        "top_score": 0.83489454
+      },
+      {
+        "query": "\"Bill of Lading errors customs clearance\"",
+        "results_found": 5,
+        "top_score": 0.84668696
+      },
+      {
+        "query": "\"Port Community System Gdansk Rotterdam\"",
+        "results_found": 5,
+        "top_score": 0.7863203
+      },
+      {
+        "query": "\"EDI standards import documentation\"",
+        "results_found": 5,
+        "top_score": 0.79530776
+      },
+      {
+        "query": "\"ISPM 15 regulations wood packaging EU\"",
+        "results_found": 5,
+        "top_score": 0.7293019
+      },
+      {
+        "query": "\"EU import security regulations\"",
+        "results_found": 5,
+        "top_score": 0.7799736
+      },
+      {
+        "query": "\"Incoterms documentation responsibilities\"",
+        "results_found": 5,
+        "top_score": 0.9042345
+      },
+      {
+        "query": "\"Furniture import safety standards EU\"",
+        "results_found": 5,
+        "top_score": 0.76311135
+      }
+    ]
+  },
+  "title": "**Nordic Bloom's Baltic Blues: Navigating Port Congestion, Customs Compliance, and Supply Chain Resilience**",
+  "enhanced_case": "**Scenario:** \"Nordic Bloom,\" a rapidly expanding Scandinavian furniture retailer specializing in minimalist, flat-pack designs, is experiencing significant supply chain disruptions impacting their ability to meet growing customer demand. The company relies heavily on sourcing furniture components from manufacturers in Vietnam and China, shipping them via container vessels to ports in Northern Europe and the Baltic Sea for final assembly and distribution.\n\n**Key Entities:**\n\n*   **Astrid Holm:** Head of Logistics at Nordic Bloom, responsible for overseeing the entire supply chain from factory to customer.\n*   **Oceanic Horizon Lines:** A major container shipping company operating regular services between Asia and Europe, used extensively by Nordic Bloom.\n*   **Hai Phong Furniture Co. Ltd:** A key supplier of wooden components to Nordic Bloom, based in Hai Phong, Vietnam.\n*   **Shanghai Metalworks Inc.:** A supplier of metal fittings and hardware to Nordic Bloom, based in Shanghai, China.\n*   **The \"MS Baltic Breeze\":** A fictional container vessel operated by Oceanic Horizon Lines, frequently used on the Asia-Europe route.\n*   **Port of Gdansk (Poland):** A major Baltic Sea port used by Nordic Bloom as a primary entry point for goods.\n*   **Port of Rotterdam (Netherlands):** A major North Sea port, an alternative entry point being considered by Nordic Bloom.\n*   **Baltic Distribution Solutions (BDS):** A fictional third-party logistics (3PL) provider offering warehousing and distribution services in the Baltic region.\n\n**Operational Challenges:**\n\n*   **Port Congestion & Customs Delays:** The Port of Gdansk is experiencing increasing congestion due to a surge in import volumes and infrastructure limitations. This is leading to significant delays in unloading vessels, impacting Nordic Bloom's ability to receive components on time. The \"MS Baltic Breeze,\" carrying a critical shipment of bed frames from Hai Phong, is currently experiencing a 5-day delay waiting for a berth in Gdansk, *further compounded by longer-than-usual customs clearance times*. *The customs authorities have indicated a higher inspection rate due to increased scrutiny of goods originating from Southeast Asia*. Astrid is concerned that the increased inspection rate may be due to inaccurate or incomplete Customs Declarations, particularly regarding valuation and origin of the goods.\n*   **Rising Shipping Costs & Incoterms Impact:** Oceanic Horizon Lines has announced a significant increase in freight rates due to higher fuel costs and increased demand. Astrid is concerned about the impact of these rising costs on Nordic Bloom's profitability. *The majority of Nordic Bloom's shipments are under CIF (Cost, Insurance, and Freight) Incoterms, placing the responsibility for insurance and freight costs on the supplier, but ultimately impacting Nordic Bloom's landed cost*. Astrid needs to analyze the potential benefits of switching to FOB (Free on Board) Incoterms for greater cost control, but this would shift the responsibility for arranging and paying for shipping and insurance to Nordic Bloom.\n*   **Inventory Management & Buffer Stock Costs:** Delays in receiving components are causing stockouts at Nordic Bloom's assembly plants, leading to production stoppages and lost sales. Astrid is struggling to balance the cost of holding excess inventory with the risk of stockouts. *The financial department is pushing back on increasing buffer stock levels, citing increased warehousing costs and potential obsolescence*. Astrid needs to find a way to optimize inventory levels while mitigating the impact of supply chain disruptions.\n*   **Supplier Reliability & Quality Control:** Shanghai Metalworks Inc. has recently experienced a series of quality control issues, resulting in several shipments of defective hardware. This is further disrupting Nordic Bloom's production schedule and damaging its reputation. *The defective hardware has resulted in costly rework and product recalls, impacting Nordic Bloom's brand image*. Astrid needs to implement a more robust quality control program for suppliers, including pre-shipment inspections and stricter quality standards.\n*   **Geopolitical Risk & Trade Compliance:** Increased tensions in the South China Sea are raising concerns about the potential for disruptions to shipping lanes. Astrid is worried about the impact of a potential conflict on Nordic Bloom's supply chain. *Furthermore, Astrid is becoming increasingly aware of the need to ensure full compliance with EU trade regulations and sanctions related to certain materials and countries*. She needs to ensure that all suppliers are compliant with these regulations and that Nordic Bloom has a robust trade compliance program in place.\n\n**The Problem:**\n\nAstrid Holm needs to develop a comprehensive strategy to mitigate the risks and challenges facing Nordic Bloom's supply chain. She must find ways to reduce the impact of port congestion and customs delays, control shipping costs and manage Incoterms effectively, improve inventory management while minimizing costs, ensure supplier reliability and quality control, and address geopolitical risks and ensure trade compliance. Specifically, Astrid needs to determine whether to continue relying solely on the Port of Gdansk, consider diversifying to other ports like Rotterdam, renegotiate contracts with Oceanic Horizon Lines and explore alternative Incoterms, implement a more robust quality control program for suppliers, invest in a trade compliance solution, and develop contingency plans for potential disruptions in the South China Sea. The board is demanding a cost-effective and resilient solution that ensures Nordic Bloom can meet its delivery commitments and maintain its competitive edge in the Scandinavian furniture market. Astrid must also consider the implications of *ISPS (International Ship and Port Facility Security) Code* compliance at all ports of call, ensuring that all security measures are in place to protect the supply chain from potential threats. She also needs to consider the impact of *the EU's Carbon Border Adjustment Mechanism (CBAM)*, which will eventually require importers to pay a carbon levy on goods imported from countries with less stringent environmental regulations.",
+  "domain_guideline": "maritime",
+  "enhancement_metadata": {
+    "model": null,
+    "timestamp": "2025-03-29 21:09:41",
+    "datapoints_used": 30,
+    "guideline_type": "maritime",
+    "guideline_chunks": 5,
+    "enhancement_duration": 6.338435
+  },
+  "enhancement_complete": true,
+  "solution": "## Executive Summary\n\nNordic Bloom is facing significant supply chain disruptions due to port congestion, customs delays, rising shipping costs, supplier quality issues, and geopolitical risks. This solution proposes a multi-faceted approach to address these challenges, focusing on port diversification, Incoterms optimization, enhanced quality control, trade compliance, inventory management improvements, and risk mitigation strategies. The solution incorporates relevant regulations, including ISPS Code, EU trade regulations, and considerations for the upcoming EU CBAM. By implementing these recommendations, Nordic Bloom can improve supply chain resilience, reduce costs, and maintain its competitive edge.\n\n## Detailed Solution Steps\n\n**Step 1: Mitigating Port Congestion and Customs Delays**\n\n*   **Action:** Diversify port usage by incorporating the Port of Rotterdam as an alternative to Gdansk.\n    *   **Reasoning:** Reduces reliance on a single congested port, spreading risk and potentially shortening lead times. Rotterdam's larger capacity and advanced infrastructure can handle higher volumes more efficiently.\n    *   **Regulatory Reference:** *ISPS Code* compliance is crucial at both Gdansk and Rotterdam. Ensure both ports have robust security measures in place, including access control, surveillance, and security plans.\n    *   **Implementation:**\n        *   Conduct a cost-benefit analysis comparing shipping costs, transit times, and customs clearance efficiency between Gdansk and Rotterdam.\n        *   Negotiate contracts with Baltic Distribution Solutions (BDS) to provide warehousing and distribution services from both Gdansk and potentially Rotterdam.\n        *   Pilot shipments through Rotterdam to assess its suitability and identify any potential challenges.\n\n*   **Action:** Improve Customs Declaration accuracy and compliance.\n    *   **Reasoning:** Reduces the likelihood of customs inspections and delays. Accurate declarations ensure compliance with EU trade regulations and prevent potential penalties.\n    *   **Regulatory Reference:** Compliance with the *Union Customs Code (UCC)* is paramount. This includes accurate valuation, classification (HS codes), origin determination, and declaration of goods.\n    *   **Implementation:**\n        *   Conduct a thorough audit of current Customs Declaration processes.\n        *   Provide training to relevant staff on proper Customs Declaration procedures, including valuation methods and origin rules.\n        *   Invest in a Customs compliance software solution to automate declaration processes and ensure accuracy.\n        *   Work closely with Hai Phong Furniture Co. Ltd and Shanghai Metalworks Inc. to ensure they provide accurate and complete documentation, including certificates of origin and detailed invoices.\n\n**Step 2: Controlling Shipping Costs and Managing Incoterms**\n\n*   **Action:** Negotiate freight rates with Oceanic Horizon Lines and explore alternative shipping lines.\n    *   **Reasoning:** Leverages bargaining power to reduce shipping costs. Exploring alternative options provides competitive pricing and reduces dependence on a single carrier.\n    *   **Regulatory Reference:** Compliance with *EU competition law* is essential when negotiating contracts with shipping lines. Ensure that agreements do not violate antitrust regulations.\n    *   **Implementation:**\n        *   Benchmark Oceanic Horizon Lines' rates against other major container shipping companies.\n        *   Consolidate shipments where possible to achieve economies of scale.\n        *   Explore long-term contracts with guaranteed rates to mitigate future price increases.\n\n*   **Action:** Evaluate a shift from CIF to FOB Incoterms.\n    *   **Reasoning:** Provides greater control over shipping and insurance costs, allowing Nordic Bloom to negotiate directly with carriers and insurers.\n    *   **Regulatory Reference:** *Incoterms 2020* defines the responsibilities and liabilities of buyers and sellers in international trade. Ensure a clear understanding of the implications of each Incoterm.\n    *   **Implementation:**\n        *   Conduct a detailed cost analysis comparing the total landed cost under CIF and FOB Incoterms.\n        *   Assess Nordic Bloom's internal capabilities to manage shipping and insurance arrangements.\n        *   Negotiate revised pricing with Hai Phong Furniture Co. Ltd and Shanghai Metalworks Inc. to reflect the change in Incoterms.\n        *   If switching to FOB, establish relationships with reliable freight forwarders and insurance providers.\n\n**Step 3: Improving Inventory Management**\n\n*   **Action:** Implement a demand forecasting system and optimize safety stock levels.\n    *   **Reasoning:** Reduces the risk of stockouts while minimizing inventory holding costs. Accurate forecasting allows for better planning and resource allocation.\n    *   **Regulatory Reference:** No specific regulations directly apply to inventory management, but compliance with *accounting standards* is crucial for accurate inventory valuation.\n    *   **Implementation:**\n        *   Invest in a demand forecasting software solution that integrates with Nordic Bloom's ERP system.\n        *   Analyze historical sales data and market trends to improve forecast accuracy.\n        *   Calculate optimal safety stock levels based on lead times, demand variability, and service level targets.\n        *   Implement a regular review process to adjust safety stock levels as needed.\n\n*   **Action:** Improve communication and collaboration with suppliers.\n    *   **Reasoning:** Enhances visibility into supplier production schedules and potential delays, allowing for proactive adjustments to inventory plans.\n    *   **Regulatory Reference:** No specific regulations apply, but *contract law* governs the relationship between Nordic Bloom and its suppliers.\n    *   **Implementation:**\n        *   Establish regular communication channels with Hai Phong Furniture Co. Ltd and Shanghai Metalworks Inc.\n        *   Implement a vendor-managed inventory (VMI) program, where suppliers are responsible for managing inventory levels at Nordic Bloom's facilities.\n        *   Share demand forecasts with suppliers to improve their production planning.\n\n**Step 4: Ensuring Supplier Reliability and Quality Control**\n\n*   **Action:** Implement a robust quality control program, including pre-shipment inspections.\n    *   **Reasoning:** Reduces the risk of receiving defective goods, minimizing rework, product recalls, and reputational damage.\n    *   **Regulatory Reference:** Compliance with *EU product safety regulations* is essential. Ensure that all furniture components meet the required safety standards.\n    *   **Implementation:**\n        *   Develop clear quality standards and specifications for all components.\n        *   Conduct pre-shipment inspections at Hai Phong Furniture Co. Ltd and Shanghai Metalworks Inc. to verify compliance with quality standards.\n        *   Implement a system for tracking and resolving quality issues.\n        *   Consider using a third-party inspection agency to provide independent quality assurance.\n\n*   **Action:** Diversify the supplier base.\n    *   **Reasoning:** Reduces reliance on a single supplier and mitigates the risk of supply disruptions due to quality issues or other factors.\n    *   **Regulatory Reference:** No specific regulations apply, but *contract law* governs the relationship between Nordic Bloom and its suppliers.\n    *   **Implementation:**\n        *   Identify and qualify alternative suppliers for critical components.\n        *   Gradually shift a portion of orders to new suppliers to reduce dependence on existing suppliers.\n\n**Step 5: Addressing Geopolitical Risks and Ensuring Trade Compliance**\n\n*   **Action:** Develop contingency plans for potential disruptions in the South China Sea.\n    *   **Reasoning:** Mitigates the impact of potential conflicts on shipping lanes.\n    *   **Regulatory Reference:** No specific regulations apply, but *international maritime law* governs the freedom of navigation on the high seas.\n    *   **Implementation:**\n        *   Identify alternative shipping routes that avoid the South China Sea.\n        *   Establish relationships with alternative suppliers in other regions.\n        *   Increase safety stock levels of critical components to buffer against potential disruptions.\n\n*   **Action:** Implement a comprehensive trade compliance program.\n    *   **Reasoning:** Ensures compliance with EU trade regulations and sanctions, avoiding potential penalties and reputational damage.\n    *   **Regulatory Reference:** Compliance with *EU trade regulations and sanctions* is mandatory. This includes screening suppliers and customers against restricted party lists, obtaining necessary export licenses, and complying with customs regulations.\n    *   **Implementation:**\n        *   Invest in a trade compliance software solution to automate screening and compliance processes.\n        *   Conduct due diligence on all suppliers to ensure they comply with EU trade regulations and sanctions.\n        *   Provide training to relevant staff on trade compliance requirements.\n        *   Establish a process for monitoring and updating trade compliance policies and procedures.\n\n*   **Action:** Prepare for the EU Carbon Border Adjustment Mechanism (CBAM).\n    *   **Reasoning:** Reduces the potential financial impact of the CBAM by identifying and mitigating carbon emissions in the supply chain.\n    *   **Regulatory Reference:** The *EU CBAM regulation* will require importers to pay a carbon levy on goods imported from countries with less stringent environmental regulations.\n    *   **Implementation:**\n        *   Assess the carbon footprint of Hai Phong Furniture Co. Ltd and Shanghai Metalworks Inc.'s production processes.\n        *   Encourage suppliers to adopt more sustainable production practices to reduce their carbon emissions.\n        *   Explore alternative sourcing options from countries with lower carbon emissions.\n        *   Develop a strategy for managing the financial impact of the CBAM.\n\n## Recommendations\n\n*   **Prioritize Customs Compliance:** Invest in a robust customs compliance program and software solution to minimize delays and penalties.\n*   **Diversify Ports and Suppliers:** Reduce reliance on single points of failure by diversifying port usage and supplier base.\n*   **Negotiate Favorable Incoterms:** Evaluate a shift to FOB Incoterms to gain greater control over shipping and insurance costs.\n*   **Implement a Quality Control Program:** Ensure product quality and reduce recalls through pre-shipment inspections and supplier audits.\n*   **Prepare for CBAM:** Assess and mitigate the carbon footprint of the supply chain to minimize the impact of the EU Carbon Border Adjustment Mechanism.\n*   **Invest in Technology:** Implement demand forecasting, inventory management, and trade compliance software solutions to improve efficiency and visibility.\n*   **Foster Collaboration:** Enhance communication and collaboration with suppliers and logistics providers to improve supply chain coordination.\n\n## Risk Mitigation\n\n| Risk                                  | Mitigation Strategy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               the\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |\n    |",
+  "solution_complete": true,
+  "solution_metadata": {
+    "model": "gemini-2.0-flash-exp",
+    "timestamp": "2025-03-29T21:10:16.972831",
+    "datapoints_referenced": 30,
+    "solution_version": "2.0",
+    "generation_duration": 35.858137,
+    "prompt_tokens": 8042,
+    "solution_structure": "four_part"
+  }
+}

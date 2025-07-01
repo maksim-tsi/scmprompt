@@ -1,0 +1,790 @@
+{
+  "case_id": "case-20250329-090028-g83pyl",
+  "checkpoint_file": "/Users/max/Documents/Code/magdeburg25/Data/Checkpoints/case_case-20250329-090028-g83pyl.json",
+  "checkpoint_history": [
+    {
+      "stage": "initialized",
+      "timestamp": "2025-03-29T09:00:28.324885"
+    },
+    {
+      "stage": "draft",
+      "timestamp": "2025-03-29T09:00:33.343223"
+    },
+    {
+      "stage": "analyzed",
+      "timestamp": "2025-03-29T09:00:39.897234"
+    },
+    {
+      "stage": "datapoints_retrieved",
+      "timestamp": "2025-03-29T09:00:47.655352"
+    },
+    {
+      "stage": "enhanced",
+      "timestamp": "2025-03-29T09:00:56.999889"
+    },
+    {
+      "stage": "completed",
+      "timestamp": "2025-03-29T09:01:17.599842"
+    }
+  ],
+  "last_checkpoint": "completed",
+  "creation_timestamp": "2025-03-29T09:00:28.324879",
+  "checkpoint_time": "2025-03-29 09:01:17",
+  "example_inspiration": "CASE • Manwell Toy Importers",
+  "example_filename": "Case_Manwell_Toy.md",
+  "draft_case": "**Scenario:** Baltic Breeze Seafood, a growing seafood distributor based in Riga, Latvia, is experiencing significant challenges in managing its frozen seafood imports from various suppliers in Southeast Asia. The company imports a variety of products, including frozen shrimp, pangasius, and tuna, primarily sourced from Vietnam, Thailand, and Indonesia.\n\n**Entities:**\n\n*   Baltic Breeze Seafood (Importer/Distributor)\n*   Golden Ocean Fisheries (Vietnamese Shrimp Supplier)\n*   Siam Marine Products (Thai Tuna Supplier)\n*   IndoAqua Farms (Indonesian Pangasius Supplier)\n*   OceanEx Logistics (Freight Forwarder)\n*   Port of Riga\n*   Port of Rotterdam (Alternative)\n*   \"Baltic Mariner\" (Fictional Container Vessel - operated by Nordic Shipping Lines)\n*   Nordic Shipping Lines (Fictional Shipping Company)\n\n**Regulatory Issues:** Baltic Breeze Seafood is subject to strict EU regulations regarding food safety and traceability. Specifically, they must comply with the EU's Rapid Alert System for Food and Feed (RASFF) and maintain detailed records of the origin and handling of their seafood products. Recent inspections have highlighted some discrepancies in temperature control documentation, leading to warnings.\n\n**Problem:** Baltic Breeze is facing rising transportation costs and increasing delays in receiving its shipments. Currently, all goods are consolidated in Singapore by OceanEx Logistics and shipped directly to the Port of Riga on the \"Baltic Mariner,\" a vessel operated by Nordic Shipping Lines. However, the transit time is lengthy (approximately 35-40 days), and the company has experienced several instances of temperature excursions during transit, resulting in rejected shipments and significant financial losses. Furthermore, congestion at the Port of Riga is becoming increasingly problematic, causing further delays and additional storage costs.\n\nBaltic Breeze is considering an alternative routing strategy: shipping goods to the Port of Rotterdam and then utilizing short-sea shipping to Riga. This option potentially offers faster transit times and reduced port congestion but introduces additional handling and transshipment costs. They also need to improve their temperature monitoring and documentation processes to avoid further regulatory issues.\n\nSpecifically, Baltic Breeze needs to determine:\n\n1.  Whether the Rotterdam-Riga route offers a cost-effective and time-efficient alternative to the current Singapore-Riga route, considering all relevant costs, including freight rates, port charges, inland transportation, and potential inventory holding costs.\n2.  How to improve temperature control and documentation throughout the supply chain to ensure compliance with EU regulations and minimize the risk of rejected shipments. This includes evaluating different temperature monitoring technologies and implementing robust data logging procedures.\n3.  How to negotiate better terms with their suppliers and OceanEx Logistics to mitigate the impact of rising freight rates and potential delays.\n4.  The impact of potential future disruptions, such as strikes at major European ports or geopolitical instability in the Baltic Sea region, on their supply chain resilience.\n",
+  "creation_date": "2025-03-29",
+  "stage": "datapoints_retrieved",
+  "model": "gemini-2.0-flash-exp",
+  "generation_duration": 4.074748,
+  "draft_complete": true,
+  "analysis": "## Case Analysis\n\nThe draft case is a good starting point, but it needs further development to fully align with the provided guidelines. Here's a breakdown:\n\n*   **Strengths:** The case provides a realistic scenario with a clear problem statement and specific questions. It identifies relevant entities and regulatory issues (EU food safety, RASFF). The consideration of alternative routes (Riga vs. Rotterdam) and potential disruptions adds complexity.\n*   **Weaknesses:**\n    *   **Import Documentation Workflow:** The case mentions documentation but doesn't explicitly integrate the \"Import Documentation Workflow\" concept. It needs to be more explicit about the steps involved and where documentation plays a critical role.\n    *   **Comprehensive Checklist:** The case doesn't explicitly call for the generation of a comprehensive checklist. This is a key requirement of the guidelines.\n    *   **Incoterms:** The case doesn't mention Incoterms, which are crucial for defining responsibilities for documentation and costs.\n    *   **Bill of Lading Errors:** The case doesn't focus on Bill of Lading errors or data quality issues, a key area of focus in the guidelines.\n    *   **Digitalization:** While the case mentions delays and inefficiencies, it doesn't explicitly explore the potential of digitalization (PCS, EDI, OCR) to solve these problems.\n    *   **Security Regulations:** The case doesn't explicitly mention security regulations at the EU port of arrival.\n*   **Improvements Needed:**\n    *   **Incorporate Incoterms:** Specify an Incoterm for each supplier relationship (e.g., CIF Riga for Golden Ocean Fisheries). This will drive different documentation responsibilities.\n    *   **Add B/L Errors:** Introduce a scenario where there's a discrepancy in the Bill of Lading (e.g., incorrect weight, misdescription of goods, incorrect consignee).\n    *   **Demand Checklists:** Explicitly ask the LLM to generate checklists for both the Singapore-Riga route and the Rotterdam-Riga route, highlighting the differences in documentation requirements.\n    *   **Focus on Workflow:** Frame the questions around the Import Documentation Workflow. For example, \"Identify the key documents required at each stage of the Import Documentation Workflow for the Singapore-Riga route.\"\n    *   **Explore Digitalization:** Ask the LLM to recommend digital solutions (PCS, EDI, OCR) to improve efficiency and reduce errors in the documentation process.\n    *   **Address Security:** Include a requirement to identify security-related documentation requirements at the Port of Riga and/or Rotterdam.\n    *   **Specify Temperature Monitoring:** Detail the current temperature monitoring process (or lack thereof) and ask the LLM to recommend best practices and technologies.\n\n## Knowledge Gaps\n\n1.  **Specific EU regulations regarding temperature control and documentation for frozen seafood imports.** (Beyond just RASFF, what are the specific requirements?)\n2.  **Port of Riga and Port of Rotterdam specific documentation requirements for seafood imports.** (Including security requirements)\n3.  **Common Bill of Lading errors specific to seafood shipments.**\n4.  **Best practices for temperature monitoring and data logging in the seafood supply chain.**\n5.  **Costs associated with different temperature monitoring technologies.**\n6.  **Specific requirements for seafood traceability in the EU.**\n7.  **The Import Documentation Workflow for the Port of Riga and Port of Rotterdam.**\n8.  **Security regulations at the Port of Riga and Port of Rotterdam related to cargo imports.**\n9.  **EDI and PCS systems used at the Port of Riga and Port of Rotterdam.**\n10. **Impact of geopolitical instability in the Baltic Sea region on shipping routes and insurance costs.**\n\n## Search Queries\n\n1.  \"EU regulations frozen seafood import temperature control\"\n2.  \"Port of Riga import documentation requirements seafood\"\n3.  \"Port of Rotterdam import documentation requirements seafood\"\n4.  \"EU RASFF seafood traceability requirements\"\n5.  \"Common Bill of Lading errors seafood shipments\"\n6.  \"Best practices temperature monitoring seafood supply chain\"\n7.  \"Seafood import security regulations EU\"\n8.  \"Port Community System Riga\"\n9.  \"EDI integration import documentation\"\n10. \"Impact Baltic Sea geopolitical instability shipping\"\n\n## Keywords\n\n*   Seafood Import\n*   Frozen Seafood\n*   EU Regulations\n*   RASFF\n*   Temperature Control\n*   Traceability\n*   Bill of Lading\n*   Port of Riga\n*   Port of Rotterdam\n*   Import Documentation Workflow\n*   Incoterms (CIF, DAP, DDP)\n*   EDI\n*   Port Community System (PCS)\n*   Security Regulations\n*   Baltic Sea\n",
+  "analysis_timestamp": "2025-03-29T09:00:39.895874",
+  "analysis_duration": 5.908888,
+  "analysis_model": "gemini-2.0-flash-exp",
+  "search_queries": [
+    "\"EU regulations frozen seafood import temperature control\"",
+    "\"Port of Riga import documentation requirements seafood\"",
+    "\"Port of Rotterdam import documentation requirements seafood\"",
+    "\"EU RASFF seafood traceability requirements\"",
+    "\"Common Bill of Lading errors seafood shipments\"",
+    "\"Best practices temperature monitoring seafood supply chain\"",
+    "\"Seafood import security regulations EU\"",
+    "\"Port Community System Riga\"",
+    "\"EDI integration import documentation\"",
+    "\"Impact Baltic Sea geopolitical instability shipping\""
+  ],
+  "keywords": [
+    "*   Seafood Import",
+    "*   Frozen Seafood",
+    "*   EU Regulations",
+    "*   RASFF",
+    "*   Temperature Control",
+    "*   Traceability",
+    "*   Bill of Lading",
+    "*   Port of Riga",
+    "*   Port of Rotterdam",
+    "*   Import Documentation Workflow",
+    "*   Incoterms (CIF",
+    "DAP",
+    "DDP)",
+    "*   EDI",
+    "*   Port Community System (PCS)",
+    "*   Security Regulations",
+    "*   Baltic Sea"
+  ],
+  "analysis_complete": true,
+  "relevant_datapoints": [
+    {
+      "datapoint_id": "IMO_DP_B_L_ACCURACY_CRUCIAL_080",
+      "datapoint_type": "Guideline",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shippers, Freight Forwarders",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Handling Guidelines",
+      "regulation_detail": "Accuracy of all information on the Bill of Lading (B/L) is crucial and must be ensured to match other shipping documents, avoiding discrepancies and delays.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "4. Guidelines for Handling Bills of Lading - Accuracy",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "accuracy",
+        "data accuracy",
+        "document accuracy",
+        "guideline",
+        "shipping documents",
+        "avoid discrepancies"
+      ],
+      "search_score": 0.8486037,
+      "matched_query": "\"Common Bill of Lading errors seafood shipments\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_CUSTOMS_IMPORT_DECLARATION_012",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Importer/Customs Broker",
+      "regulation_category": "Customs Declaration - Netherlands",
+      "regulation_subcategory": "Import Declaration Filing",
+      "regulation_detail": "Import declaration must be filed electronically with Dutch Customs for goods entering Port of Rotterdam. EORI number is mandatory.",
+      "source_document": "Comparative Analysis Report",
+      "keywords": [
+        "import declaration",
+        "electronic filing",
+        "Dutch Customs",
+        "EORI number",
+        "customs declaration",
+        "procedure",
+        "Rotterdam"
+      ],
+      "search_score": 0.8384682,
+      "matched_query": "\"Port of Rotterdam import documentation requirements seafood\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "CUSTOMS_DOC_PHYTOSANITARY_CERTIFICATE_FOOD_084",
+      "datapoint_type": "Document Requirement",
+      "document_type": "Phytosanitary Certificate",
+      "relevant_entity": "Importer (Food Products)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Special Cargo Types - Food Products",
+      "source_document": "Customs Declaration Report",
+      "regulation_detail": "For import of plant materials at the Port of Riga, an original Phytosanitary Certificate from the origin country is required for customs clearance.",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "Phytosanitary Certificate",
+        "food products",
+        "agricultural products",
+        "document requirement",
+        "certificate"
+      ],
+      "search_score": 0.83011836,
+      "matched_query": "\"Port of Riga import documentation requirements seafood\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_PORT_CUSTOMS_INSPECTION_009",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Customs Authority/Importer",
+      "regulation_category": "Customs Inspection - Rotterdam",
+      "regulation_subcategory": "Inspection Procedures",
+      "regulation_detail": "Customs inspections at Port of Rotterdam often use scans at terminals. Physical inspections possible. Importer pays for 3rd party inspection costs.",
+      "source_document": "Comparative Analysis Report",
+      "keywords": [
+        "customs inspection",
+        "scans",
+        "terminals",
+        "physical inspection",
+        "importer",
+        "inspection costs",
+        "Rotterdam"
+      ],
+      "search_score": 0.8197876,
+      "matched_query": "\"Port of Rotterdam import documentation requirements seafood\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_TRANSHIPMENT_DOC_PORTBASE_SEAINSEEOUT_051",
+      "datapoint_type": "Documentation Requirement",
+      "relevant_entity": "Container Transhipment",
+      "regulation_category": "Port Operations - Rotterdam",
+      "regulation_subcategory": "Transhipment Documentation",
+      "regulation_detail": "Container transhipment operations in Rotterdam require documentation to reflect 'Sea in/Sea out' status in the Portbase register.",
+      "source_document": "Perplexity Web Search - \"Procedures and Documentation for Container Transhipment in the Port of Rotterdam\" Report",
+      "keywords": [
+        "container transhipment",
+        "documentation",
+        "Sea in/Sea out",
+        "Portbase register",
+        "Port of Rotterdam",
+        "port operations"
+      ],
+      "search_score": 0.8170298,
+      "matched_query": "\"Port of Rotterdam import documentation requirements seafood\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "DOC_CHECKLIST_RIGA_PORT_ARRIVAL_022",
+      "datapoint_type": "Checklist",
+      "document_type": "Port Arrival Documents",
+      "relevant_entity": "Logistics Professional/Shipping Agent",
+      "regulation_category": "Documentation",
+      "regulation_subcategory": "Port Arrival Checklist",
+      "source_document": "Riga Port Report (Table 1)",
+      "regulation_detail": "Likely Required Documents for Container Arrival at the Port of Riga: Shipping line's Bill of Lading, Power of Attorney (POA), Container Arrival Notice, Cargo Manifest, Proof of Freight Payment, Commercial Invoice (Original), Packing List, Transportation Invoice, Certificate of Origin (Original), Customs Declaration (Electronic), Import/Export Licenses/Permits, Sanitary/Phytosanitary Certificates, Documents for Reduced VAT, Transit Documents (if applicable).",
+      "keywords": [
+        "Riga Port",
+        "port arrival",
+        "documents",
+        "checklist",
+        "shipping documents",
+        "customs documents"
+      ],
+      "search_score": 0.81622046,
+      "matched_query": "\"Port of Riga import documentation requirements seafood\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_PORT_DOCS_FORMS_CHECKLISTS_005",
+      "datapoint_type": "Documentation Mention",
+      "relevant_entity": "Vessel Agent",
+      "regulation_category": "Port Arrival Documentation - Rotterdam",
+      "regulation_subcategory": "Key Documents & Checklists",
+      "regulation_detail": "Key arrival documents (via 'Forms and checklists' section on Port of Rotterdam website) include IMO General Declaration, Ship's Stores, Crew List, Passenger List, ISPS pre-registration, pre-transfer/during transfer checklists.",
+      "source_document": "Comparative Analysis Report",
+      "keywords": [
+        "port arrival",
+        "documentation",
+        "IMO General Declaration",
+        "ship's stores",
+        "crew list",
+        "passenger list",
+        "ISPS",
+        "checklists",
+        "Rotterdam"
+      ],
+      "search_score": 0.8109282,
+      "matched_query": "\"Port of Rotterdam import documentation requirements seafood\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_OVERVIEW_071",
+      "datapoint_type": "Document Function",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shipper/Carrier/Consignee",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Overview",
+      "regulation_detail": "The Bill of Lading (B/L) is a fundamental document in international trade, acting as a contract of carriage, receipt for goods, and document of title.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Description",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "shipping document",
+        "contract of carriage",
+        "receipt for goods",
+        "document of title",
+        "international trade"
+      ],
+      "search_score": 0.803819,
+      "matched_query": "\"Common Bill of Lading errors seafood shipments\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "DOC_CHECKLIST_CUSTOMS_CLEARANCE_IMPORT_097",
+      "datapoint_type": "Checklist",
+      "document_type": "Customs Clearance Documents - Import",
+      "relevant_entity": "Importer/Customs Broker",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Import Documentation - Checklist",
+      "source_document": "Customs Declaration Report, Latvia Customs Information, EuroBrokers",
+      "regulation_detail": "Customs Clearance Documents Checklist for Import to Latvia: Commercial Invoice (Original), Packing List, Bill of Lading, Certificate of Origin (if preferential duties), Customs Declaration (Electronic), Import Licenses/Permits (if applicable), Sanitary/Phytosanitary Certificates (if applicable), Documents for Reduced VAT (if applicable).",
+      "keywords": [
+        "customs",
+        "import",
+        "documents",
+        "checklist",
+        "customs clearance documents",
+        "import documentation"
+      ],
+      "search_score": 0.80286354,
+      "matched_query": "\"Port of Riga import documentation requirements seafood\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "ROTTERDAM_DP_PORT_GENERAL_CARGO_DOCS_007",
+      "datapoint_type": "Documentation Requirement",
+      "relevant_entity": "Container Vessel",
+      "regulation_category": "General Cargo Documentation - Rotterdam",
+      "regulation_subcategory": "Cargo-Specific Documentation",
+      "regulation_detail": "General cargo vessel documentation at Port of Rotterdam includes IOPP, SOPEP, dangerous goods, and fumigants certificates.",
+      "source_document": "Comparative Analysis Report",
+      "keywords": [
+        "general cargo",
+        "vessel documentation",
+        "IOPP",
+        "SOPEP",
+        "dangerous goods",
+        "fumigants certificates",
+        "Rotterdam",
+        "container ships"
+      ],
+      "search_score": 0.80252385,
+      "matched_query": "\"Port of Rotterdam import documentation requirements seafood\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "RIGA_PORT_GOVERNANCE_AUTHORITY_003",
+      "datapoint_type": "Fact",
+      "relevant_entity": "Freeport of Riga Authority (FPRA)",
+      "regulation_category": "Port Governance",
+      "regulation_subcategory": "Authority Structure",
+      "source_document": "Riga Port Report",
+      "regulation_detail": "The overall management and operation of the Port of Riga are overseen by the Freeport of Riga Authority (FPRA).",
+      "keywords": [
+        "Riga Port",
+        "Freeport of Riga Authority",
+        "FPRA",
+        "governance",
+        "management",
+        "authority"
+      ],
+      "search_score": 0.8010297,
+      "matched_query": "\"Port Community System Riga\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "CUSTOMS_PROCEDURE_HAZARDOUS_GOODS_PERMIT_083",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Importer (Hazardous Goods)",
+      "regulation_category": "Customs Procedures",
+      "regulation_subcategory": "Special Cargo Types - Hazardous Goods",
+      "source_document": "Riga Port Report, Customs Declaration Report",
+      "regulation_detail": "To engage in activities involving dangerous cargoes at the Port of Riga, port merchants are required to obtain a category B permit from the State Environmental Service.",
+      "keywords": [
+        "customs",
+        "hazardous goods",
+        "dangerous cargo",
+        "permit",
+        "environmental permit",
+        "category B permit",
+        "State Environmental Service",
+        "requirement"
+      ],
+      "search_score": 0.7946753,
+      "matched_query": "\"Port of Riga import documentation requirements seafood\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "VTMIS_REPORTING_POINT_ENTERING_PORT_014",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Vessel",
+      "regulation_category": "VTMIS",
+      "regulation_subcategory": "Reporting",
+      "source_document": "VTMIS Report",
+      "regulation_detail": "Reporting is mandatory for vessels approaching, entering, navigating within, and departing from Port of Riga waters; specific reporting points are established for vessels entering or leaving the operational area.",
+      "keywords": [
+        "VTMIS",
+        "reporting",
+        "mandatory reporting",
+        "vessel arrival",
+        "vessel departure",
+        "procedure"
+      ],
+      "search_score": 0.7926207,
+      "matched_query": "\"Port of Riga import documentation requirements seafood\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_ESSENTIAL_CARGO_RELEASE_075",
+      "datapoint_type": "Requirement",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Consignee",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Importance",
+      "regulation_detail": "Presenting the original Bill of Lading (B/L) is essential for the consignee to obtain release of cargo from the carrier at the destination port.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Importance",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "cargo release",
+        "delivery of goods",
+        "original B/L",
+        "consignee",
+        "requirement",
+        "port operations"
+      ],
+      "search_score": 0.7918671,
+      "matched_query": "\"Common Bill of Lading errors seafood shipments\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_MARITIME_CODE_CARRIER_DUE_DILIGENCE_CARGO_FITNESS_022",
+      "datapoint_type": "Regulation",
+      "port_area": "International",
+      "relevant_entity": "Carrier",
+      "regulation_category": "Carrier Obligations",
+      "regulation_subcategory": "Due Diligence - Cargo Fitness",
+      "regulation_detail": "Carriers must ensure vessel components are 'fit and safe for their reception, carriage and preservation' of goods.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Maritime Code of the People's Republic of China: Fundamental Framework (Article 47)",
+      "keywords": [
+        "legal framework",
+        "maritime code",
+        "carrier obligation",
+        "due diligence",
+        "cargo fitness",
+        "vessel components",
+        "cargo reception",
+        "cargo carriage",
+        "cargo preservation",
+        "article 47"
+      ],
+      "search_score": 0.7881908,
+      "matched_query": "\"EU regulations frozen seafood import temperature control\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "HAMBURG_EUROGATE_DP_HANDLING_ORDER_EDI_04",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Key Logistics & Operational Procedures",
+      "regulation_subcategory": "Goods Handling Orders",
+      "source_document": "EUROGATE Hamburg - General Terms & Conditions of Business Analysis",
+      "regulation_detail": "Orders for goods handling must be submitted by EDI or exceptionally in text form using stipulated forms/templates.",
+      "keywords": [
+        "goods handling",
+        "order",
+        "EDI",
+        "forms",
+        "templates"
+      ],
+      "search_score": 0.785407,
+      "matched_query": "\"EDI integration import documentation\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "HAMBURG_DP_CUSTOMS_BMEL_FOOD_IMPORT_065",
+      "datapoint_type": "Regulatory Authority",
+      "relevant_entity": "BMEL",
+      "regulation_category": "Cargo-Specific Regulations - Germany",
+      "regulation_subcategory": "Food Import Regulations",
+      "regulation_detail": "BMEL (Federal Ministry of Food and Agriculture) regulates import conditions and certifications for specific cargo types like food products in Germany and Port of Hamburg.",
+      "source_document": "Comparative Analysis Report",
+      "search_score": 0.7820554,
+      "matched_query": "\"Seafood import security regulations EU\"",
+      "result_position": 1
+    },
+    {
+      "datapoint_id": "IMO_DP_B_L_FUNCTION_CONTRACT_073",
+      "datapoint_type": "Document Function",
+      "port_area": "International - Trade/Shipping",
+      "relevant_entity": "Shipper/Carrier",
+      "regulation_category": "Shipping Documents",
+      "regulation_subcategory": "Bill of Lading (B/L) - Functions",
+      "regulation_detail": "Another key function of the Bill of Lading (B/L) is to act as evidence of the contract of carriage between the shipper and the carrier, outlining terms and conditions.",
+      "source_document": "Bill of Lading (B/L) Report",
+      "source_section": "1. Document Overview - Three Primary Functions",
+      "keywords": [
+        "Bill of Lading",
+        "B/L",
+        "contract of carriage",
+        "shipping contract",
+        "shipper",
+        "carrier",
+        "function",
+        "terms and conditions"
+      ],
+      "search_score": 0.7810416,
+      "matched_query": "\"Common Bill of Lading errors seafood shipments\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_MARITIME_CODE_CARRIER_DUE_DILIGENCE_CARGO_FITNESS_022",
+      "datapoint_type": "Regulation",
+      "port_area": "International",
+      "relevant_entity": "Carrier",
+      "regulation_category": "Carrier Obligations",
+      "regulation_subcategory": "Due Diligence - Cargo Fitness",
+      "regulation_detail": "Carriers must ensure vessel components are 'fit and safe for their reception, carriage and preservation' of goods.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Maritime Code of the People's Republic of China: Fundamental Framework (Article 47)",
+      "keywords": [
+        "legal framework",
+        "maritime code",
+        "carrier obligation",
+        "due diligence",
+        "cargo fitness",
+        "vessel components",
+        "cargo reception",
+        "cargo carriage",
+        "cargo preservation",
+        "article 47"
+      ],
+      "search_score": 0.7809199,
+      "matched_query": "\"Seafood import security regulations EU\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_INTL_MARITIME_TRANSPORT_REGS_REFORM_ADMIN_PROCEDURES_028",
+      "datapoint_type": "Fact",
+      "port_area": "China",
+      "relevant_entity": "Regulation (International Maritime Transportation)",
+      "regulation_category": "Administrative Reform",
+      "regulation_subcategory": "Streamlined Procedures",
+      "regulation_detail": "Recent reforms to the regulations aimed at streamlining administrative procedures for international shipping operators.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Regulations on International Maritime Transportation: Recent Reforms",
+      "keywords": [
+        "administrative reform",
+        "streamlined procedures",
+        "international shipping operators",
+        "simplified administration",
+        "regulation changes"
+      ],
+      "search_score": 0.7808037,
+      "matched_query": "\"Seafood import security regulations EU\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "INCO_DP_268_Issue_CFR_RiskPointVsCostResponsibilityConfusion",
+      "datapoint_type": "Clarification",
+      "domain_area": "Incoterms:2020",
+      "relevant_entity": "CFR",
+      "regulation_category": "Challenges",
+      "regulation_subcategory": "CFR",
+      "regulation_detail": "Under CFR, confusion can arise as risk transfers early (on board) while the seller continues to pay freight to the destination port.",
+      "source_document": "Incoterms 2020 Rules",
+      "source_section": "CFR Guidance Note [Source 27]",
+      "keywords": [
+        "cfr",
+        "cost and freight",
+        "issue",
+        "challenge",
+        "confusion",
+        "risk transfer",
+        "cost",
+        "freight"
+      ],
+      "search_score": 0.78007066,
+      "matched_query": "\"Common Bill of Lading errors seafood shipments\"",
+      "result_position": 5
+    },
+    {
+      "datapoint_id": "RIGA_PORT_INFO_OPERABILITY_001",
+      "datapoint_type": "Fact",
+      "relevant_entity": "Port of Riga",
+      "regulation_category": "Port Overview",
+      "regulation_subcategory": "General Information",
+      "source_document": "Riga Port Report, General Knowledge",
+      "regulation_detail": "The Port of Riga maintains year-round operability for navigation.",
+      "keywords": [
+        "Riga Port",
+        "operability",
+        "navigation",
+        "year-round"
+      ],
+      "search_score": 0.77518225,
+      "matched_query": "\"Port Community System Riga\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_KBO_DP_GENERAL_CUSTOMER_DATATRANSFER_EDI_PREFERRED_03",
+      "datapoint_type": "Recommendation",
+      "relevant_entity": "Customer",
+      "regulation_category": "IT Systems in Port",
+      "regulation_subcategory": "Data Exchange - EDI (Recommended)",
+      "source_document": "Hafen Hamburg e.V. - Kaibetriebsordnung Analysis",
+      "regulation_detail": "Customer is recommended to use quay operator's printed forms or EDI for application data transfer. EDI preferred if available.",
+      "keywords": [
+        "data transfer",
+        "EDI",
+        "forms",
+        "recommendation",
+        "communication"
+      ],
+      "search_score": 0.7679124,
+      "matched_query": "\"EDI integration import documentation\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "YANGSHAN_DP_INTL_MARITIME_TRANSPORT_REGS_REFORM_ADMIN_PROCEDURES_028",
+      "datapoint_type": "Fact",
+      "port_area": "China",
+      "relevant_entity": "Regulation (International Maritime Transportation)",
+      "regulation_category": "Administrative Reform",
+      "regulation_subcategory": "Streamlined Procedures",
+      "regulation_detail": "Recent reforms to the regulations aimed at streamlining administrative procedures for international shipping operators.",
+      "source_document": "Regulation of Container Logistics at Yangshan Port (Shanghai): Impact of China's Legal Framework",
+      "source_section": "Regulations on International Maritime Transportation: Recent Reforms",
+      "keywords": [
+        "administrative reform",
+        "streamlined procedures",
+        "international shipping operators",
+        "simplified administration",
+        "regulation changes"
+      ],
+      "search_score": 0.76765996,
+      "matched_query": "\"EU regulations frozen seafood import temperature control\"",
+      "result_position": 2
+    },
+    {
+      "datapoint_id": "HAMBURG_DP_CUSTOMS_BMEL_FOOD_IMPORT_065",
+      "datapoint_type": "Regulatory Authority",
+      "relevant_entity": "BMEL",
+      "regulation_category": "Cargo-Specific Regulations - Germany",
+      "regulation_subcategory": "Food Import Regulations",
+      "regulation_detail": "BMEL (Federal Ministry of Food and Agriculture) regulates import conditions and certifications for specific cargo types like food products in Germany and Port of Hamburg.",
+      "source_document": "Comparative Analysis Report",
+      "search_score": 0.76688945,
+      "matched_query": "\"EU regulations frozen seafood import temperature control\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "RIGA_PORT_CARGO_FOCUS_CONTAINERS_TIMBER_AGRICULTURE_078",
+      "datapoint_type": "Fact",
+      "relevant_entity": "Port of Riga",
+      "regulation_category": "Port Overview",
+      "regulation_subcategory": "Cargo Specializations",
+      "source_document": "Riga Port Report, Port Website",
+      "regulation_detail": "The Port of Riga has strategically identified containerized freight, agricultural products, and timber as key areas for growth and development.",
+      "keywords": [
+        "Riga Port",
+        "cargo focus",
+        "specialization",
+        "containerized freight",
+        "timber",
+        "agricultural products",
+        "growth sectors"
+      ],
+      "search_score": 0.7659024,
+      "matched_query": "\"Port Community System Riga\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_GENERAL_DATATRANSFER_EDI_MANDATORY_02",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "IT Systems in Port",
+      "regulation_subcategory": "Data Exchange - EDI",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "Client must use forms provided by HHLA or EDI for data transmission necessary for services.",
+      "keywords": [
+        "data transfer",
+        "EDI",
+        "forms",
+        "mandatory",
+        "communication"
+      ],
+      "search_score": 0.76554763,
+      "matched_query": "\"EDI integration import documentation\"",
+      "result_position": 3
+    },
+    {
+      "datapoint_id": "TRANSIT_SYSTEM_NCTS_ELECTRONIC_TRACKING_042",
+      "datapoint_type": "Procedure",
+      "relevant_entity": "Latvian Customs (VID)/Transit Cargo",
+      "regulation_category": "Customs Procedures - Transit",
+      "regulation_subcategory": "Control & Supervision",
+      "source_document": "Transit Regulations Report",
+      "regulation_detail": "New Computerized Transit System (NCTS) is used to track goods in real-time during transit through Latvia.",
+      "keywords": [
+        "customs",
+        "transit",
+        "NCTS",
+        "New Computerized Transit System",
+        "electronic tracking",
+        "supervision",
+        "procedure"
+      ],
+      "search_score": 0.7596333,
+      "matched_query": "\"Port Community System Riga\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "HAMBURG_HHLA_DP_HANDLING_CUSTOMSPRESENTATION_ZAPP_15",
+      "datapoint_type": "Requirement",
+      "relevant_entity": "Customer",
+      "regulation_category": "Customs Procedures & Regulations",
+      "regulation_subcategory": "Foreign Trade Regulations - Customs Presentation",
+      "source_document": "HHLA - General Terms and Conditions for Container Handling (GTCCH) Analysis",
+      "regulation_detail": "For handling towards Sea Going Vessels, customs presentation data must be presented to customs by Client, and customs receipt acknowledged via ZAPP-System number.",
+      "keywords": [
+        "foreign trade",
+        "customs presentation",
+        "ZAPP-System",
+        "acknowledgement",
+        "checklist item"
+      ],
+      "search_score": 0.7592391,
+      "matched_query": "\"Seafood import security regulations EU\"",
+      "result_position": 4
+    },
+    {
+      "datapoint_id": "RIGA_PORT_CONTAINER_THROUGHPUT_ANNUAL_079",
+      "datapoint_type": "Fact",
+      "relevant_entity": "Container Terminal (Port of Riga)",
+      "regulation_category": "Port Operations",
+      "regulation_subcategory": "Cargo Throughput",
+      "source_document": "Riga Port Report, Port Website",
+      "regulation_detail": "The Port of Riga's container terminals have a combined handling capacity exceeding 465,000 TEU annually.",
+      "keywords": [
+        "Riga Port",
+        "container throughput",
+        "TEU",
+        "annual capacity",
+        "cargo volume",
+        "terminal capacity"
+      ],
+      "search_score": 0.75392663,
+      "matched_query": "\"Port Community System Riga\"",
+      "result_position": 5
+    }
+  ],
+  "datapoints_complete": true,
+  "search_metadata": {
+    "collection_name": "logistics_datapoints",
+    "queries_used": 10,
+    "total_results": 50,
+    "unique_datapoints": 30,
+    "retrieval_duration": 7.754797,
+    "timestamp": "2025-03-29T09:00:47.654306",
+    "query_stats": [
+      {
+        "query": "\"EU regulations frozen seafood import temperature control\"",
+        "results_found": 5,
+        "top_score": 0.7881908
+      },
+      {
+        "query": "\"Port of Riga import documentation requirements seafood\"",
+        "results_found": 5,
+        "top_score": 0.83011836
+      },
+      {
+        "query": "\"Port of Rotterdam import documentation requirements seafood\"",
+        "results_found": 5,
+        "top_score": 0.8384682
+      },
+      {
+        "query": "\"EU RASFF seafood traceability requirements\"",
+        "results_found": 5,
+        "top_score": 0.7476593
+      },
+      {
+        "query": "\"Common Bill of Lading errors seafood shipments\"",
+        "results_found": 5,
+        "top_score": 0.8486037
+      },
+      {
+        "query": "\"Best practices temperature monitoring seafood supply chain\"",
+        "results_found": 5,
+        "top_score": 0.7534125
+      },
+      {
+        "query": "\"Seafood import security regulations EU\"",
+        "results_found": 5,
+        "top_score": 0.7820554
+      },
+      {
+        "query": "\"Port Community System Riga\"",
+        "results_found": 5,
+        "top_score": 0.8010297
+      },
+      {
+        "query": "\"EDI integration import documentation\"",
+        "results_found": 5,
+        "top_score": 0.785407
+      },
+      {
+        "query": "\"Impact Baltic Sea geopolitical instability shipping\"",
+        "results_found": 5,
+        "top_score": 0.7330935
+      }
+    ]
+  },
+  "title": "**Baltic Breeze: Navigating Seafood Import Challenges and EU Regulatory Compliance**",
+  "enhanced_case": "**Scenario:** Baltic Breeze Seafood, a growing seafood distributor based in Riga, Latvia, is experiencing significant challenges in managing its frozen seafood imports from various suppliers in Southeast Asia. The company imports a variety of products, including frozen shrimp, pangasius, and tuna, primarily sourced from Vietnam (Golden Ocean Fisheries), Thailand (Siam Marine Products), and Indonesia (IndoAqua Farms). These shipments arrive at the Port of Riga, with Rotterdam as a potential alternative. OceanEx Logistics handles freight forwarding, utilizing the \"Baltic Mariner\" (operated by Nordic Shipping Lines) for the Singapore-Riga route.\n\n**Entities:**\n\n*   Baltic Breeze Seafood (Importer/Distributor)\n*   Golden Ocean Fisheries (Vietnamese Shrimp Supplier)\n*   Siam Marine Products (Thai Tuna Supplier)\n*   IndoAqua Farms (Indonesian Pangasius Supplier)\n*   OceanEx Logistics (Freight Forwarder)\n*   Port of Riga (Governed by Freeport of Riga Authority (FPRA))\n*   Port of Rotterdam (Alternative)\n*   \"Baltic Mariner\" (Fictional Container Vessel - operated by Nordic Shipping Lines)\n*   Nordic Shipping Lines (Fictional Shipping Company)\n\n**Regulatory Issues & Compliance:** Baltic Breeze Seafood is subject to strict EU regulations regarding food safety, traceability, and customs procedures. Specifically, they *must* comply with:\n\n*   **EU's Rapid Alert System for Food and Feed (RASFF):** Requires immediate notification of any food safety risks detected. This triggers potential recalls and market withdrawals, impacting Baltic Breeze's reputation and finances.\n*   **Regulation (EC) No 178/2002 (General Food Law):** Establishes the general principles and requirements of food law, ensuring food safety from farm to fork. Baltic Breeze must demonstrate due diligence in sourcing, handling, and distributing safe seafood.\n*   **Regulation (EC) No 852/2004 (Hygiene Regulation):** Requires food businesses to implement and maintain a food safety management system based on Hazard Analysis and Critical Control Points (HACCP) principles. This includes rigorous temperature control throughout the supply chain.\n*   **Regulation (EC) No 853/2004 (Specific Hygiene Rules for Food of Animal Origin):** Sets out specific hygiene rules for products of animal origin, including seafood. This includes requirements for traceability, identification marking, and official controls.\n*   **EU Customs Code (Regulation (EU) No 952/2013):** Governs the rules for importing goods into the EU, including customs declarations, tariffs, and import duties. Baltic Breeze needs to ensure accurate and complete customs documentation to avoid delays and penalties.\n*   **EU Regulation on Common Organisation of the Markets in Fishery and Aquaculture Products (Regulation (EU) No 1379/2013):** Establishes labelling requirements for seafood products, including the commercial designation, production method, and catch area. Baltic Breeze must ensure accurate and informative labelling.\n*   **Border Control Post (BCP) requirements:** As a food importer, Baltic Breeze is subject to checks at the BCP upon entry to the EU. These checks include documentary, identity and physical checks to verify compliance with EU law.\n*   **Compliance with ISPM 15:** International Standards For Phytosanitary Measures No. 15 - regulation of wood packaging material in international trade.\n\nRecent inspections by the Latvian Food and Veterinary Service (PVD) have highlighted discrepancies in temperature control documentation, specifically missing temperature logs for certain shipments and inconsistencies between recorded temperatures and the required storage conditions. This has led to formal warnings and increased scrutiny of Baltic Breeze's import procedures.\n\n**Problem:** Baltic Breeze is facing rising transportation costs and increasing delays in receiving its shipments. Currently, all goods are consolidated in Singapore by OceanEx Logistics and shipped directly to the Port of Riga on the \"Baltic Mariner,\" a vessel operated by Nordic Shipping Lines. However, the transit time is lengthy (approximately 35-40 days), and the company has experienced several instances of temperature excursions during transit, resulting in rejected shipments and significant financial losses. Furthermore, congestion at the Port of Riga is becoming increasingly problematic, causing further delays and additional storage costs at the Freeport of Riga Authority (FPRA) terminals.\n\nSpecifically, Baltic Breeze has faced issues with:\n\n*   **Incomplete Bills of Lading:** Missing information regarding the consignee's details and the specific cargo description.\n*   **Delays in Customs Clearance:** Due to discrepancies between the declared value of the goods and the customs valuation.\n*   **Detention of Shipments:** Owing to non-compliance with food safety regulations at the Port of Riga.\n\nBaltic Breeze is considering an alternative routing strategy: shipping goods to the Port of Rotterdam and then utilizing short-sea shipping to Riga. This option potentially offers faster transit times and reduced port congestion but introduces additional handling and transshipment costs. They also need to improve their temperature monitoring and documentation processes to avoid further regulatory issues, including potential fines and import license revocation.\n\n**Specifically, Baltic Breeze needs to determine:**\n\n1.  Whether the Rotterdam-Riga route offers a cost-effective and time-efficient alternative to the current Singapore-Riga route, considering all relevant costs, including freight rates, port charges (including potential demurrage due to congestion at both ports), inland transportation, and potential inventory holding costs. This analysis must include a detailed comparison of Incoterms (e.g. CIF Riga vs. DAP Rotterdam) and their associated costs and responsibilities.\n2.  How to improve temperature control and documentation throughout the supply chain to ensure compliance with EU regulations and minimize the risk of rejected shipments. This includes evaluating different temperature monitoring technologies (e.g., data loggers with real-time alerts, blockchain-based tracking), implementing robust data logging procedures, and ensuring proper calibration of temperature monitoring equipment. The documentation must adhere to the requirements of the HACCP plan and be readily available for inspection by the PVD.\n3.  How to negotiate better terms with their suppliers and OceanEx Logistics to mitigate the impact of rising freight rates and potential delays. This includes exploring options for long-term contracts, volume discounts, and penalty clauses for delays or temperature excursions.\n4.  The impact of potential future disruptions, such as strikes at major European ports or geopolitical instability in the Baltic Sea region, on their supply chain resilience. This requires developing contingency plans, such as diversifying sourcing locations and exploring alternative transportation routes. They must also consider the implications of potential delays on the shelf life of the seafood products and the need for cold storage facilities.\n5.  How to improve data quality and accuracy in their import documentation to avoid customs delays and penalties. This includes implementing data validation procedures, training staff on customs regulations, and utilizing electronic data interchange (EDI) to streamline the customs clearance process.\n\nThis enhanced case provides a more realistic and educational scenario by incorporating specific regulatory details, potential bottlenecks, and considerations for risk mitigation. It highlights the complexity of seafood import and distribution within the EU regulatory framework and emphasizes the importance of efficient supply chain management and compliance with food safety standards.",
+  "domain_guideline": "maritime",
+  "enhancement_metadata": {
+    "model": null,
+    "timestamp": "2025-03-29 09:00:56",
+    "datapoints_used": 30,
+    "guideline_type": "maritime",
+    "guideline_chunks": 5,
+    "enhancement_duration": 8.579873
+  },
+  "enhancement_complete": true,
+  "solution": "## Executive Summary\n\nBaltic Breeze Seafood is facing significant challenges in its frozen seafood import operations due to rising transportation costs, delays, temperature excursions, and regulatory non-compliance. This solution proposes a multi-pronged approach to address these issues, focusing on route optimization, improved temperature control and documentation, supplier negotiation, risk mitigation, and enhanced data accuracy. The solution incorporates specific EU regulations and best practices to ensure compliance and improve operational efficiency. The core recommendation is to implement a hybrid approach, leveraging both the direct Singapore-Riga route and the Rotterdam-Riga alternative strategically, while simultaneously strengthening internal processes and supplier relationships.\n\n## Detailed Solution Steps\n\n**Step 1: Route Optimization Analysis: Riga vs. Rotterdam**\n\n*   **Action:** Conduct a thorough cost-benefit analysis of the Singapore-Riga route versus the Singapore-Rotterdam-Riga route. This analysis should include all relevant costs:\n    *   **Freight Rates:** Obtain quotes from Nordic Shipping Lines and other carriers for both routes. Consider different Incoterms (CIF Riga vs. DAP Rotterdam) to understand cost responsibilities.\n    *   **Port Charges:** Research port charges at both Riga and Rotterdam, including potential demurrage fees due to congestion. Contact the Freeport of Riga Authority (FPRA) and the Port of Rotterdam Authority for detailed tariff information.\n    *   **Inland Transportation (Rotterdam-Riga):** Obtain quotes for short-sea shipping from Rotterdam to Riga. Consider factors like transit time, handling costs, and insurance.\n    *   **Inventory Holding Costs:** Calculate the cost of holding inventory for the longer Singapore-Riga route versus the potentially faster Rotterdam-Riga route.\n    *   **Customs Clearance Costs:** Compare customs clearance fees and potential delays at both ports.\n    *   **Risk Assessment:** Quantify the risk of temperature excursions and rejected shipments for each route.\n*   **Regulatory Reference:** *EU Customs Code (Regulation (EU) No 952/2013)* - Ensure accurate valuation of goods for customs purposes in both scenarios.\n*   **Reasoning:** This analysis will provide a data-driven basis for determining the most cost-effective and time-efficient route. Considering all cost components and potential risks is crucial for making an informed decision.\n\n**Step 2: Enhanced Temperature Control and Documentation**\n\n*   **Action:** Implement a comprehensive temperature monitoring system throughout the supply chain.\n    *   **Technology:** Invest in data loggers with real-time alerts for all shipments. Explore blockchain-based tracking solutions for enhanced transparency and security.\n    *   **Procedures:** Develop and implement robust data logging procedures, including regular calibration of temperature monitoring equipment. Ensure all temperature logs are complete, accurate, and readily available for inspection.\n    *   **Training:** Provide comprehensive training to all personnel involved in handling and monitoring temperature-sensitive seafood.\n    *   **HACCP Integration:** Integrate temperature monitoring and documentation procedures into the existing HACCP plan, as required by *Regulation (EC) No 852/2004 (Hygiene Regulation)*.\n*   **Regulatory Reference:** *Regulation (EC) No 852/2004 (Hygiene Regulation)* and *Regulation (EC) No 853/2004 (Specific Hygiene Rules for Food of Animal Origin)* - Temperature control is a critical aspect of food safety and hygiene.\n*   **Reasoning:** Accurate and reliable temperature monitoring is essential for preventing temperature excursions and ensuring compliance with EU regulations. Real-time alerts allow for immediate corrective action in case of temperature deviations.\n\n**Step 3: Supplier and Freight Forwarder Negotiation**\n\n*   **Action:** Negotiate better terms with suppliers (Golden Ocean Fisheries, Siam Marine Products, IndoAqua Farms) and OceanEx Logistics.\n    *   **Long-Term Contracts:** Explore options for long-term contracts with suppliers to secure favorable pricing and prioritize shipments.\n    *   **Volume Discounts:** Negotiate volume discounts based on the total quantity of seafood imported.\n    *   **Penalty Clauses:** Include penalty clauses in contracts with suppliers and OceanEx Logistics for delays or temperature excursions.\n    *   **Incoterms Review:** Re-evaluate Incoterms with suppliers to potentially shift risk and responsibility for transportation and insurance. For example, shifting from CIF Riga to FOB origin could give Baltic Breeze more control over the shipping process.\n*   **Regulatory Reference:** *Commercial Law Principles* - Contracts should be legally sound and enforceable, clearly defining responsibilities and liabilities.\n*   **Reasoning:** Negotiating favorable terms with suppliers and freight forwarders can help mitigate the impact of rising freight rates and potential delays. Penalty clauses incentivize timely and compliant performance.\n\n**Step 4: Risk Mitigation and Contingency Planning**\n\n*   **Action:** Develop contingency plans to address potential future disruptions.\n    *   **Diversification:** Diversify sourcing locations to reduce reliance on a single region or supplier.\n    *   **Alternative Transportation Routes:** Identify and evaluate alternative transportation routes in case of disruptions at major European ports or geopolitical instability.\n    *   **Cold Storage Facilities:** Secure access to cold storage facilities at both Riga and Rotterdam to accommodate potential delays and maintain product quality.\n    *   **Insurance:** Ensure adequate insurance coverage for all shipments to protect against potential losses due to delays, damage, or rejection.\n*   **Regulatory Reference:** *General Business Risk Management Principles* - Proactive risk management is essential for business continuity and resilience.\n*   **Reasoning:** Contingency planning is crucial for mitigating the impact of unforeseen events and ensuring the continuity of supply. Diversification and alternative routes provide flexibility and resilience.\n\n**Step 5: Data Accuracy and Customs Compliance**\n\n*   **Action:** Implement measures to improve data quality and accuracy in import documentation.\n    *   **Data Validation:** Implement data validation procedures to ensure the accuracy and completeness of all import documents.\n    *   **Training:** Provide comprehensive training to staff on customs regulations and documentation requirements.\n    *   **Electronic Data Interchange (EDI):** Utilize EDI to streamline the customs clearance process and reduce the risk of errors.\n    *   **Regular Audits:** Conduct regular internal audits of import documentation to identify and correct any discrepancies.\n*   **Regulatory Reference:** *EU Customs Code (Regulation (EU) No 952/2013)* - Accurate and complete customs documentation is essential for compliance and avoiding penalties.\n*   **Reasoning:** Accurate data and streamlined customs processes reduce the risk of delays and penalties, ensuring smooth and efficient import operations.\n\n**Step 6: Border Control Post (BCP) Readiness**\n\n*   **Action:** Prepare thoroughly for BCP checks at the Port of Riga.\n    *   **Documentation Review:** Ensure all required documentation is readily available and complete, including health certificates, catch certificates, and temperature logs.\n    *   **Communication:** Establish clear communication channels with the PVD and the BCP to address any questions or concerns promptly.\n    *   **Mock Audits:** Conduct mock audits to simulate BCP inspections and identify any areas for improvement.\n*   **Regulatory Reference:** *EU Regulations on Food Safety and Animal Health* - Compliance with BCP requirements is mandatory for importing food products into the EU.\n*   **Reasoning:** Proactive preparation for BCP checks minimizes the risk of delays and detentions, ensuring the smooth entry of seafood products into the EU market.\n\n**Step 7: ISPM 15 Compliance**\n\n*   **Action:** Ensure all wood packaging material (pallets, crates, etc.) used in shipments complies with ISPM 15 standards.\n    *   **Certification:** Verify that all wood packaging material is properly treated and marked with the ISPM 15 stamp.\n    *   **Documentation:** Maintain records of ISPM 15 compliance for all shipments.\n    *   **Supplier Communication:** Communicate ISPM 15 requirements to suppliers and ensure they are aware of their responsibilities.\n*   **Regulatory Reference:** *International Standards For Phytosanitary Measures No. 15 (ISPM 15)* - Compliance with ISPM 15 is mandatory for preventing the spread of plant pests and diseases.\n*   **Reasoning:** Compliance with ISPM 15 prevents delays and rejections due to non-compliant wood packaging material.\n\n**Step 8: Rapid Alert System for Food and Feed (RASFF) Preparedness**\n\n*   **Action:** Establish a clear protocol for responding to RASFF alerts.\n    *   **Designated Contact Person:** Designate a specific individual or team responsible for handling RASFF alerts.\n    *   **Communication Plan:** Develop a communication plan for notifying relevant stakeholders, including suppliers, customers, and regulatory authorities.\n    *   **Recall Procedures:** Establish clear recall procedures in case of a food safety risk.\n*   **Regulatory Reference:** *EU's Rapid Alert System for Food and Feed (RASFF)* - Immediate notification of food safety risks is mandatory.\n*   **Reasoning:** Prompt and effective response to RASFF alerts minimizes the impact on public health and protects Baltic Breeze's reputation.\n\n## Recommendations\n\n*   **Implement a Hybrid Route Strategy:** Utilize both the direct Singapore-Riga route and the Rotterdam-Riga route strategically, based on factors like urgency, cost, and risk.\n*   **Invest in Real-Time Temperature Monitoring:** Implement a comprehensive temperature monitoring system with real-time alerts to prevent temperature excursions.\n*   **Strengthen Supplier Relationships:** Negotiate long-term contracts and penalty clauses with suppliers to ensure timely and compliant performance.\n*   **Develop Robust Contingency Plans:** Prepare for potential disruptions by diversifying sourcing locations and identifying alternative transportation routes.\n*   **Enhance Data Accuracy and Customs Compliance:** Implement data validation procedures and utilize EDI to streamline the customs clearance process.\n*   **Prioritize BCP Readiness:** Ensure all required documentation is readily available and establish clear communication channels with the PVD and the BCP.\n*   **Ensure ISPM 15 Compliance:** Verify that all wood packaging material complies with ISPM 15 standards.\n*   **Establish RASFF Preparedness:** Develop a clear protocol for responding to RASFF alerts.\n\n## Risk Mitigation\n\n| Risk                                   | Mitigation Strategy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           LockerService: \n",
+  "solution_complete": true,
+  "solution_metadata": {
+    "model": "gemini-2.0-flash-exp",
+    "timestamp": "2025-03-29T09:01:17.598408",
+    "datapoints_referenced": 30,
+    "solution_version": "2.0",
+    "generation_duration": 20.594735,
+    "prompt_tokens": 9655,
+    "solution_structure": "four_part"
+  }
+}
