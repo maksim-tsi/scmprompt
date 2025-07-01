@@ -1,5 +1,5 @@
 """
-Qdrant Cloud utilities for the magdeburg25 project.
+Qdrant Cloud utilities for the scmprompt project.
 Provides standardized access to Qdrant collections for logistics datapoints.
 """
 import os

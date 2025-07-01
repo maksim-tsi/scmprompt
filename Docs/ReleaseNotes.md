@@ -37,11 +37,11 @@ This document tracks the key changes, improvements, and fixes in each release of
 ## Dependencies
 - Updated requirements.txt with Streamlit and supporting packages
 
-# Magdeburg25 v0.7.0 
+# Previous Project: Magdeburg25 v0.7.0 (Legacy)
 
 ## Maritime Logistics Case Generation and Solution Assistant
 
-This release provides a complete implementation of the Magdeburg25 system for maritime logistics case generation and solutions using advanced AI techniques.
+This release provided a complete implementation of the Magdeburg25 system for maritime logistics case generation and solutions using advanced AI techniques. The current project, scmprompt, is a direct evolution and rebranding of this work.
 
 ### Key Features
 
@@ -58,6 +58,7 @@ This release provides a complete implementation of the Magdeburg25 system for ma
 #### Vector Database Integration
 - Qdrant integration for semantic search
 - Efficient storage of cases and solutions
+
 - Pre-populated with 300+ maritime logistics examples
 
 #### Evaluation Framework

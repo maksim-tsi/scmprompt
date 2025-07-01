@@ -1,4 +1,4 @@
-# magdeburg25 - LLM Assistant for SCM Logistics Consulting & Problem Solving
+# LLM Assistant for SCM Logistics Consulting & Problem Solving
 
 ## Release Information
 
@@ -93,7 +93,7 @@ The project is currently in the **Proof-of-Concept (PoC) Phase**. The primary go
 
 ## Preliminary Repository Structure
 
-magdeburg25/
+scmprompt/
 ├── notebooks/ # Jupyter notebooks for the PoC workflow (01_... to 06_...)
 ├── data/
 │ ├── atomic_regulations/ # Raw JSON files for regulatory datapoints
@@ -116,14 +116,14 @@ magdeburg25/
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/skazo4nick/magdeburg25.git
-    cd magdeburg25
+    git clone https://github.com/maksim-tsi/scmprompt.git
+    cd scmprompt
     ```
 2.  **Set up Python Environment:**
     ```bash
     # Recommended: Create and activate a virtual environment (e.g., conda or venv)
-    # conda create -n magdeburg25 python=3.10
-    # conda activate magdeburg25
+    # conda create -n mscmprompt python=3.10
+    # conda activate scmprompt
     pip install -r requirements.txt
     ```
 3.  **Configure API Keys:**
