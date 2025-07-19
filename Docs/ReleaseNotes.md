@@ -2,6 +2,39 @@
 
 This document tracks the key changes, improvements, and fixes in each release of our Maritime Logistics Knowledge Base project.
 
+# Release 0.8.1 - Examples Notebook Enhancement (July 19, 2025)
+
+## 🚀 New Features
+- **Enhanced Examples Notebook**: Complete overhaul of `examples.ipynb` to work with generated maritime logistics cases
+- **Case Export Functionality**: New feature to export full case studies as formatted text files
+- **Improved Data Loading**: Switched from textbook examples to AI-generated training cases from `train_cases.parquet`
+
+## 🛠️ Improvements
+- **Data Source Migration**: Updated notebook to use generated maritime logistics cases instead of static textbook examples
+- **Robust Error Handling**: Added comprehensive pandas Series and numpy array handling for case export
+- **Simplified File Naming**: Streamlined exported file names to use only case IDs for clarity
+- **Enhanced Case Analysis**: Added quality metrics analysis, qualification status, and case length statistics
+- **Better Fallback Search**: Improved local search functionality when vector database is unavailable
+
+## 🐛 Bug Fixes
+- Fixed malformed JSON syntax in notebook cells that prevented proper execution
+- Resolved numpy array handling issues in text file export functionality
+- Fixed empty file generation problem in case export feature
+- Corrected string conversion errors for mixed data types
+
+## 📝 Technical Details
+- **File Format**: Case exports saved as `.txt` files in `/Data/GeneratedCases/txt/` directory
+- **Data Processing**: Added `safe_get_value()` function for robust pandas data extraction
+- **Quality Metrics**: Display realism scores, complexity scores, and educational value for cases
+- **Content Structure**: Exported files include case scenario, solution, quality metrics, and evaluation summaries
+
+## 📊 Example Workflow Demonstrated
+1. Load 245 generated maritime logistics cases from parquet file
+2. Analyze case quality metrics and qualification status
+3. Export sample cases with full details for review
+4. Demonstrate few-shot prompt construction using real cases
+5. Show vector database search with local fallback capability
+
 # Release 0.8.0 Planning
 
 ## Objectives

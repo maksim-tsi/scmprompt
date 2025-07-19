@@ -134,6 +134,33 @@ scmprompt/
     *   Place literature PDF files in `data/literature/` (or configure paths in Notebook 2).
 5.  **Run Notebooks:** Execute the notebooks in numerical order (`01_...` through `06_...`) within the `notebooks/` directory. Each notebook typically loads data from previous steps (or raw sources) and saves its output for the next step. Follow instructions within each notebook.
 
+## Notebooks Overview
+
+The project includes several Jupyter notebooks that demonstrate the complete workflow from data exploration to model evaluation:
+
+### Core Workflow Notebooks
+- **`examples.ipynb`** - ✨ **Enhanced in v0.8.1** - Working with generated maritime logistics case examples
+  - Load and explore 245+ generated training cases from `train_cases.parquet`
+  - Analyze case quality metrics (realism, complexity, educational value)
+  - Export full case studies as formatted text files
+  - Demonstrate few-shot prompt construction using real cases
+  - Vector database search with local fallback capability
+- **`02_Test_Queries.ipynb`** - Advanced search and retrieval testing
+- **`03_Embed_Examples_Guidelines.ipynb`** - Creating and updating example embeddings
+- **`04_Case_Generation.ipynb`** - Using examples in case generation pipeline
+- **`05_Case_Evaluation.ipynb`** - Evaluating generated cases quality
+- **`06_ICL_Dataset_Preparation.ipynb`** - Preparing datasets for In-Context Learning
+
+### Model Testing & Evaluation
+- **`07_Baseline_Gemma_3.ipynb`** - Baseline testing with Gemma 3 model
+- **`08_ICL_Implementation.ipynb`** - In-Context Learning implementation
+- **`09_Evaluation_ICL_vs_Baseline.ipynb`** - Comparative evaluation framework
+- **`Release_Dashboard.ipynb`** - Project status and metrics dashboard
+
+### Utility Notebooks
+- **`qdrant_setup.ipynb`** - Vector database configuration and setup
+- **`entity_name_normalization.ipynb`** - Data preprocessing utilities
+
 ## Data
 
 The project utilizes three main categories of data:
